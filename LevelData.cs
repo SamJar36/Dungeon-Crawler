@@ -27,10 +27,16 @@ public class LevelData
                 {
                     if (character == '#')
                     {
-                        Wall wall = new Wall(mapX, mapY, '#', ConsoleColor.Gray);
+                        Wall wall = new Wall(mapX, mapY);
                         wall.Draw();
                     }
+                    else if (character == 'B')
+                    {
+                        TreasureChest chest = new TreasureChest(mapX, mapY);
+                        chest.Draw();
+                    }
                     mapX++;
+
                 }
             }
         }

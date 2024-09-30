@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Metrics;
+﻿using Dungeon_Crawler.Elements;
+using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 
@@ -45,19 +46,29 @@ public class Player
         if (keyPressed.Key == ConsoleKey.UpArrow)
         {  
             this.PosY -= 1;
+            CheckForCollision();
         }
         else if (keyPressed.Key == ConsoleKey.DownArrow)
         {
             this.PosY += 1;
+            CheckForCollision();
+
         }
         else if (keyPressed.Key == ConsoleKey.LeftArrow)
         {
             this.PosX -= 1;
+            CheckForCollision();
+
         }
         else if (keyPressed.Key == ConsoleKey.RightArrow)
         {
             this.PosX += 1;
+            CheckForCollision();
+
         }
-            
+    }
+    private void CheckForCollision()
+    {
+        
     }
 }
