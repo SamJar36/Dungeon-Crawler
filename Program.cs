@@ -1,4 +1,6 @@
-﻿namespace DungeonCrawler;
+﻿using Dungeon_Crawler.Elements;
+
+namespace DungeonCrawler;
 
 public class Program
 {
@@ -7,9 +9,13 @@ public class Program
         Console.CursorVisible = false;
         bool isGameRunning = true;
 
+        //map
+        LevelData levelData = new LevelData();
+        levelData.LoadMap();
+
         //player
         Player player = new Player(10, 10);
-        
+
         while (isGameRunning)
         {
             player.MovePlayer();
