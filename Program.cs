@@ -19,7 +19,14 @@ public class Program
         while (isGameRunning)
         {
             player.MovePlayer(levelData);
+            player.EraseLastPositionOfPlayer();
             player.DrawPlayer(player.PosX, player.PosY);
+            foreach (var rat in levelData.RatList)
+            {
+                rat.Move();
+                rat.EraseLastPositionOfEnemy();
+                rat.Draw();  
+            }
 
         }
         Console.Clear();

@@ -28,11 +28,10 @@ public class Player
     }
     public void DrawPlayer(int x, int y)
     {
-        EraseLastPosition();
         Console.SetCursorPosition(PosX, PosY);
         Console.Write(symbol);        
     }
-    private void EraseLastPosition()
+    public void EraseLastPositionOfPlayer()
     {
         Console.SetCursorPosition(LastPosX, LastPosY);
         Console.Write(" ");

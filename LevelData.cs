@@ -9,6 +9,8 @@ public class LevelData
     private int currentLevel = 1;
     private List<Wall> wallList = new List<Wall>();
     public List<Wall> WallList {  get { return wallList; } }
+    private List<Rat> ratList = new List<Rat>();
+    public List<Rat> RatList { get {return ratList; } }
 
     public void LoadMap()
     {     
@@ -38,6 +40,13 @@ public class LevelData
                     {
                         TreasureChest chest = new TreasureChest(mapX, mapY);
                         chest.Draw();
+                    }
+                    else if (character == 'r')
+                    {
+                        Rat rat = new Rat(mapX, mapY, this);
+                        rat.Draw();
+                        ratList.Add(rat);
+
                     }
                     mapX++;
 
