@@ -14,12 +14,13 @@ public class Program
         levelData.LoadMap();
 
         //player
-        Player player = new Player(10, 10);
+        Player player = new Player(10, 10, levelData);
 
         while (isGameRunning)
         {
-            player.MovePlayer();
+            player.MovePlayer(levelData);
             player.DrawPlayer(player.PosX, player.PosY);
+
         }
         Console.Clear();
         Console.WriteLine("Thanks for playing!");

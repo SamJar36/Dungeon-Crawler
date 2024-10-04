@@ -12,14 +12,17 @@ public class Player
     private int LastPosX { get; set; }
     private int LastPosY { get; set; }
     private char symbol = '@';
+    private LevelData LData { get; set; }
 
-    public Player(int x, int y)
+    public Player(int x, int y, LevelData levelData)
     {
         this.PosX = x;
         this.PosY = y;
 
         this.LastPosX = x;
         this.LastPosY = y;
+
+        this.LData = levelData;
 
         DrawPlayer(this.PosX, this.PosY);
     }
@@ -39,12 +42,12 @@ public class Player
         this.LastPosY = this.PosY;
         this.LastPosX = this.PosX;
     }
-    public void MovePlayer()
+    public void MovePlayer(LevelData levelData)
     {
         var keyPressed = Console.ReadKey();
         LastPositionOfPlayer();
         if (keyPressed.Key == ConsoleKey.UpArrow)
-        {  
+        {
             this.PosY -= 1;
             CheckForCollision();
         }
@@ -69,6 +72,13 @@ public class Player
     }
     private void CheckForCollision()
     {
-        
+        foreach (var item in LData.WallList)
+        {
+            if (PosX == item.PosX && PosY == item.PosY)
+            {
+                this.PosX = LastPosX;
+                this.PosY = LastPosY;
+            }
+        }
     }
 }

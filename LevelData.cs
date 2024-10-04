@@ -7,6 +7,9 @@ namespace DungeonCrawler;
 public class LevelData
 {
     private int currentLevel = 1;
+    private List<Wall> wallList = new List<Wall>();
+    public List<Wall> WallList {  get { return wallList; } }
+
     public void LoadMap()
     {     
         string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{currentLevel}.text";
@@ -29,6 +32,7 @@ public class LevelData
                     {
                         Wall wall = new Wall(mapX, mapY);
                         wall.Draw();
+                        wallList.Add(wall);
                     }
                     else if (character == 'B')
                     {
