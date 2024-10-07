@@ -10,7 +10,7 @@ namespace Dungeon_Crawler.Elements
     public class Rat : Enemy
     {
         private Random random = new Random();
-        public Rat(int x, int y, LevelData levelData) : base(x, y, 5, 'r', ConsoleColor.Red, levelData)
+        public Rat(int x, int y, LevelData levelData, Player player) : base(x, y, 5, 'r', ConsoleColor.Red, levelData, player)
         {
 
         }

@@ -14,7 +14,8 @@ namespace Dungeon_Crawler.Elements
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
         private LevelData LData { get; set; }
-        public Enemy(int x, int y, int HP, char symbol, ConsoleColor color, LevelData levelData) : base(x, y, symbol, color)
+        private Player Player { get; set; }
+        public Enemy(int x, int y, int HP, char symbol, ConsoleColor color, LevelData levelData, Player player) : base(x, y, symbol, color)
         {
             this.HitPoints = HP;
 
@@ -22,6 +23,8 @@ namespace Dungeon_Crawler.Elements
             this.LastPosY = y;
 
             this.LData = levelData;
+
+            this.Player = player;
         }
         public void LastPositionOfEnemy()
         {
@@ -54,6 +57,13 @@ namespace Dungeon_Crawler.Elements
                     this.PosX = LastPosX;
                     this.PosY = LastPosY;
                 }
+            }
+            if (this.PosX == Player.PosX && this.PosY == Player.PosY)
+            {
+                this.PosX = LastPosX;
+                this.PosY = LastPosY;
+
+                // start battle
             }
         }
     }

@@ -13,14 +13,11 @@ public class Program
         LevelData levelData = new LevelData();
         levelData.LoadMap();
 
-        //player
-        Player player = new Player(10, 10, levelData);
-
         while (isGameRunning)
         {
-            player.MovePlayer(levelData);
-            player.EraseLastPositionOfPlayer();
-            player.DrawPlayer(player.PosX, player.PosY);
+            levelData.Player.MovePlayer();
+            levelData.Player.EraseLastPositionOfPlayer();
+            levelData.Player.DrawPlayer(levelData.Player.PosX, levelData.Player.PosY);
             foreach (var rat in levelData.RatList)
             {
                 rat.Move();

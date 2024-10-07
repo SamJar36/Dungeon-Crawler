@@ -41,7 +41,7 @@ public class Player
         this.LastPosY = this.PosY;
         this.LastPosX = this.PosX;
     }
-    public void MovePlayer(LevelData levelData)
+    public void MovePlayer()
     {
         var keyPressed = Console.ReadKey();
         LastPositionOfPlayer();
@@ -73,10 +73,20 @@ public class Player
     {
         foreach (var item in LData.WallList)
         {
-            if (PosX == item.PosX && PosY == item.PosY)
+            if (this.PosX == item.PosX && this.PosY == item.PosY)
             {
                 this.PosX = LastPosX;
                 this.PosY = LastPosY;
+            }
+        }
+        foreach (var rat in LData.RatList)
+        {
+            if (this.PosX == rat.PosX && this.PosY == rat.PosY)
+            {
+                this.PosX = LastPosX;
+                this.PosY = LastPosY;
+
+                // start battle
             }
         }
     }
