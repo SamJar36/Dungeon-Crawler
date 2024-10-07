@@ -17,6 +17,11 @@ public class Program
         //HUD
         HUD hud = new HUD(levelData.Player.HitPoints, levelData.Level, levelData.Player.Steps);
 
+        //Weapons
+        Dice woodenSword = new Dice(1, 6, 3);
+        Dice shortSword = new Dice(2, 6, 2);
+        Dice goldenSword = new Dice(3, 8, 10);
+
         while (isGameRunning)
         {
             hud.Draw(levelData.Player.HitPoints, levelData.Player.Steps);
