@@ -15,12 +15,17 @@ namespace Dungeon_Crawler
         private ConsoleColor ColorLevel { get; set; }
         private ConsoleColor ColorSeparator { get; set; }
         private int Steps { get; set; }
+        private string Weapon { get; set; }
+        private string Armor { get; set; }
 
-        public HUD(int hitPoints, int level, int steps)
+        public HUD(int hitPoints, int level, int steps, Dice weapon, Dice armor)
         {
             this.HitPoints = hitPoints;
             this.Level = level;
             this.Steps = steps;
+
+            this.Weapon = $"{weapon.DiceName}({weapon.DiceNumber}d{weapon.DiceSides}+{weapon.DiceModifier})";
+            this.Armor = $"{armor.DiceName}({armor.DiceNumber}d{armor.DiceSides}+{armor.DiceModifier})";
 
             this.Color = ConsoleColor.Yellow;
             this.ColorLevel = ConsoleColor.Green;
@@ -33,9 +38,9 @@ namespace Dungeon_Crawler
             
             Console.ForegroundColor = ColorLevel;
             Console.SetCursorPosition(0, 0);
-            Console.WriteLine($"                                                    Level: {Level}");
+            Console.WriteLine($"Level: {Level}");
             Console.ForegroundColor = Color;
-            Console.WriteLine($"HP: {HitPoints}, Steps: {Steps}");
+            Console.WriteLine($"HP: {HitPoints}, Steps: {Steps}, {Weapon}, {Armor}");
             Console.ForegroundColor = ColorSeparator;
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             Console.ResetColor();

@@ -13,8 +13,7 @@ public class LevelData
     public List<Wall> WallList {  get { return wallList; } }
     private List<Rat> ratList = new List<Rat>();
     public List<Rat> RatList { get {return ratList; } }
-    public Player ?Player { get; set; }
-    
+    public Player Player { get; set; }
 
     public void LoadMap()
     {     

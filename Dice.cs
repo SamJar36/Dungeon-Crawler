@@ -8,15 +8,21 @@ namespace Dungeon_Crawler
 {
     public class Dice
     {
-        private int DiceNumber { get; set; }
-        private int DiceSides { get; set; }
-        private int DiceModifier { get; set; }
+        public string DiceName { get; set; }
+        public int DiceNumber { get; set; }
+        public int DiceSides { get; set; }
+        public int DiceModifier { get; set; }
         private Random random = new Random();
         public Dice(int diceNumber, int diceSides, int diceModifier)
         {
             this.DiceNumber = diceNumber;
             this.DiceSides = diceSides;
             this.DiceModifier = diceModifier;
+        }
+        public Dice(int diceNumber, int diceSides, int diceModifier, string name) 
+            : this(diceNumber, diceSides, diceModifier)
+        {
+            this.DiceName = name;
         }
         public int Throw()
         {

@@ -11,13 +11,17 @@ namespace Dungeon_Crawler.Elements
     public abstract class Enemy : LevelElement
     {
         public int HitPoints { get; set; }
+        public string Name { get; set; }
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
         private LevelData LData { get; set; }
         private Player Player { get; set; }
-        public Enemy(int x, int y, int HP, char symbol, ConsoleColor color, LevelData levelData, Player player) : base(x, y, symbol, color)
+        public Dice AttackDice { get; set; }
+        public Dice DefenseDice { get; set; }
+        public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) : base(x, y, symbol, color)
         {
             this.HitPoints = HP;
+            this.Name = name;
 
             this.LastPosX = x;
             this.LastPosY = y;
@@ -25,6 +29,9 @@ namespace Dungeon_Crawler.Elements
             this.LData = levelData;
 
             this.Player = player;
+
+            this.AttackDice = new Dice(attackArray[0], attackArray[1], attackArray[2]);
+            this.DefenseDice = new Dice(defenseArray[0], defenseArray[1], defenseArray[2]);
         }
         public void LastPositionOfEnemy()
         {
