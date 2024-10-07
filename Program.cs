@@ -1,4 +1,5 @@
-﻿using Dungeon_Crawler.Elements;
+﻿using Dungeon_Crawler;
+using Dungeon_Crawler.Elements;
 
 namespace DungeonCrawler;
 
@@ -13,8 +14,12 @@ public class Program
         LevelData levelData = new LevelData();
         levelData.LoadMap();
 
+        //HUD
+        HUD hud = new HUD(levelData.Player.HitPoints, levelData.Level, levelData.Player.Steps);
+
         while (isGameRunning)
         {
+            hud.Draw(levelData.Player.HitPoints, levelData.Player.Steps);
             levelData.Player.MovePlayer();
             levelData.Player.EraseLastPositionOfPlayer();
             levelData.Player.DrawPlayer(levelData.Player.PosX, levelData.Player.PosY);

@@ -13,6 +13,8 @@ public class Player
     private int LastPosY { get; set; }
     private char symbol = '@';
     private LevelData LData { get; set; }
+    public int HitPoints { get; set; }
+    public int Steps { get; set; }
 
     public Player(int x, int y, LevelData levelData)
     {
@@ -23,6 +25,9 @@ public class Player
         this.LastPosY = y;
 
         this.LData = levelData;
+
+        this.HitPoints = 100;
+        this.Steps = 0;
 
         DrawPlayer(this.PosX, this.PosY);
     }
@@ -48,23 +53,27 @@ public class Player
         if (keyPressed.Key == ConsoleKey.UpArrow)
         {
             this.PosY -= 1;
+            this.Steps++;
             CheckForCollision();
         }
         else if (keyPressed.Key == ConsoleKey.DownArrow)
         {
             this.PosY += 1;
+            this.Steps++;
             CheckForCollision();
 
         }
         else if (keyPressed.Key == ConsoleKey.LeftArrow)
         {
             this.PosX -= 1;
+            this.Steps++;
             CheckForCollision();
 
         }
         else if (keyPressed.Key == ConsoleKey.RightArrow)
         {
             this.PosX += 1;
+            this.Steps++;
             CheckForCollision();
 
         }
@@ -77,6 +86,7 @@ public class Player
             {
                 this.PosX = LastPosX;
                 this.PosY = LastPosY;
+                this.Steps--;
             }
         }
         foreach (var rat in LData.RatList)
@@ -85,6 +95,7 @@ public class Player
             {
                 this.PosX = LastPosX;
                 this.PosY = LastPosY;
+                this.Steps--;
 
                 // start battle
             }

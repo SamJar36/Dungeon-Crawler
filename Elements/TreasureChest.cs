@@ -2,7 +2,7 @@
 
 public class TreasureChest : LevelElement
 {
-    public TreasureChest(int x, int y) : base(x, y, 'C', ConsoleColor.Yellow)
+    public TreasureChest(int x, int y) : base(x, y, 'C', ConsoleColor.Cyan)
     {
 
     }

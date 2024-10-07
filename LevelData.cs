@@ -7,18 +7,21 @@ namespace DungeonCrawler;
 public class LevelData
 {
     private int currentLevel = 1;
+    public int Level { get { return currentLevel; } }
+    private int yOffset = 5;
     private List<Wall> wallList = new List<Wall>();
     public List<Wall> WallList {  get { return wallList; } }
     private List<Rat> ratList = new List<Rat>();
     public List<Rat> RatList { get {return ratList; } }
-    public Player Player { get; set; }
+    public Player ?Player { get; set; }
+    
 
     public void LoadMap()
     {     
         string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{currentLevel}.text";
 
         int mapX = 0;
-        int mapY = 0;
+        int mapY = yOffset;
         int character;
 
         // creates the player first so the game doesn't crash when loading a rat, for example, before the player
@@ -43,7 +46,7 @@ public class LevelData
             }
         }
         mapX = 0;
-        mapY = 0;
+        mapY = yOffset;
         using (StreamReader readEverythingElse = new StreamReader(filePath))
         {
             while ((character = readEverythingElse.Read()) != -1)
