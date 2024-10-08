@@ -10,8 +10,8 @@ public class Player
 {
     public int PosX { get; set; }
     public int PosY { get; set; }
-    private int LastPosX { get; set; }
-    private int LastPosY { get; set; }
+    public int LastPosX { get; set; }
+    public int LastPosY { get; set; }
     private char Symbol { get; set; }
     private LevelData LData { get; set; }
     public int HitPoints { get; set; }
@@ -36,19 +36,26 @@ public class Player
         this.Steps = 0;
 
         Equipment EQ = new Equipment();
-        this.EquippedWeapon = EQ.WoodenSword;
+        //this.EquippedWeapon = EQ.WoodenSword;
+        this.EquippedWeapon = EQ.DebuggingSword;
         this.EquippedArmor = EQ.Tunic;
 
-        DrawPlayer(this.PosX, this.PosY);
+        DrawPlayer();
     }
-    public void DrawPlayer(int x, int y)
+    public void Update()
     {
-        Console.SetCursorPosition(PosX, PosY);
-        Console.Write(Symbol);        
+        MovePlayer();
+        EraseLastPositionOfPlayer();
+        DrawPlayer();
+    }
+    public void DrawPlayer()
+    {
+        Console.SetCursorPosition(this.PosX, this.PosY);
+        Console.Write(this.Symbol);        
     }
     public void EraseLastPositionOfPlayer()
     {
-        Console.SetCursorPosition(LastPosX, LastPosY);
+        Console.SetCursorPosition(this.LastPosX, this.LastPosY);
         Console.Write(" ");
     }
     private void LastPositionOfPlayer()
@@ -99,15 +106,15 @@ public class Player
                 this.Steps--;
             }
         }
-        foreach (var rat in LData.RatList)
+        foreach (var enemy in LData.EnemyList)
         {
-            if (this.PosX == rat.PosX && this.PosY == rat.PosY)
+            if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
             {
                 this.PosX = LastPosX;
                 this.PosY = LastPosY;
                 this.Steps--;
 
-                Battle(rat);
+                Battle(enemy);
             }
         }
     }
@@ -116,6 +123,10 @@ public class Player
         int playerAttack = EquippedWeapon.Throw();
         int enemyDefense = enemy.DefenseDice.Throw();
         int result = playerAttack - enemyDefense;
+        if (result < 0)
+        {
+            result = 0;
+        }
         Console.SetCursorPosition(0, attackPositionOnHUD);
         Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
         enemy.HitPoints -= result;
@@ -125,6 +136,10 @@ public class Player
             int enemyAttack = enemy.AttackDice.Throw();
             int playerDefense = EquippedArmor.Throw();
             result = enemyAttack - playerDefense;
+            if (result < 0)
+            {
+                result = 0;
+            }
             Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
             this.HitPoints -= result;
             if (this.HitPoints < 1)

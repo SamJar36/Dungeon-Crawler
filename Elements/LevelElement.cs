@@ -20,5 +20,12 @@ public abstract class LevelElement
         Console.Write(Symbol);
         Console.ResetColor();
     }
+    public double CalculateEuclideanDistance(int x, int y, int playerX, int playerY)
+    {
+        int deltaX = x - playerX;
+        int deltaY = y - playerY;
+        double result = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+        return result;
+    }
 }
 

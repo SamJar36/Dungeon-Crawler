@@ -24,6 +24,13 @@ namespace Dungeon_Crawler.Elements
         {
 
         }
+        public override void Update()
+        {
+            Move();
+            EraseLastPositionOfEnemy();
+            Draw();
+            CheckIfHitPointsBelowZero();
+        }
         public void Move()
         {
             int direction = random.Next(1, 5);

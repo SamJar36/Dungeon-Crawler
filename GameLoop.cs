@@ -23,16 +23,19 @@ namespace Dungeon_Crawler
             while (IsGameRunning)
             {
                 Hud.Draw(LevelData.Player.HitPoints, LevelData.Player.Steps);
-                LevelData.Player.MovePlayer();
-                LevelData.Player.EraseLastPositionOfPlayer();
-                LevelData.Player.DrawPlayer(LevelData.Player.PosX, LevelData.Player.PosY);
-                foreach (var rat in LevelData.RatList)
+                LevelData.Player.Update();
+                foreach (var enemy in LevelData.EnemyList)
                 {
-                    rat.Move();
-                    rat.EraseLastPositionOfEnemy();
-                    rat.Draw();
+                    enemy.Update();
                 }
-
+                // can't remove the list from within the foreach loop above
+                for (int i = LevelData.EnemyList.Count - 1; i >= 0; i--)
+                {
+                    if (LevelData.EnemyList[i].HitPoints <= 0)
+                    {
+                        LevelData.EnemyList.RemoveAt(i);
+                    }
+                }
             }
             Console.Clear();
             Console.WriteLine("Thanks for playing!");

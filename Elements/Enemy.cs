@@ -14,8 +14,8 @@ namespace Dungeon_Crawler.Elements
         public string Name { get; set; }
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
-        private LevelData LData { get; set; }
-        private Player Player { get; set; }
+        protected LevelData LData { get; set; }
+        protected Player Player { get; set; }
         public Dice AttackDice { get; set; }
         public Dice DefenseDice { get; set; }
         public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) : base(x, y, symbol, color)
@@ -33,6 +33,7 @@ namespace Dungeon_Crawler.Elements
             this.AttackDice = new Dice(attackArray[0], attackArray[1], attackArray[2]);
             this.DefenseDice = new Dice(defenseArray[0], defenseArray[1], defenseArray[2]);
         }
+        public abstract void Update();
         public void LastPositionOfEnemy()
         {
             this.LastPosX = this.PosX;
@@ -53,13 +54,13 @@ namespace Dungeon_Crawler.Elements
                     this.PosY = LastPosY;
                 }
             }
-            foreach (var rat in LData.RatList)
+            foreach (var enemy in LData.EnemyList)
             {
-                if (rat == this)
+                if (enemy == this)
                 {
                     continue;
                 }
-                if (this.PosX == rat.PosX && this.PosY == rat.PosY)
+                if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
                 {
                     this.PosX = LastPosX;
                     this.PosY = LastPosY;
@@ -71,6 +72,14 @@ namespace Dungeon_Crawler.Elements
                 this.PosY = LastPosY;
 
                 // start battle
+            }
+        }
+        public void CheckIfHitPointsBelowZero()
+        {
+            if (this.HitPoints <= 0)
+            {
+                Console.SetCursorPosition(this.PosX, this.PosY);
+                Console.Write(" ");
             }
         }
     }

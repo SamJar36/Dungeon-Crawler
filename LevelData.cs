@@ -11,8 +11,8 @@ public class LevelData
     private int yOffset = 5;
     private List<Wall> wallList = new List<Wall>();
     public List<Wall> WallList {  get { return wallList; } }
-    private List<Rat> ratList = new List<Rat>();
-    public List<Rat> RatList { get {return ratList; } }
+    private List<Enemy> enemyList = new List<Enemy>();
+    public List<Enemy> EnemyList { get {return enemyList; } }
     public Player Player { get; set; }
 
     public void LoadMap()
@@ -72,9 +72,15 @@ public class LevelData
                     {
                         Rat rat = new Rat(mapX, mapY, this, this.Player);
                         rat.Draw();
-                        ratList.Add(rat);
+                        enemyList.Add(rat);
 
-                    }   
+                    }
+                    else if (character == 's')
+                    {
+                        Snake snake = new Snake(mapX, mapY, this, this.Player);
+                        snake.Draw();
+                        enemyList.Add(snake);
+                    }
                     mapX++;
                 }
             }

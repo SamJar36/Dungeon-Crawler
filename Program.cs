@@ -26,9 +26,7 @@ public class Program
         gameLoop.Run();
         
         //Things to fix
-        // -1 in battle damage
-        // enemy disappears when dead
-        // enemy update instead
-        // enemy list
+        // enemy kill count
+        // loot
     }
 }
