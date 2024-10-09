@@ -36,10 +36,6 @@ public class Program
         
         //Things to fix
 
-        // random gold depending on enemy
-        // health potions (press D to drink)
-        // locked doors and keys
-        // treasure chests hold items (hard coded locations)
-        // 
+        // fix mimic code
     }
 }
