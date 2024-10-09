@@ -23,12 +23,16 @@ namespace Dungeon_Crawler.Elements
                     Console.Write("You unlocked the door!");
                     this.Player.KeyCount -= 1;
                     this.Symbol = ' ';
+                    this.Draw();
                     this.IsDrawing = false;
                 }
                 else
                 {
                     Console.SetCursorPosition(0, 3);
                     Console.Write("The door is locked");
+                    this.Player.PosX = this.Player.LastPosX;
+                    this.Player.PosY = this.Player.LastPosY;
+                    this.Player.Steps--;
                 }
             }     
         }

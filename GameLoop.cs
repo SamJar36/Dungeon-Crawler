@@ -28,7 +28,8 @@ namespace Dungeon_Crawler
                     LevelData.Player.Steps, 
                     LevelData.Player.KillCount, 
                     LevelData.Player.GoldCount,
-                    LevelData.Player.KeyCount);
+                    LevelData.Player.KeyCount,
+                    LevelData.Player.HealthPotionCount);
                 LevelData.Player.Update();
                 foreach (var enemy in LevelData.EnemyList)
                 {

@@ -22,7 +22,8 @@ public class Program
             levelData.Player.EquippedArmor,
             levelData.Player.KillCount,
             levelData.Player.GoldCount,
-            levelData.Player.KeyCount);
+            levelData.Player.KeyCount,
+            levelData.Player.HealthPotionCount);
 
         //Attacks and Defense
         Equipment equipment = new Equipment();

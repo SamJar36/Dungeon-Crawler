@@ -12,6 +12,7 @@ public class Player
     public int PosY { get; set; }
     public int LastPosX { get; set; }
     public int LastPosY { get; set; }
+    public bool IsAbleToMove { get; set; }
     private char Symbol { get; set; }
     private LevelData LData { get; set; }
     public int HitPoints { get; set; }
@@ -19,6 +20,7 @@ public class Player
     public int KillCount { get; set; }
     public int GoldCount { get; set; }
     public int KeyCount { get; set; }
+    public int HealthPotionCount { get; set; }
     public Dice EquippedWeapon { get; set; }
     public Dice EquippedArmor { get; set; }
     private int attackPositionOnHUD = 3;
@@ -31,6 +33,7 @@ public class Player
 
         this.LastPosX = x;
         this.LastPosY = y;
+        this.IsAbleToMove = true;
 
         this.LData = levelData;
         this.Symbol = '@';
@@ -39,6 +42,7 @@ public class Player
         this.Steps = 0;
         this.KillCount = 0;
         this.KeyCount = 0;
+        this.HealthPotionCount = 0;
 
         Equipment EQ = new Equipment();
         //this.EquippedWeapon = EQ.WoodenSword;
@@ -73,35 +77,56 @@ public class Player
         var keyPressed = Console.ReadKey();
         LastPositionOfPlayer();
         EraseBattleText();
-        if (keyPressed.Key == ConsoleKey.UpArrow)
+        if (IsAbleToMove)
         {
-            this.PosY -= 1;
-            this.Steps++;
-            CheckForCollision();
-        }
-        else if (keyPressed.Key == ConsoleKey.DownArrow)
-        {
-            this.PosY += 1;
-            this.Steps++;
-            CheckForCollision();
+            if (keyPressed.Key == ConsoleKey.UpArrow)
+            {
+                this.PosY -= 1;
+                this.Steps++;
+                CheckForCollision();
+            }
+            else if (keyPressed.Key == ConsoleKey.DownArrow)
+            {
+                this.PosY += 1;
+                this.Steps++;
+                CheckForCollision();
 
-        }
-        else if (keyPressed.Key == ConsoleKey.LeftArrow)
-        {
-            this.PosX -= 1;
-            this.Steps++;
-            CheckForCollision();
+            }
+            else if (keyPressed.Key == ConsoleKey.LeftArrow)
+            {
+                this.PosX -= 1;
+                this.Steps++;
+                CheckForCollision();
 
-        }
-        else if (keyPressed.Key == ConsoleKey.RightArrow)
-        {
-            this.PosX += 1;
-            this.Steps++;
-            CheckForCollision();
+            }
+            else if (keyPressed.Key == ConsoleKey.RightArrow)
+            {
+                this.PosX += 1;
+                this.Steps++;
+                CheckForCollision();
+            }
         }
         else if (keyPressed.Key == ConsoleKey.K)
         {
             this.KeyCount += 1;
+            this.HealthPotionCount += 1;
+        }
+        else if (keyPressed.Key == ConsoleKey.D)
+        {
+            EraseBattleText();
+            Console.SetCursorPosition(0, attackPositionOnHUD);
+            if (HealthPotionCount > 0)
+            {
+                Random random = new Random();
+                int healthRecovered = random.Next(20, 51);
+                Console.Write($"You drank a potion and recovered {healthRecovered} HP!");
+                this.HitPoints += healthRecovered;
+                this.HealthPotionCount -= 1;
+            }
+            else
+            {
+                Console.Write("You don't have any Health Potions left");
+            }
         }
     }
     private void CheckForCollision()
@@ -110,39 +135,27 @@ public class Player
         {
             if (element is Wall wall)
             {
-                if (this.PosX == wall.PosX && this.PosY == wall.PosY)
-                {
-                    this.PosX = this.LastPosX;
-                    this.PosY = this.LastPosY;
-                    this.Steps--;
-                }
+                IfMovementBlockedGoBack(wall);
             }
-            if (element is TreasureChest treasure)
+            else if (element is TreasureChest treasure)
             {
                 if (this.PosX == treasure.PosX && this.PosY == treasure.PosY)
                 {
-                    this.PosX = this.LastPosX;
-                    this.PosY = this.LastPosY;
-                    this.Steps--;
-
-                    // call treasure chest method
+                    treasure.OpenTreasureChest();
                 }
             }
-            if (element is Gold gold)
+            else if (element is Gold gold)
             {
                 if (this.PosX == gold.PosX && this.PosY == gold.PosY)
                 {
                     gold.PickUpGold();
                 }
             }
-            if (element is LockedDoor door)
+            else if (element is LockedDoor door)
             {
                 if (this.PosX == door.PosX && this.PosY == door.PosY)
                 {
                     door.TryOpeningDoor();
-                    this.PosX = this.LastPosX;
-                    this.PosY = this.LastPosY;
-                    this.Steps--;
                 }
             }
         foreach (var enemy in LData.EnemyList)
@@ -192,6 +205,15 @@ public class Player
             Console.SetCursorPosition(0, defensePositionOnHUD);
             Console.WriteLine($"The {enemy.Name} is defeated!");
             this.KillCount += 1;
+        }
+    }
+    public void IfMovementBlockedGoBack(LevelElement element)
+    {
+        if (this.PosX == element.PosX && this.PosY == element.PosY)
+        {
+            this.PosX = this.LastPosX;
+            this.PosY = this.LastPosY;
+            this.Steps--;
         }
     }
     public void EraseBattleText()

@@ -63,14 +63,30 @@ public class LevelData
                     {
                         Wall wall = new Wall(mapX, mapY, this.Player);
                         wall.Draw();
-                        wallList.Add(wall);
                         levelElementList.Add(wall);
                     }
-                    else if (character == 'C')
+                    else if (character >= '1' && character <= '4')
                     {
-                        TreasureChest chest = new TreasureChest(mapX, mapY, this.Player);
-                        chest.Draw();
-                        levelElementList.Add(chest);
+                        if (currentLevel == 1)
+                        {
+                            if (character == '1')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "key");
+                            }
+                            if (character == '2')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "health potion");
+                            }
+                            if (character == '3')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "empty");
+                            }
+                            if (character == '4')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "mimic");
+                            }
+                        }
+
                     }
                     else if (character == 'r')
                     {
@@ -95,5 +111,11 @@ public class LevelData
                 }
             }
         }
+    }
+    private void CreateTreasureChestObject(int x, int y, string s)
+    {
+        TreasureChest chest = new TreasureChest(x, y, this.Player, s, this);
+        chest.Draw();
+        levelElementList.Add(chest);
     }
 }
