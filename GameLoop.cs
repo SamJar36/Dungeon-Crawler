@@ -23,7 +23,12 @@ namespace Dungeon_Crawler
         {
             while (IsGameRunning)
             {
-                Hud.Draw(LevelData.Player.HitPoints, LevelData.Player.Steps, LevelData.Player.KillCount, LevelData.Player.GoldCount);
+                Hud.Draw(
+                    LevelData.Player.HitPoints, 
+                    LevelData.Player.Steps, 
+                    LevelData.Player.KillCount, 
+                    LevelData.Player.GoldCount,
+                    LevelData.Player.KeyCount);
                 LevelData.Player.Update();
                 foreach (var enemy in LevelData.EnemyList)
                 {

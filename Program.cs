@@ -14,13 +14,15 @@ public class Program
         levelData.LoadMap();
 
         //HUD
-        HUD hud = new HUD(levelData.Player.HitPoints,
+        HUD hud = new HUD(
+            levelData.Player.HitPoints,
             levelData.Level, 
             levelData.Player.Steps,
             levelData.Player.EquippedWeapon,
             levelData.Player.EquippedArmor,
             levelData.Player.KillCount,
-            levelData.Player.GoldCount);
+            levelData.Player.GoldCount,
+            levelData.Player.KeyCount);
 
         //Attacks and Defense
         Equipment equipment = new Equipment();
@@ -32,7 +34,11 @@ public class Program
         gameLoop.Run();
         
         //Things to fix
-        // enemy kill count
-        // loot
+
+        // random gold depending on enemy
+        // health potions (press D to drink)
+        // locked doors and keys
+        // treasure chests hold items (hard coded locations)
+        // 
     }
 }

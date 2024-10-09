@@ -85,6 +85,12 @@ public class LevelData
                         snake.Draw();
                         enemyList.Add(snake);
                     }
+                    else if (character == '?')
+                    {
+                        LockedDoor door = new LockedDoor(mapX, mapY, this.Player);
+                        door.Draw();
+                        levelElementList.Add(door);
+                    }
                     mapX++;
                 }
             }

@@ -76,8 +76,16 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.HitPoints <= 0)
             {
-                Gold gold = new Gold(this.PosX, this.PosY, this.Player);
-                LData.LevelElementList.Add(gold);
+                if (this is Rat rat)
+                {
+                    Gold gold = new Gold(this.PosX, this.PosY, this.Player, 1, 3);
+                    LData.LevelElementList.Add(gold);
+                }
+                else if (this is Snake snake)
+                {
+                    Gold gold = new Gold(this.PosX, this.PosY, this.Player, 2, 6);
+                    LData.LevelElementList.Add(gold);
+                }  
             }   
         }
     }

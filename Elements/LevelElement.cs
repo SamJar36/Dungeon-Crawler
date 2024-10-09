@@ -21,7 +21,7 @@ public abstract class LevelElement
     }
     public void Draw()
     {
-        if (IsDrawing)
+        if (this.IsDrawing)
         {
             double distance = CalculateEuclideanDistance(this.PosX, this.PosY, this.Player.PosX, this.Player.PosY);
             if (distance <= 5)

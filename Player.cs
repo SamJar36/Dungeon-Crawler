@@ -18,6 +18,7 @@ public class Player
     public int Steps { get; set; }
     public int KillCount { get; set; }
     public int GoldCount { get; set; }
+    public int KeyCount { get; set; }
     public Dice EquippedWeapon { get; set; }
     public Dice EquippedArmor { get; set; }
     private int attackPositionOnHUD = 3;
@@ -37,6 +38,7 @@ public class Player
         this.HitPoints = 100;
         this.Steps = 0;
         this.KillCount = 0;
+        this.KeyCount = 0;
 
         Equipment EQ = new Equipment();
         //this.EquippedWeapon = EQ.WoodenSword;
@@ -97,6 +99,10 @@ public class Player
             this.Steps++;
             CheckForCollision();
         }
+        else if (keyPressed.Key == ConsoleKey.K)
+        {
+            this.KeyCount += 1;
+        }
     }
     private void CheckForCollision()
     {
@@ -104,19 +110,19 @@ public class Player
         {
             if (element is Wall wall)
             {
-                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                if (this.PosX == wall.PosX && this.PosY == wall.PosY)
                 {
-                    this.PosX = LastPosX;
-                    this.PosY = LastPosY;
+                    this.PosX = this.LastPosX;
+                    this.PosY = this.LastPosY;
                     this.Steps--;
                 }
             }
             if (element is TreasureChest treasure)
             {
-                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                if (this.PosX == treasure.PosX && this.PosY == treasure.PosY)
                 {
-                    this.PosX = LastPosX;
-                    this.PosY = LastPosY;
+                    this.PosX = this.LastPosX;
+                    this.PosY = this.LastPosY;
                     this.Steps--;
 
                     // call treasure chest method
@@ -126,15 +132,25 @@ public class Player
             {
                 if (this.PosX == gold.PosX && this.PosY == gold.PosY)
                 {
-                    gold.PickUpGold(1, 3);
+                    gold.PickUpGold();
+                }
+            }
+            if (element is LockedDoor door)
+            {
+                if (this.PosX == door.PosX && this.PosY == door.PosY)
+                {
+                    door.TryOpeningDoor();
+                    this.PosX = this.LastPosX;
+                    this.PosY = this.LastPosY;
+                    this.Steps--;
                 }
             }
         foreach (var enemy in LData.EnemyList)
             {
                 if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
                 {
-                    this.PosX = LastPosX;
-                    this.PosY = LastPosY;
+                    this.PosX = this.LastPosX;
+                    this.PosY = this.LastPosY;
                     this.Steps--;
 
                     Battle(enemy);
@@ -180,6 +196,7 @@ public class Player
     }
     public void EraseBattleText()
     {
+        // Erasing the battle text on the HUD each round
         string eraseBattleText = "                                                                                                                     ";
         Console.SetCursorPosition(0, 3);
         Console.Write(eraseBattleText);
@@ -198,7 +215,6 @@ public class Player
         Console.WriteLine("#                          #");
         Console.WriteLine("############################");
         Console.ReadKey();
-
 
     }
 }
