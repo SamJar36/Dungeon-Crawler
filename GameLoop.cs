@@ -1,4 +1,5 @@
-﻿using DungeonCrawler;
+﻿using Dungeon_Crawler.Elements;
+using DungeonCrawler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,13 +23,17 @@ namespace Dungeon_Crawler
         {
             while (IsGameRunning)
             {
-                Hud.Draw(LevelData.Player.HitPoints, LevelData.Player.Steps);
+                Hud.Draw(LevelData.Player.HitPoints, LevelData.Player.Steps, LevelData.Player.KillCount, LevelData.Player.GoldCount);
                 LevelData.Player.Update();
                 foreach (var enemy in LevelData.EnemyList)
                 {
                     enemy.Update();
                 }
-                // can't remove the list from within the foreach loop above
+                foreach (var element in LevelData.LevelElementList)
+                {
+                    element.Draw();
+                }
+                // can't remove an item from list within the foreach loop above
                 for (int i = LevelData.EnemyList.Count - 1; i >= 0; i--)
                 {
                     if (LevelData.EnemyList[i].HitPoints <= 0)

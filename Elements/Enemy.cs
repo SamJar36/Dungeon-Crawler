@@ -15,10 +15,10 @@ namespace Dungeon_Crawler.Elements
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
         protected LevelData LData { get; set; }
-        protected Player Player { get; set; }
         public Dice AttackDice { get; set; }
         public Dice DefenseDice { get; set; }
-        public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) : base(x, y, symbol, color)
+        public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) 
+            : base(x, y, symbol, color, player)
         {
             this.HitPoints = HP;
             this.Name = name;
@@ -27,8 +27,6 @@ namespace Dungeon_Crawler.Elements
             this.LastPosY = y;
 
             this.LData = levelData;
-
-            this.Player = player;
 
             this.AttackDice = new Dice(attackArray[0], attackArray[1], attackArray[2]);
             this.DefenseDice = new Dice(defenseArray[0], defenseArray[1], defenseArray[2]);
@@ -78,9 +76,9 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.HitPoints <= 0)
             {
-                Console.SetCursorPosition(this.PosX, this.PosY);
-                Console.Write(" ");
-            }
+                Gold gold = new Gold(this.PosX, this.PosY, this.Player);
+                LData.LevelElementList.Add(gold);
+            }   
         }
     }
 }

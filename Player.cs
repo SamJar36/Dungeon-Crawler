@@ -16,6 +16,8 @@ public class Player
     private LevelData LData { get; set; }
     public int HitPoints { get; set; }
     public int Steps { get; set; }
+    public int KillCount { get; set; }
+    public int GoldCount { get; set; }
     public Dice EquippedWeapon { get; set; }
     public Dice EquippedArmor { get; set; }
     private int attackPositionOnHUD = 3;
@@ -34,6 +36,7 @@ public class Player
 
         this.HitPoints = 100;
         this.Steps = 0;
+        this.KillCount = 0;
 
         Equipment EQ = new Equipment();
         //this.EquippedWeapon = EQ.WoodenSword;
@@ -97,24 +100,45 @@ public class Player
     }
     private void CheckForCollision()
     {
-        foreach (var wall in LData.WallList)
+        foreach (var element in LData.LevelElementList)
         {
-            if (this.PosX == wall.PosX && this.PosY == wall.PosY)
+            if (element is Wall wall)
             {
-                this.PosX = LastPosX;
-                this.PosY = LastPosY;
-                this.Steps--;
+                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                {
+                    this.PosX = LastPosX;
+                    this.PosY = LastPosY;
+                    this.Steps--;
+                }
             }
-        }
-        foreach (var enemy in LData.EnemyList)
-        {
-            if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
+            if (element is TreasureChest treasure)
             {
-                this.PosX = LastPosX;
-                this.PosY = LastPosY;
-                this.Steps--;
+                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                {
+                    this.PosX = LastPosX;
+                    this.PosY = LastPosY;
+                    this.Steps--;
 
-                Battle(enemy);
+                    // call treasure chest method
+                }
+            }
+            if (element is Gold gold)
+            {
+                if (this.PosX == gold.PosX && this.PosY == gold.PosY)
+                {
+                    gold.PickUpGold(1, 3);
+                }
+            }
+        foreach (var enemy in LData.EnemyList)
+            {
+                if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
+                {
+                    this.PosX = LastPosX;
+                    this.PosY = LastPosY;
+                    this.Steps--;
+
+                    Battle(enemy);
+                }
             }
         }
     }
@@ -151,6 +175,7 @@ public class Player
         {
             Console.SetCursorPosition(0, defensePositionOnHUD);
             Console.WriteLine($"The {enemy.Name} is defeated!");
+            this.KillCount += 1;
         }
     }
     public void EraseBattleText()

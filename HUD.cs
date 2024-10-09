@@ -15,14 +15,18 @@ namespace Dungeon_Crawler
         private ConsoleColor ColorLevel { get; set; }
         private ConsoleColor ColorSeparator { get; set; }
         private int Steps { get; set; }
+        private int KillCount { get; set; }
+        private int GoldCount { get; set; }
         private string Weapon { get; set; }
         private string Armor { get; set; }
 
-        public HUD(int hitPoints, int level, int steps, Dice weapon, Dice armor)
+        public HUD(int hitPoints, int level, int steps, Dice weapon, Dice armor, int killCount, int goldCount)
         {
             this.HitPoints = hitPoints;
             this.Level = level;
             this.Steps = steps;
+            this.KillCount = killCount;
+            this.GoldCount = goldCount;
 
             this.Weapon = $"{weapon.DiceName}({weapon.DiceNumber}d{weapon.DiceSides}+{weapon.DiceModifier})";
             this.Armor = $"{armor.DiceName}({armor.DiceNumber}d{armor.DiceSides}+{armor.DiceModifier})";
@@ -31,16 +35,18 @@ namespace Dungeon_Crawler
             this.ColorLevel = ConsoleColor.Green;
             this.ColorSeparator = ConsoleColor.White;
         }
-        public void Draw(int HP, int steps)
+        public void Draw(int HP, int steps, int killCount, int goldCount)
         {
             this.HitPoints = HP;
             this.Steps = steps;
+            this.KillCount = killCount;
+            this.GoldCount = goldCount;
             
             Console.ForegroundColor = ColorLevel;
             Console.SetCursorPosition(0, 0);
             Console.WriteLine($"Level: {Level}");
             Console.ForegroundColor = Color;
-            Console.WriteLine($"HP: {HitPoints}, Steps: {Steps}, {Weapon}, {Armor}");
+            Console.WriteLine($"HP: {HitPoints}, Gold: {GoldCount}, Steps: {Steps}, Monsters killed: {KillCount}, {Weapon}, {Armor}");
             Console.ForegroundColor = ColorSeparator;
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             Console.ResetColor();

@@ -14,7 +14,13 @@ public class Program
         levelData.LoadMap();
 
         //HUD
-        HUD hud = new HUD(levelData.Player.HitPoints, levelData.Level, levelData.Player.Steps, levelData.Player.EquippedWeapon, levelData.Player.EquippedArmor);
+        HUD hud = new HUD(levelData.Player.HitPoints,
+            levelData.Level, 
+            levelData.Player.Steps,
+            levelData.Player.EquippedWeapon,
+            levelData.Player.EquippedArmor,
+            levelData.Player.KillCount,
+            levelData.Player.GoldCount);
 
         //Attacks and Defense
         Equipment equipment = new Equipment();

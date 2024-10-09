@@ -13,6 +13,8 @@ public class LevelData
     public List<Wall> WallList {  get { return wallList; } }
     private List<Enemy> enemyList = new List<Enemy>();
     public List<Enemy> EnemyList { get {return enemyList; } }
+    private List<LevelElement> levelElementList = new List<LevelElement>();
+    public List<LevelElement> LevelElementList { get { return levelElementList; } }
     public Player Player { get; set; }
 
     public void LoadMap()
@@ -59,14 +61,16 @@ public class LevelData
                 {
                     if (character == '#')
                     {
-                        Wall wall = new Wall(mapX, mapY);
+                        Wall wall = new Wall(mapX, mapY, this.Player);
                         wall.Draw();
                         wallList.Add(wall);
+                        levelElementList.Add(wall);
                     }
                     else if (character == 'C')
                     {
-                        TreasureChest chest = new TreasureChest(mapX, mapY);
+                        TreasureChest chest = new TreasureChest(mapX, mapY, this.Player);
                         chest.Draw();
+                        levelElementList.Add(chest);
                     }
                     else if (character == 'r')
                     {

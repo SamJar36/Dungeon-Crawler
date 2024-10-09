@@ -1,8 +1,10 @@
-﻿namespace Dungeon_Crawler.Elements;
+﻿using DungeonCrawler;
+
+namespace Dungeon_Crawler.Elements;
 
 public class TreasureChest : LevelElement
 {
-    public TreasureChest(int x, int y) : base(x, y, 'C', ConsoleColor.Cyan)
+    public TreasureChest(int x, int y, Player player) : base(x, y, 'C', ConsoleColor.Cyan, player)
     {
 
     }
