@@ -60,7 +60,7 @@ namespace Dungeon_Crawler
                 $"Keys: {KeyCount}, " +
                 $"{Weapon}, " +
                 $"{Armor}, " +
-                $"Health Potions: {HealthPotionCount}");
+                $"Health Potions (D): {HealthPotionCount}");
             Console.ForegroundColor = ColorSeparator;
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             Console.ResetColor();

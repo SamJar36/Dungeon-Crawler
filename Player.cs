@@ -33,6 +33,7 @@ public class Player
 
         this.LastPosX = x;
         this.LastPosY = y;
+
         this.IsAbleToMove = true;
 
         this.LData = levelData;
@@ -45,8 +46,8 @@ public class Player
         this.HealthPotionCount = 0;
 
         Equipment EQ = new Equipment();
-        //this.EquippedWeapon = EQ.WoodenSword;
-        this.EquippedWeapon = EQ.DebuggingSword;
+        this.EquippedWeapon = EQ.WoodenSword;
+        //this.EquippedWeapon = EQ.DebuggingSword;
         this.EquippedArmor = EQ.Tunic;
 
         DrawPlayer();
@@ -106,7 +107,7 @@ public class Player
                 CheckForCollision();
             }
         }
-        else if (keyPressed.Key == ConsoleKey.K)
+        if (keyPressed.Key == ConsoleKey.K)
         {
             this.KeyCount += 1;
             this.HealthPotionCount += 1;
@@ -166,7 +167,14 @@ public class Player
                     this.PosY = this.LastPosY;
                     this.Steps--;
 
-                    Battle(enemy);
+                    if (enemy is Mimic mimic)
+                    {
+                        mimic.ActivateMimic();
+                    }
+                    else
+                    {
+                        Battle(enemy);
+                    }  
                 }
             }
         }
@@ -195,10 +203,6 @@ public class Player
             }
             Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
             this.HitPoints -= result;
-            if (this.HitPoints < 1)
-            {
-                GameOver();
-            }
         }
         else
         {
@@ -224,19 +228,5 @@ public class Player
         Console.Write(eraseBattleText);
         Console.SetCursorPosition(0, 4);
         Console.Write(eraseBattleText);
-    }
-    public void GameOver()
-    {
-        Console.Clear();
-        Console.SetCursorPosition(0, 0);
-        Console.WriteLine("############################");
-        Console.WriteLine("#                          #");
-        Console.WriteLine("#        GAME OVER         #");
-        Console.WriteLine("#                          #");
-        Console.WriteLine("#   Your HP went below 0   #");
-        Console.WriteLine("#                          #");
-        Console.WriteLine("############################");
-        Console.ReadKey();
-
     }
 }

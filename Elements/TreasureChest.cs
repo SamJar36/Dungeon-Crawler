@@ -21,7 +21,7 @@ public class TreasureChest : LevelElement
             if (Contents == "key")
             {
                 this.Player.KeyCount += 1;
-                text = "a Small Key! It opens locked doors";
+                text = "a Small Key!";
             }
             else if (Contents == "health potion")
             {
@@ -32,14 +32,6 @@ public class TreasureChest : LevelElement
             {
                 text = "... nothing";
             }
-            else if (Contents == "mimic")
-            {
-                text = "a Mimic! It clamps down on you with its jaws and you can't move!";
-                Mimic mimic = new Mimic(this.PosX, this.PosY, LData, Player);
-                mimic.Draw();
-                LData.LevelElementList.Add(mimic);
-            }
-            // fix this shit man
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");
             this.Player.PosX = this.Player.LastPosX;

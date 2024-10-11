@@ -83,7 +83,7 @@ public class LevelData
                             }
                             if (character == '4')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "mimic");
+                                
                             }
                         }
 
@@ -100,6 +100,12 @@ public class LevelData
                         Snake snake = new Snake(mapX, mapY, this, this.Player);
                         snake.Draw();
                         enemyList.Add(snake);
+                    }
+                    else if (character == 'M')
+                    {
+                        Mimic mimic = new Mimic(mapX, mapY, this, this.Player);
+                        mimic.Draw();
+                        enemyList.Add(mimic);
                     }
                     else if (character == '?')
                     {

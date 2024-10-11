@@ -103,15 +103,12 @@ namespace Dungeon_Crawler.Elements
                 }
                 Console.SetCursorPosition(0, 4);
                 Console.WriteLine($"You attacked the {this.Name} for {playerAttack}, the {this.Name} defended for {enemyDefense}. The {this.Name} dealt {result} damage!");
+                this.HitPoints -= result;
                 if (this.HitPoints < 1)
                 {
                     Console.Write($" The {this.Name} is defeated!");
                     player.KillCount += 1;
                 }
-            }
-            else
-            {
-                player.GameOver();
             }
         }
         public void CheckIfHitPointsBelowZero()

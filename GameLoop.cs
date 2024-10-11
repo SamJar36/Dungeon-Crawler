@@ -15,14 +15,19 @@ namespace Dungeon_Crawler
         private HUD Hud { get; set; }
         public GameLoop(LevelData levelData, HUD hud)
         {
-            this.IsGameRunning = true;
             this.LevelData = levelData;
             this.Hud = hud;
+            this.IsGameRunning = true;
         }
         public void Run()
         {
             while (IsGameRunning)
             {
+                if (LevelData.Player.HitPoints <= 0)
+                {
+                    GameOver();
+                    continue;
+                }
                 Hud.Draw(
                     LevelData.Player.HitPoints, 
                     LevelData.Player.Steps, 
@@ -39,7 +44,7 @@ namespace Dungeon_Crawler
                 {
                     element.Draw();
                 }
-                // can't remove an item from list within the foreach loop above
+                // can't remove an enemy from list within the foreach loop above
                 for (int i = LevelData.EnemyList.Count - 1; i >= 0; i--)
                 {
                     if (LevelData.EnemyList[i].HitPoints <= 0)
@@ -50,6 +55,20 @@ namespace Dungeon_Crawler
             }
             Console.Clear();
             Console.WriteLine("Thanks for playing!");
+        }
+        private void GameOver()
+        {
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("############################");
+            Console.WriteLine("#                          #");
+            Console.WriteLine("#        GAME OVER         #");
+            Console.WriteLine("#                          #");
+            Console.WriteLine("#   Your HP went below 0   #");
+            Console.WriteLine("#                          #");
+            Console.WriteLine("############################");
+            Console.ReadKey();
+            this.IsGameRunning = false;
         }
     }
 }

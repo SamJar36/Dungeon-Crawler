@@ -16,7 +16,7 @@ namespace Dungeon_Crawler
         public Equipment()
         {
             // Weapons
-            Dice woodenSword = new Dice(1, 6, 2, "Wooden Sword");
+            Dice woodenSword = new Dice(1, 6, 4, "Wooden Sword");
             Dice debuggingSword = new Dice(3, 6, 5, "Debugging Sword");
             this.WoodenSword = woodenSword;
             this.DebuggingSword = debuggingSword;

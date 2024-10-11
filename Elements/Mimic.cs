@@ -9,29 +9,46 @@ namespace Dungeon_Crawler.Elements
 {
     public class Mimic : Enemy
     {
+        private bool IsActivated { get; set; }
+        private bool IsFirstRoundOfBattle { get; set; }
         public Mimic(int x, int y, LevelData levelData, Player player)
             : base(x, y,
                   20,
-                  'M',
+                  'C',
                   "Mimic",
-                  ConsoleColor.Red,
+                  ConsoleColor.Cyan,
                   levelData,
                   player,
                   new int[] { 3, 6, 2 },
                   new int[] { 1, 6, 2 })
         {
-
+            this.IsActivated = false;
+            this.IsFirstRoundOfBattle = true;
         }
         public override void Update()
         {
-            Player.IsAbleToMove = false;
-            AttackPlayer();
             Draw();
-            CheckIfHitPointsBelowZero();   
+            if (this.IsActivated)
+            {   
+                if (!this.IsFirstRoundOfBattle)
+                {
+                    Battle(Player);
+                    CheckIfHitPointsBelowZero();
+                }
+                this.IsFirstRoundOfBattle = false;
+            }   
         }
-        public void AttackPlayer()
+        public void ActivateMimic()
         {
-            Battle(Player);
+            Player.IsAbleToMove = false;
+
+            Console.SetCursorPosition(0, 3);
+            Console.WriteLine("The treasure chest was actually a MIMIC! You're trapped in it's jaws!");
+            this.Symbol = 'M';
+            this.Color = ConsoleColor.Red;
+            Draw();
+
+            this.IsActivated = true;
         }
     }
 }

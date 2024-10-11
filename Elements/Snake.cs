@@ -12,7 +12,7 @@ namespace Dungeon_Crawler.Elements
     {
         public Snake(int x, int y, LevelData levelData, Player player)
             : base(x, y,
-                  15,
+                  13,
                   's',
                   "snake",
                   ConsoleColor.Red,

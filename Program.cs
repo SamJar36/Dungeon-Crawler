@@ -1,5 +1,6 @@
 ﻿using Dungeon_Crawler;
 using Dungeon_Crawler.Elements;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DungeonCrawler;
 
@@ -36,6 +37,10 @@ public class Program
         
         //Things to fix
 
-        // fix mimic code
+        // when enemy attacks, enemy defeat message is in a weird location
+        // random loot (gold, health potions, health, weapons and armor)
+        // gain a magical spell that lets you break the seal in order to move to next level
+        // only 1 enemy battle per round
+        // game over screen
     }
 }
