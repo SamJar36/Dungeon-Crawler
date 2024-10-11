@@ -1,6 +1,6 @@
-#Dungeon Crawler!
+# (The .sln file doesn't seem to work, so open the .csproj instead)
 
-(The .sln file doesn't seem to work, so open the .csproj instead)
+## Dungeon Crawler
 
 -Press arrowkeys to move
 
