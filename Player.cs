@@ -13,6 +13,7 @@ public class Player
     public int LastPosX { get; set; }
     public int LastPosY { get; set; }
     public bool IsAbleToMove { get; set; }
+    public bool IsCurrentlyInABattle { get; set; }
     private char Symbol { get; set; }
     private LevelData LData { get; set; }
     public int HitPoints { get; set; }
@@ -35,6 +36,7 @@ public class Player
         this.LastPosY = y;
 
         this.IsAbleToMove = true;
+        this.IsCurrentlyInABattle = false;
 
         this.LData = levelData;
         this.Symbol = '@';
@@ -159,6 +161,13 @@ public class Player
                     door.TryOpeningDoor();
                 }
             }
+            else if (element is HeartPiece heart)
+            {
+                if (this.PosX == heart.PosX && this.PosY == heart.PosY)
+                {
+                    heart.PickUpHeartPiece();
+                }
+            }
         foreach (var enemy in LData.EnemyList)
             {
                 if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
@@ -169,11 +178,12 @@ public class Player
 
                     if (enemy is Mimic mimic)
                     {
+                        // mimics have a slightly different battle phase
                         mimic.ActivateMimic();
                     }
                     else
                     {
-                        Battle(enemy);
+                        Battle(enemy); 
                     }  
                 }
             }
@@ -181,6 +191,8 @@ public class Player
     }
     private void Battle(Enemy enemy)
     {
+        this.IsCurrentlyInABattle = true;
+        enemy.IsAbleToMove = false;
         int playerAttack = EquippedWeapon.Throw();
         int enemyDefense = enemy.DefenseDice.Throw();
         int result = playerAttack - enemyDefense;

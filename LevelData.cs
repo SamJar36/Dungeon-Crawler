@@ -83,10 +83,9 @@ public class LevelData
                             }
                             if (character == '4')
                             {
-                                
+                                CreateTreasureChestObject(mapX, mapY, "gold");
                             }
                         }
-
                     }
                     else if (character == 'r')
                     {
@@ -112,6 +111,12 @@ public class LevelData
                         LockedDoor door = new LockedDoor(mapX, mapY, this.Player);
                         door.Draw();
                         levelElementList.Add(door);
+                    }
+                    else if (character == '♥')
+                    {
+                        HeartPiece heart = new HeartPiece(mapX, mapY, this.Player);
+                        heart.Draw();
+                        levelElementList.Add(heart);
                     }
                     mapX++;
                 }

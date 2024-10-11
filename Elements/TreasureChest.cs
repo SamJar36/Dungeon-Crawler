@@ -32,6 +32,10 @@ public class TreasureChest : LevelElement
             {
                 text = "... nothing";
             }
+            else if (Contents == "gold")
+            {
+                text = "10 gold";
+            }
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");
             this.Player.PosX = this.Player.LastPosX;

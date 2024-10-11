@@ -15,9 +15,10 @@ namespace Dungeon_Crawler.Elements
         public string Name { get; set; }
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
-        protected LevelData LData { get; set; }
         public Dice AttackDice { get; set; }
         public Dice DefenseDice { get; set; }
+        public bool IsAbleToMove { get; set; }
+        protected LevelData LData { get; set; }
         public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) 
             : base(x, y, symbol, color, player)
         {
@@ -31,6 +32,8 @@ namespace Dungeon_Crawler.Elements
 
             this.AttackDice = new Dice(attackArray[0], attackArray[1], attackArray[2]);
             this.DefenseDice = new Dice(defenseArray[0], defenseArray[1], defenseArray[2]);
+
+            this.IsAbleToMove = true;
         }
         public abstract void Update();
         public void LastPositionOfEnemy()
@@ -77,7 +80,10 @@ namespace Dungeon_Crawler.Elements
                 this.PosX = LastPosX;
                 this.PosY = LastPosY;
 
-                // start battle
+                if (!Player.IsCurrentlyInABattle)
+                {
+                    Battle(Player);
+                }
             }
         }
         protected void Battle(Player player)
@@ -117,21 +123,33 @@ namespace Dungeon_Crawler.Elements
             {
                 if (this is Rat rat)
                 {
-                    Gold gold = new Gold(this.PosX, this.PosY, this.Player, 1, 3);
-                    LData.LevelElementList.Add(gold);
+                    CreateLoot(1, 3);
+                    
                 }
                 else if (this is Snake snake)
                 {
-                    Gold gold = new Gold(this.PosX, this.PosY, this.Player, 2, 6);
-                    LData.LevelElementList.Add(gold);
+                    CreateLoot(3, 6);
                 }
                 else if (this is Mimic mimic)
                 {
-                    Gold gold = new Gold(this.PosX, this.PosY, this.Player, 12, 26);
-                    LData.LevelElementList.Add(gold);
-                    Player.IsAbleToMove = true;
+                    CreateLoot(12, 20);
                 }
             }   
+        }
+        public void CreateLoot(int lowValue = 0, int highValue = 0)
+        {
+            Random random = new Random();
+            int chance = random.Next(1, 101);
+            if (chance <= 50)
+            {
+                Gold gold = new Gold(this.PosX, this.PosY, Player, lowValue, highValue);
+                LData.LevelElementList.Add(gold);
+            }
+            else if (chance >= 51)
+            {
+                HeartPiece heart = new HeartPiece(this.PosX, this.PosY, Player);
+                LData.LevelElementList.Add(heart);
+            }
         }
         public void IfMovementBlockedGoBack(LevelElement element)
         {

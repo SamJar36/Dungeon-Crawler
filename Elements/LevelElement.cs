@@ -10,6 +10,7 @@ public abstract class LevelElement
     public ConsoleColor Color { get; set; }
     protected Player Player { get; set; }
     protected bool IsDrawing { get; set; }
+    protected LevelData LData { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player)
     {
         this.PosX = x;

@@ -18,7 +18,7 @@ namespace Dungeon_Crawler.Elements
                   "rat",
                   ConsoleColor.Red, 
                   levelData, 
-                  player, 
+                  player,
                   new int[] { 1, 6, 5},
                   new int[] { 1, 6, 0})
         {
@@ -26,10 +26,14 @@ namespace Dungeon_Crawler.Elements
         }
         public override void Update()
         {
-            Move();
-            EraseLastPositionOfEnemy();
+            if (this.IsAbleToMove)
+            {
+                Move();
+                EraseLastPositionOfEnemy();
+            }
             Draw();
             CheckIfHitPointsBelowZero();
+            this.IsAbleToMove = true;
         }
         public void Move()
         {

@@ -26,9 +26,6 @@ public class Program
             levelData.Player.KeyCount,
             levelData.Player.HealthPotionCount);
 
-        //Attacks and Defense
-        Equipment equipment = new Equipment();
-
         //Game Loop
         GameLoop gameLoop = new GameLoop(levelData, hud);
 
@@ -37,10 +34,7 @@ public class Program
         
         //Things to fix
 
-        // when enemy attacks, enemy defeat message is in a weird location
-        // random loot (gold, health potions, health, weapons and armor)
         // gain a magical spell that lets you break the seal in order to move to next level
-        // only 1 enemy battle per round
-        // game over screen
+        // movement blocked while walking through door
     }
 }
