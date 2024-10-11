@@ -1,11 +1,13 @@
-Dungeon Crawler!
+#Dungeon Crawler!
 
-Press arrowkeys to move
+(The .sln file doesn't seem to work, so open the .csproj instead)
 
-Collect keys to open locked doors
+-Press arrowkeys to move
 
-Find the Magical Key to open the Magical Barrier
+-Collect keys to open locked doors
 
-Enemies drop gold and sometimes heart pieces that recover health
+-Find the Magical Key to open the Magical Barrier
 
-Press D to drink health potions
+-Enemies drop gold and sometimes heart pieces that recover health
+
+-Press D to drink health potions
