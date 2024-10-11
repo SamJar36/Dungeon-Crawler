@@ -11,6 +11,7 @@ public abstract class LevelElement
     protected Player Player { get; set; }
     protected bool IsDrawing { get; set; }
     protected LevelData LData { get; set; }
+    public int DrawingDistance { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player)
     {
         this.PosX = x;
@@ -19,13 +20,14 @@ public abstract class LevelElement
         this.Color = color;
         this.Player = player;
         this.IsDrawing = true;
+        this.DrawingDistance = 5;
     }
     public void Draw()
     {
         if (this.IsDrawing)
         {
             double distance = CalculateEuclideanDistance(this.PosX, this.PosY, this.Player.PosX, this.Player.PosY);
-            if (distance <= 5)
+            if (distance <= DrawingDistance)
             {
                 Console.ForegroundColor = Color;
                 Console.SetCursorPosition(this.PosX, this.PosY);

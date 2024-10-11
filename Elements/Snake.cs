@@ -39,7 +39,7 @@ namespace Dungeon_Crawler.Elements
                 double directionX = this.PosX - this.Player.PosX;
                 double directionY = this.PosY - this.Player.PosY;
 
-                double magnitude = CalculateEuclideanDistance(this.PosX, this.PosY, this.Player.PosX, this.Player.PosY);
+                double magnitude = Math.Sqrt(directionX * directionX + directionY * directionY);
                 directionX /= magnitude;
                 directionY /= magnitude;
 

@@ -21,6 +21,7 @@ public class Player
     public int KillCount { get; set; }
     public int GoldCount { get; set; }
     public int KeyCount { get; set; }
+    public int MagicalKey { get; set; }
     public int HealthPotionCount { get; set; }
     public Dice EquippedWeapon { get; set; }
     public Dice EquippedArmor { get; set; }
@@ -46,6 +47,7 @@ public class Player
         this.KillCount = 0;
         this.KeyCount = 0;
         this.HealthPotionCount = 0;
+        this.MagicalKey = 0;
 
         Equipment EQ = new Equipment();
         this.EquippedWeapon = EQ.WoodenSword;
@@ -111,8 +113,8 @@ public class Player
         }
         if (keyPressed.Key == ConsoleKey.K)
         {
-            this.KeyCount += 1;
-            this.HealthPotionCount += 1;
+            //this.KeyCount += 1;
+            //this.HealthPotionCount += 1;
         }
         else if (keyPressed.Key == ConsoleKey.D)
         {
@@ -138,7 +140,11 @@ public class Player
         {
             if (element is Wall wall)
             {
-                IfMovementBlockedGoBack(wall);
+                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                {
+                    IfMovementBlockedGoBack();
+                }
+
             }
             else if (element is TreasureChest treasure)
             {
@@ -168,13 +174,25 @@ public class Player
                     heart.PickUpHeartPiece();
                 }
             }
+            else if (element is MagicalBarrier barrier)
+            {
+                if (this.PosX == barrier.PosX && this.PosY == barrier.PosY)
+                {
+                    barrier.TryOpeningBarrier();
+                }
+            }
+            else if (element is MagicalKey magicalKey)
+            {
+                if (this.PosX == magicalKey.PosX && this.PosY == magicalKey.PosY)
+                {
+                    magicalKey.PickUpMagicalKey(LData.LevelElementList);  
+                }
+            }
         foreach (var enemy in LData.EnemyList)
             {
                 if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
                 {
-                    this.PosX = this.LastPosX;
-                    this.PosY = this.LastPosY;
-                    this.Steps--;
+                    IfMovementBlockedGoBack();
 
                     if (enemy is Mimic mimic)
                     {
@@ -191,14 +209,19 @@ public class Player
     }
     private void Battle(Enemy enemy)
     {
+        Console.ForegroundColor = ConsoleColor.White;
         this.IsCurrentlyInABattle = true;
         enemy.IsAbleToMove = false;
         int playerAttack = EquippedWeapon.Throw();
         int enemyDefense = enemy.DefenseDice.Throw();
         int result = playerAttack - enemyDefense;
-        if (result < 0)
+        if (result <= 0)
         {
             result = 0;
+        }
+        else if (result > 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
         }
         Console.SetCursorPosition(0, attackPositionOnHUD);
         Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
@@ -211,26 +234,33 @@ public class Player
             result = enemyAttack - playerDefense;
             if (result < 0)
             {
+                Console.ForegroundColor = ConsoleColor.White;
+
                 result = 0;
+            }
+            else if (result > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+
             }
             Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
             this.HitPoints -= result;
+            Console.ForegroundColor = ConsoleColor.White;
+
         }
         else
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.SetCursorPosition(0, defensePositionOnHUD);
             Console.WriteLine($"The {enemy.Name} is defeated!");
             this.KillCount += 1;
         }
     }
-    public void IfMovementBlockedGoBack(LevelElement element)
+    public void IfMovementBlockedGoBack()
     {
-        if (this.PosX == element.PosX && this.PosY == element.PosY)
-        {
-            this.PosX = this.LastPosX;
-            this.PosY = this.LastPosY;
-            this.Steps--;
-        }
+        this.PosX = this.LastPosX;
+        this.PosY = this.LastPosY;
+        this.Steps--;
     }
     public void EraseBattleText()
     {

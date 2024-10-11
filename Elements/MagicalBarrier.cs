@@ -7,33 +7,33 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    public class LockedDoor : LevelElement
+    public class MagicalBarrier : LevelElement
     {
-        public LockedDoor(int x, int y, Player player) : base(x, y, '?', ConsoleColor.White, player)
+        public MagicalBarrier(int x, int y, Player player) : base(x, y, 'X', ConsoleColor.DarkMagenta, player)
         {
 
         }
-        public void TryOpeningDoor()
+        public void TryOpeningBarrier()
         {
             if (this.IsDrawing)
             {
-                if (this.Player.KeyCount > 0)
+                if (this.Player.MagicalKey == 1)
                 {
                     Console.SetCursorPosition(0, 3);
-                    Console.Write("You unlocked the door!");
-                    this.Player.IfMovementBlockedGoBack();
-                    this.Player.KeyCount -= 1;
+                    Console.Write("With your Magical Key you vanquished the Magical Barrier!");
+                    this.Player.MagicalKey -= 1;
                     this.Symbol = ' ';
                     this.Draw();
                     this.IsDrawing = false;
+                    this.Player.IfMovementBlockedGoBack();
                 }
                 else
                 {
                     Console.SetCursorPosition(0, 3);
-                    Console.Write("The door is locked");
+                    Console.Write("Your path is blocked by a Magical Barrier");
                     this.Player.IfMovementBlockedGoBack();
                 }
-            }     
+            }
         }
     }
 }

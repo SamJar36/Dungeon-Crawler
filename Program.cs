@@ -31,10 +31,5 @@ public class Program
 
         //Run the game
         gameLoop.Run();
-        
-        //Things to fix
-
-        // gain a magical spell that lets you break the seal in order to move to next level
-        // movement blocked while walking through door
     }
 }

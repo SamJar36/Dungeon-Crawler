@@ -11,4 +11,14 @@ public class Wall : LevelElement
     {
 
     }
+    public void PaintWallsGreen()
+    {
+        this.Color = ConsoleColor.Green;
+        this.Draw();
+    }
+    public void PaintWallsGray()
+    {
+        this.Color = ConsoleColor.DarkGray;
+        this.Draw();
+    }
 }

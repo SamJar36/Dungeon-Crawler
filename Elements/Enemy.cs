@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -66,6 +67,18 @@ namespace Dungeon_Crawler.Elements
                 {
                     IfMovementBlockedGoBack(gold);
                 }
+                if (element is MagicalBarrier barrier)
+                {
+                    IfMovementBlockedGoBack(barrier);
+                }
+                if (element is MagicalKey magicalKey)
+                {
+                    IfMovementBlockedGoBack(magicalKey);
+                }
+                if (element is HeartPiece heart)
+                {
+                    IfMovementBlockedGoBack(heart);
+                }
             }
             foreach (var enemy in LData.EnemyList)
             {
@@ -87,13 +100,19 @@ namespace Dungeon_Crawler.Elements
             }
         }
         protected void Battle(Player player)
-        { 
+        {
+            Console.ForegroundColor = ConsoleColor.White;
             int enemyAttack = this.AttackDice.Throw();
             int playerDefense = player.EquippedArmor.Throw();
             int result = enemyAttack - playerDefense;
             if (result < 0)
             {
                 result = 0;
+            }
+            else if (result > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+
             }
             Console.SetCursorPosition(0, 3);
             Console.WriteLine($"The {this.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {this.Name} dealt {result} damage!");
@@ -103,18 +122,27 @@ namespace Dungeon_Crawler.Elements
                 int playerAttack = player.EquippedWeapon.Throw();
                 int enemyDefense = this.DefenseDice.Throw();
                 result = playerAttack - enemyDefense;
-                if (result < 0)
+                if (result <= 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.White;
                     result = 0;
                 }
+                else if (result > 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                }
                 Console.SetCursorPosition(0, 4);
-                Console.WriteLine($"You attacked the {this.Name} for {playerAttack}, the {this.Name} defended for {enemyDefense}. The {this.Name} dealt {result} damage!");
                 this.HitPoints -= result;
+                string enemyDefeatedText = "";
                 if (this.HitPoints < 1)
                 {
-                    Console.Write($" The {this.Name} is defeated!");
+                    enemyDefeatedText = $"The {this.Name} is defeated!";
                     player.KillCount += 1;
                 }
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"You attacked the {this.Name} for {playerAttack}, the {this.Name} defended for {enemyDefense}. You dealt {result} damage! {enemyDefeatedText}");
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
         public void CheckIfHitPointsBelowZero()
@@ -133,6 +161,7 @@ namespace Dungeon_Crawler.Elements
                 else if (this is Mimic mimic)
                 {
                     CreateLoot(12, 20);
+                    this.Player.IsAbleToMove = true;
                 }
             }   
         }

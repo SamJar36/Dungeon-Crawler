@@ -38,9 +38,8 @@ public class TreasureChest : LevelElement
             }
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");
-            this.Player.PosX = this.Player.LastPosX;
-            this.Player.PosY = this.Player.LastPosY;
-            this.Player.Steps--;
+
+            this.Player.IfMovementBlockedGoBack();
 
             this.Symbol = ' ';
             this.Draw();

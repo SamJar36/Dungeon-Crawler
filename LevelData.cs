@@ -9,8 +9,6 @@ public class LevelData
     private int currentLevel = 1;
     public int Level { get { return currentLevel; } }
     private int yOffset = 5;
-    private List<Wall> wallList = new List<Wall>();
-    public List<Wall> WallList {  get { return wallList; } }
     private List<Enemy> enemyList = new List<Enemy>();
     public List<Enemy> EnemyList { get {return enemyList; } }
     private List<LevelElement> levelElementList = new List<LevelElement>();
@@ -117,6 +115,24 @@ public class LevelData
                         HeartPiece heart = new HeartPiece(mapX, mapY, this.Player);
                         heart.Draw();
                         levelElementList.Add(heart);
+                    }
+                    else if (character == 'X')
+                    {
+                        MagicalBarrier barrier = new MagicalBarrier(mapX, mapY, this.Player);
+                        barrier.Draw();
+                        levelElementList.Add(barrier);
+                    }
+                    else if (character == 'K')
+                    {
+                        MagicalKey magicalkey = new MagicalKey(mapX, mapY, this.Player);
+                        magicalkey.Draw();
+                        levelElementList.Add(magicalkey);
+                    }
+                    else if (character == 'F')
+                    {
+                        FinishLevel finish = new FinishLevel(mapX, mapY, this.Player);
+                        finish.Draw();
+                        levelElementList.Add(finish);
                     }
                     mapX++;
                 }
