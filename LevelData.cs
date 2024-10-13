@@ -17,7 +17,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 1;
+        this.CurrentLevel = 2;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -53,8 +53,17 @@ public class LevelData
                         }
                         else
                         {
-                            this.Player.PosX = mapX;
-                            this.Player.PosY = mapY;
+                            if (Player == null)
+                            {
+                                // in case I start on a different level for debugging or designing purposes
+                                Player player = new Player(mapX, mapY, this);
+                                this.Player = player;
+                            }
+                            else
+                            {
+                                this.Player.PosX = mapX;
+                                this.Player.PosY = mapY;
+                            }
                         }
                     }
                     mapX++;
@@ -132,6 +141,12 @@ public class LevelData
                         HeartPiece heart = new HeartPiece(mapX, mapY, this.Player);
                         heart.Draw();
                         levelElementList.Add(heart);
+                    }
+                    else if (character == '$')
+                    {
+                        Gold gold = new Gold(mapX, mapY, Player, 1, 2);
+                        gold.Draw();
+                        levelElementList.Add(gold);
                     }
                     else if (character == 'X')
                     {
