@@ -12,7 +12,7 @@ public abstract class LevelElement
     protected bool IsDrawing { get; set; }
     protected LevelData LData { get; set; }
     public int DrawingDistance { get; set; }
-    public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player)
+    public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player, int drawingDistance = 5)
     {
         this.PosX = x;
         this.PosY = y;
@@ -20,7 +20,7 @@ public abstract class LevelElement
         this.Color = color;
         this.Player = player;
         this.IsDrawing = true;
-        this.DrawingDistance = 5;
+        this.DrawingDistance = drawingDistance;
     }
     public void Draw()
     {

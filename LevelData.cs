@@ -6,8 +6,8 @@ namespace DungeonCrawler;
 
 public class LevelData
 {
-    private int currentLevel = 1;
-    public int Level { get { return currentLevel; } }
+    public int CurrentLevel { get; set; }
+    public bool IsSwitchingLevels { get; set; }
     private int yOffset = 5;
     private List<Enemy> enemyList = new List<Enemy>();
     public List<Enemy> EnemyList { get {return enemyList; } }
@@ -15,9 +15,18 @@ public class LevelData
     public List<LevelElement> LevelElementList { get { return levelElementList; } }
     public Player Player { get; set; }
 
+    public LevelData()
+    {
+        this.CurrentLevel = 1;
+        this.IsSwitchingLevels = false;
+    }
+    public void SetCurrentLevel(int level)
+    {
+        this.CurrentLevel = level;
+    }
     public void LoadMap()
     {     
-        string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{currentLevel}.text";
+        string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{CurrentLevel}.text";
 
         int mapX = 0;
         int mapY = yOffset;
@@ -37,8 +46,16 @@ public class LevelData
                 {
                     if (character == '@')
                     {
-                        Player player = new Player(mapX, mapY, this);
-                        this.Player = player;
+                        if (CurrentLevel == 1)
+                        {
+                            Player player = new Player(mapX, mapY, this);
+                            this.Player = player;
+                        }
+                        else
+                        {
+                            this.Player.PosX = mapX;
+                            this.Player.PosY = mapY;
+                        }
                     }
                     mapX++;
                 }
@@ -65,7 +82,7 @@ public class LevelData
                     }
                     else if (character >= '1' && character <= '4')
                     {
-                        if (currentLevel == 1)
+                        if (CurrentLevel == 1)
                         {
                             if (character == '1')
                             {
@@ -133,6 +150,18 @@ public class LevelData
                         FinishLevel finish = new FinishLevel(mapX, mapY, this.Player);
                         finish.Draw();
                         levelElementList.Add(finish);
+                    }
+                    else if (character == '>')
+                    {
+                        FakeWall fakeWall = new FakeWall(mapX, mapY, this.Player);
+                        fakeWall.Draw();
+                        levelElementList.Add(fakeWall);
+                    }
+                    else if (character == '_')
+                    {
+                        HiddenWall hiddenWall = new HiddenWall(mapX, mapY, this.Player);
+                        hiddenWall.Draw();
+                        levelElementList.Add(hiddenWall);
                     }
                     mapX++;
                 }

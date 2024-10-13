@@ -50,34 +50,41 @@ namespace Dungeon_Crawler.Elements
         public void EnemyCheckForCollision()
         {
             foreach (var element in LData.LevelElementList)
-            { 
-                if (element is Wall wall)
+            {
+                if (element == this)
                 {
-                    IfMovementBlockedGoBack(wall);
+                    continue;
                 }
-                if (element is LockedDoor door)
+                if (this.PosX == element.PosX && this.PosY == element.PosY)
                 {
-                    IfMovementBlockedGoBack(door);
-                }
-                if (element is TreasureChest chest)
-                {
-                    IfMovementBlockedGoBack(chest);
-                }
-                if (element is Gold gold)
-                {
-                    IfMovementBlockedGoBack(gold);
-                }
-                if (element is MagicalBarrier barrier)
-                {
-                    IfMovementBlockedGoBack(barrier);
-                }
-                if (element is MagicalKey magicalKey)
-                {
-                    IfMovementBlockedGoBack(magicalKey);
-                }
-                if (element is HeartPiece heart)
-                {
-                    IfMovementBlockedGoBack(heart);
+                    if (element is Wall wall)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is LockedDoor door)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is TreasureChest chest)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is Gold gold)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is MagicalBarrier barrier)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is MagicalKey magicalKey)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is HeartPiece heart)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
                 }
             }
             foreach (var enemy in LData.EnemyList)
@@ -86,12 +93,14 @@ namespace Dungeon_Crawler.Elements
                 {
                     continue;
                 }
-                IfMovementBlockedGoBack(enemy);
+                if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
             }
             if (this.PosX == Player.PosX && this.PosY == Player.PosY)
             {
-                this.PosX = LastPosX;
-                this.PosY = LastPosY;
+                MovementIsBlockedGoBack();
 
                 if (!Player.IsCurrentlyInABattle)
                 {
@@ -180,13 +189,10 @@ namespace Dungeon_Crawler.Elements
                 LData.LevelElementList.Add(heart);
             }
         }
-        public void IfMovementBlockedGoBack(LevelElement element)
+        public void MovementIsBlockedGoBack()
         {
-            if (this.PosX == element.PosX && this.PosY == element.PosY)
-            {
-                this.PosX = LastPosX;
-                this.PosY = LastPosY;
-            }
+            this.PosX = LastPosX;
+            this.PosY = LastPosY;
         }
     }
 }

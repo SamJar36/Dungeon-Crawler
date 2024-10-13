@@ -113,8 +113,8 @@ public class Player
         }
         if (keyPressed.Key == ConsoleKey.K)
         {
-            //this.KeyCount += 1;
-            //this.HealthPotionCount += 1;
+            this.KeyCount += 1;
+            this.HealthPotionCount += 1;
         }
         else if (keyPressed.Key == ConsoleKey.D)
         {
@@ -138,55 +138,49 @@ public class Player
     {
         foreach (var element in LData.LevelElementList)
         {
-            if (element is Wall wall)
+            if (this.PosX == element.PosX && this.PosY == element.PosY)
             {
-                if (this.PosX == element.PosX && this.PosY == element.PosY)
+                if (element is Wall wall)
                 {
                     IfMovementBlockedGoBack();
                 }
-
-            }
-            else if (element is TreasureChest treasure)
-            {
-                if (this.PosX == treasure.PosX && this.PosY == treasure.PosY)
+                else if (element is FakeWall fakeWall)
+                {
+                    fakeWall.WalkThroughWall();
+                }
+                else if (element is HiddenWall hiddenWall)
+                {
+                    IfMovementBlockedGoBack();
+                }
+                else if (element is TreasureChest treasure)
                 {
                     treasure.OpenTreasureChest();
                 }
-            }
-            else if (element is Gold gold)
-            {
-                if (this.PosX == gold.PosX && this.PosY == gold.PosY)
+                else if (element is Gold gold)
                 {
                     gold.PickUpGold();
                 }
-            }
-            else if (element is LockedDoor door)
-            {
-                if (this.PosX == door.PosX && this.PosY == door.PosY)
+                else if (element is LockedDoor door)
                 {
                     door.TryOpeningDoor();
                 }
-            }
-            else if (element is HeartPiece heart)
-            {
-                if (this.PosX == heart.PosX && this.PosY == heart.PosY)
+                else if (element is HeartPiece heart)
                 {
                     heart.PickUpHeartPiece();
                 }
-            }
-            else if (element is MagicalBarrier barrier)
-            {
-                if (this.PosX == barrier.PosX && this.PosY == barrier.PosY)
+                else if (element is MagicalBarrier barrier)
                 {
                     barrier.TryOpeningBarrier();
                 }
-            }
-            else if (element is MagicalKey magicalKey)
-            {
-                if (this.PosX == magicalKey.PosX && this.PosY == magicalKey.PosY)
+                else if (element is MagicalKey magicalKey)
                 {
-                    magicalKey.PickUpMagicalKey(LData.LevelElementList);  
+                    magicalKey.PickUpMagicalKey(LData.LevelElementList);
                 }
+                else if (element is FinishLevel finish)
+                {
+                    finish.GoToNextLevel(LData);
+                }
+                
             }
         foreach (var enemy in LData.EnemyList)
             {

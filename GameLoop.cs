@@ -52,25 +52,56 @@ namespace Dungeon_Crawler
                         LData.EnemyList.RemoveAt(i);
                     }
                 }
+                if (LData.IsSwitchingLevels)
+                {
+                    SwitchLevel();
+                }
+                LData.IsSwitchingLevels = false;
                 LData.Player.IsCurrentlyInABattle = false;
             }
             Console.Clear();
             Console.WriteLine("Thanks for playing!");
         }
+        private void SwitchLevel()
+        {
+            for (int i = LData.LevelElementList.Count - 1; i >= 0; i--)
+            {
+                LData.LevelElementList.RemoveAt(i);
+            }
+            for (int i = LData.EnemyList.Count - 1; i >= 0; i--)
+            {
+                LData.EnemyList.RemoveAt(i);
+            }
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
+            Console.WriteLine("#############################");
+            Console.WriteLine("#                           #");
+            Console.WriteLine("#      CONGRATULATIONS      #");
+            Console.WriteLine("#                           #");
+            Console.WriteLine("#  You finished the level!  #");
+            Console.WriteLine("#                           #");
+            Console.WriteLine("#############################");
+            Thread.Sleep(2000);
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+            LData.LoadMap();
+        }
         private void GameOver()
         {
             Console.Clear();
             Console.SetCursorPosition(0, 0);
-            Console.WriteLine("############################");
-            Console.WriteLine("#                          #");
-            Console.WriteLine("#        GAME OVER         #");
-            Console.WriteLine("#                          #");
-            Console.WriteLine("#   Your HP went below 0   #");
-            Console.WriteLine("#                          #");
-            Console.WriteLine("############################");
+            Console.WriteLine("##########################");
+            Console.WriteLine("#                        #");
+            Console.WriteLine("#       GAME OVER        #");
+            Console.WriteLine("#                        #");
+            Console.WriteLine("#  Your HP went below 0  #");
+            Console.WriteLine("#                        #");
+            Console.WriteLine("##########################");
             Thread.Sleep(2000);
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+            Console.Clear();
             this.IsGameRunning = false;
         }
     }

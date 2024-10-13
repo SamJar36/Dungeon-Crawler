@@ -13,24 +13,10 @@ namespace Dungeon_Crawler.Elements
         {
 
         }
-        public void GoToNextLevel()
+        public void GoToNextLevel(LevelData LData)
         {
-            // I didn't have time to make another level so this is a placeholder
-            Console.Clear();
-            Console.SetCursorPosition(0, 0);
-            Console.WriteLine("#############################");
-            Console.WriteLine("#                           #");
-            Console.WriteLine("#      CONGRATULATIONS      #");
-            Console.WriteLine("#                           #");
-            Console.WriteLine("#  You finished the level!  #");
-            Console.WriteLine("#                           #");
-            Console.WriteLine("#############################");
-            Thread.Sleep(2000);
-            Console.WriteLine();
-            Console.WriteLine("(Unfortunately, I didn't have time to make anymore levels...)");
-            Console.ReadKey();
-            Environment.Exit(0);
-            
+            LData.SetCurrentLevel(LData.CurrentLevel + 1);
+            LData.IsSwitchingLevels = true;
         }
     }
 }

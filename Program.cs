@@ -17,7 +17,7 @@ public class Program
         //HUD
         HUD hud = new HUD(
             levelData.Player.HitPoints,
-            levelData.Level, 
+            levelData.CurrentLevel, 
             levelData.Player.Steps,
             levelData.Player.EquippedWeapon,
             levelData.Player.EquippedArmor,
