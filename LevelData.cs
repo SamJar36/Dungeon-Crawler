@@ -17,7 +17,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 2;
+        this.CurrentLevel = 1;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -177,6 +177,21 @@ public class LevelData
                         HiddenWall hiddenWall = new HiddenWall(mapX, mapY, this.Player);
                         hiddenWall.Draw();
                         levelElementList.Add(hiddenWall);
+                    }
+                    else if (character == 'W')
+                    {
+                        Warp warp = new Warp(mapX, mapY, this.Player);
+                        warp.Draw();
+                        levelElementList.Add(warp);
+                    }
+                    else if (character == 'B')
+                    {
+                        if (CurrentLevel == 1)
+                        {
+                            BossRatKing ratKing = new BossRatKing(mapX, mapY, this, this.Player);
+                            ratKing.Draw();
+                            enemyList.Add(ratKing);
+                        }
                     }
                     mapX++;
                 }

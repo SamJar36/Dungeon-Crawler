@@ -180,6 +180,14 @@ public class Player
                 {
                     finish.GoToNextLevel(LData);
                 }
+                else if (element is Warp warp)
+                {
+                    warp.UseWarp(LData.CurrentLevel);
+                }
+                else if (element is Key key)
+                {
+                    key.PickUpKey();
+                }
                 
             }
         foreach (var enemy in LData.EnemyList)

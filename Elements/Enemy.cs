@@ -161,7 +161,6 @@ namespace Dungeon_Crawler.Elements
                 if (this is Rat rat)
                 {
                     CreateLoot(1, 3);
-                    
                 }
                 else if (this is Snake snake)
                 {
@@ -171,6 +170,10 @@ namespace Dungeon_Crawler.Elements
                 {
                     CreateLoot(12, 20);
                     this.Player.IsAbleToMove = true;
+                }
+                else if (this is BossRatKing ratKing)
+                {
+                    CreateLoot(30);
                 }
             }   
         }
@@ -187,6 +190,14 @@ namespace Dungeon_Crawler.Elements
             {
                 HeartPiece heart = new HeartPiece(this.PosX, this.PosY, Player);
                 LData.LevelElementList.Add(heart);
+            }
+        }
+        public void CreateSpecificLoot(string s)
+        {
+            if (s == "key")
+            {
+                Key key = new Key(this.PosX, this.PosY, this.Player);
+                LData.LevelElementList.Add(key);
             }
         }
         public void MovementIsBlockedGoBack()

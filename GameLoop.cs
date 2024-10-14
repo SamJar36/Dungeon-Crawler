@@ -86,6 +86,7 @@ namespace Dungeon_Crawler
             Console.ReadKey();
             Console.Clear();
             LData.LoadMap();
+            LData.Player.DrawPlayer();
         }
         private void GameOver()
         {

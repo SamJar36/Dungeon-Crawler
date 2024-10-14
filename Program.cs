@@ -31,5 +31,7 @@ public class Program
 
         //Run the game
         gameLoop.Run();
+
+        // redo loot system
     }
 }
