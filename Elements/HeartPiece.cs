@@ -12,7 +12,7 @@ namespace Dungeon_Crawler.Elements
         private int HealAmount { get; set; }
         private string Name { get; set; }
         public HeartPiece(int x, int y, Player player) 
-            : base(x, y, 
+            : base(x, y,
                   '♥', 
                   ConsoleColor.White, 
                   player)

@@ -17,7 +17,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 1;
+        this.CurrentLevel = 2;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -178,9 +178,16 @@ public class LevelData
                         hiddenWall.Draw();
                         levelElementList.Add(hiddenWall);
                     }
-                    else if (character == 'W')
+                    // up to 6 possible sets of Warps in each level
+                    else if (character == 'Ö' ||
+                        character == 'Ä' ||
+                        character == 'Å' ||
+                        character == 'ö' ||
+                        character == 'ä' ||
+                        character == 'å')
                     {
-                        Warp warp = new Warp(mapX, mapY, this.Player);
+                        character = (char)character;
+                        Warp warp = new Warp(mapX, mapY, this.Player, filePath, character);
                         warp.Draw();
                         levelElementList.Add(warp);
                     }

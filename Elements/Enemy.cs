@@ -151,7 +151,7 @@ namespace Dungeon_Crawler.Elements
                 }
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"You attacked the {this.Name} for {playerAttack}, the {this.Name} defended for {enemyDefense}. You dealt {result} damage! {enemyDefeatedText}");
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ResetColor();
             }
         }
         public void CheckIfHitPointsBelowZero()

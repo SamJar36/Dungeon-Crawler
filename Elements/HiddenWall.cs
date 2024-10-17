@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    public class InnerWall : LevelElement
+    public class HiddenWall : LevelElement
     {
-        public InnerWall(int x, int y, Player player) : base(x, y, '#', ConsoleColor.Gray, player)
+        public HiddenWall(int x, int y, Player player) : base(x, y, '#', ConsoleColor.Gray, player, 1)
         {
         }
     }

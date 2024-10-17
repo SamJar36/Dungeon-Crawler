@@ -9,6 +9,7 @@ public class Program
     static void Main(string[] args)
     {
         Console.CursorVisible = false;
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         //Map
         LevelData levelData = new LevelData();
@@ -33,5 +34,10 @@ public class Program
         gameLoop.Run();
 
         // redo loot system
+        // remove yOffset in levelData
+        // remove the ints "attackplaceinHud" or whatever they're called
+        // add chests on second level
+        // guard enemy (stationary)
+        // heart bool on object creation that determines if a heart is red or gold (so it doesn't randomize when created in map level)
     }
 }
