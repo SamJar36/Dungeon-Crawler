@@ -1,4 +1,5 @@
-﻿using Dungeon_Crawler.Elements;
+﻿using Dungeon_Crawler;
+using Dungeon_Crawler.Elements;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
@@ -24,7 +25,7 @@ public class LevelData
     {
         this.CurrentLevel = level;
     }
-    public void LoadMap()
+    public void LoadMap(Equipment EQ)
     {     
         string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{CurrentLevel}.text";
 
@@ -48,7 +49,7 @@ public class LevelData
                     {
                         if (CurrentLevel == 1)
                         {
-                            Player player = new Player(mapX, mapY, this);
+                            Player player = new Player(mapX, mapY, this, EQ);
                             this.Player = player;
                         }
                         else
@@ -56,7 +57,7 @@ public class LevelData
                             if (Player == null)
                             {
                                 // in case I start on a different level for debugging or designing purposes
-                                Player player = new Player(mapX, mapY, this);
+                                Player player = new Player(mapX, mapY, this, EQ);
                                 this.Player = player;
                             }
                             else
@@ -89,27 +90,39 @@ public class LevelData
                         wall.Draw();
                         levelElementList.Add(wall);
                     }
-                    else if (character >= '1' && character <= '4')
+                    else if (character >= '1' && character <= '9')
                     {
+                        if (character == '1')
+                        {
+                            CreateTreasureChestObject(mapX, mapY, "key", EQ);
+                        }
+                        else if (character == '2')
+                        {
+                            CreateTreasureChestObject(mapX, mapY, "health potion", EQ);
+                        }
+                        else if (character == '3')
+                        {
+                            CreateTreasureChestObject(mapX, mapY, "empty", EQ);
+                        }
                         if (CurrentLevel == 1)
                         {
-                            if (character == '1')
-                            {
-                                CreateTreasureChestObject(mapX, mapY, "key");
-                            }
-                            if (character == '2')
-                            {
-                                CreateTreasureChestObject(mapX, mapY, "health potion");
-                            }
-                            if (character == '3')
-                            {
-                                CreateTreasureChestObject(mapX, mapY, "empty");
-                            }
                             if (character == '4')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "gold");
+                                CreateTreasureChestObject(mapX, mapY, "gold", EQ);
                             }
                         }
+                        else if (CurrentLevel == 2)
+                        {
+                            if (character == '4')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "leather armor", EQ);
+                            }
+                            else if (character == '5')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "short sword", EQ);
+                            }
+                        }
+                        
                     }
                     else if (character == 'r')
                     {
@@ -193,7 +206,7 @@ public class LevelData
                     }
                     else if (character == 'B')
                     {
-                        if (CurrentLevel == 1)
+                        if (CurrentLevel == 1 || CurrentLevel == 2)
                         {
                             BossRatKing ratKing = new BossRatKing(mapX, mapY, this, this.Player);
                             ratKing.Draw();
@@ -205,9 +218,9 @@ public class LevelData
             }
         }
     }
-    private void CreateTreasureChestObject(int x, int y, string s)
+    private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
     {
-        TreasureChest chest = new TreasureChest(x, y, this.Player, s, this);
+        TreasureChest chest = new TreasureChest(x, y, this.Player, s, this, EQ);
         chest.Draw();
         levelElementList.Add(chest);
     }

@@ -85,6 +85,15 @@ namespace Dungeon_Crawler.Elements
                     {
                         MovementIsBlockedGoBack();
                     }
+                    else if (element is FakeWall fakeWall)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is HiddenWall hiddenWall)
+                    {
+                        MovementIsBlockedGoBack();
+
+                    }
                 }
             }
             foreach (var enemy in LData.EnemyList)
@@ -173,7 +182,7 @@ namespace Dungeon_Crawler.Elements
                 }
                 else if (this is BossRatKing ratKing)
                 {
-                    CreateLoot(30);
+                    CreateLoot(30, 31);
                 }
             }   
         }

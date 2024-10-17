@@ -11,9 +11,12 @@ public class Program
         Console.CursorVisible = false;
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+        //Equipment
+        Equipment EQ = new Equipment();
+
         //Map
         LevelData levelData = new LevelData();
-        levelData.LoadMap();
+        levelData.LoadMap(EQ);
 
         //HUD
         HUD hud = new HUD(
@@ -28,7 +31,7 @@ public class Program
             levelData.Player.HealthPotionCount);
 
         //Game Loop
-        GameLoop gameLoop = new GameLoop(levelData, hud);
+        GameLoop gameLoop = new GameLoop(levelData, hud, EQ);
 
         //Run the game
         gameLoop.Run();

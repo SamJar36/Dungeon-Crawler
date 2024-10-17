@@ -28,7 +28,7 @@ public class Player
     private int attackPositionOnHUD = 3;
     private int defensePositionOnHUD = 4;
 
-    public Player(int x, int y, LevelData levelData)
+    public Player(int x, int y, LevelData levelData, Equipment EQ)
     {
         this.PosX = x;
         this.PosY = y;
@@ -49,7 +49,6 @@ public class Player
         this.HealthPotionCount = 0;
         this.MagicalKey = 0;
 
-        Equipment EQ = new Equipment();
         this.EquippedWeapon = EQ.WoodenSword;
         //this.EquippedWeapon = EQ.DebuggingSword;
         this.EquippedArmor = EQ.Tunic;

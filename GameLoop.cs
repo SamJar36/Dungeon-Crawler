@@ -13,11 +13,13 @@ namespace Dungeon_Crawler
         public bool IsGameRunning { get; set; }
         private LevelData LData { get; set; }
         private HUD Hud { get; set; }
-        public GameLoop(LevelData levelData, HUD hud)
+        private Equipment EQ { get; set; }
+        public GameLoop(LevelData levelData, HUD hud, Equipment eQ)
         {
             this.LData = levelData;
             this.Hud = hud;
             this.IsGameRunning = true;
+            this.EQ = eQ;
         }
         public void Run()
         {
@@ -34,7 +36,9 @@ namespace Dungeon_Crawler
                     LData.Player.KillCount, 
                     LData.Player.GoldCount,
                     LData.Player.KeyCount,
-                    LData.Player.HealthPotionCount);
+                    LData.Player.HealthPotionCount,
+                    LData.Player.EquippedWeapon,
+                    LData.Player.EquippedArmor);
                 LData.Player.Update();
                 foreach (var enemy in LData.EnemyList)
                 {
@@ -85,7 +89,7 @@ namespace Dungeon_Crawler
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
             Console.Clear();
-            LData.LoadMap();
+            LData.LoadMap(EQ);
             LData.Player.DrawPlayer();
         }
         private void GameOver()

@@ -14,7 +14,7 @@ namespace Dungeon_Crawler.Elements
         public BossRatKing(int x, int y, LevelData levelData, Player player) 
             : base(x, y, 
                   25, 
-                  '&', 
+                  'B', 
                   "Rat King",
                   ConsoleColor.Red, 
                   levelData, 
