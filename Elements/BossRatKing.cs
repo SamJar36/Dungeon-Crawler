@@ -20,7 +20,10 @@ namespace Dungeon_Crawler.Elements
                   levelData, 
                   player,
                   new int[] { 2, 6, 3},
-                  new int[] { 1, 6, 1})
+                  new int[] { 1, 6, 1},
+                  new List<LootItem> 
+                    { new LootItem("key", 1)
+                    })
         {
 
         }

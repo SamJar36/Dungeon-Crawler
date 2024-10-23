@@ -20,21 +20,30 @@ namespace Dungeon_Crawler.Elements
         public Dice DefenseDice { get; set; }
         public bool IsAbleToMove { get; set; }
         protected LevelData LData { get; set; }
-        public Enemy(int x, int y, int HP, char symbol, string name, ConsoleColor color, LevelData levelData, Player player, int[] attackArray, int[] defenseArray) 
-            : base(x, y, symbol, color, player)
+        private List<LootItem> LootTable { get; set; }
+        public Enemy(int x, 
+                     int y, 
+                     int HP, 
+                     char symbol, 
+                     string name, 
+                     ConsoleColor color, 
+                     LevelData levelData, 
+                     Player player, 
+                     int[] attackArray, 
+                     int[] defenseArray, 
+                     List<LootItem> lootTable) 
+
+                     : base(x, y, symbol, color, player)
         {
             this.HitPoints = HP;
             this.Name = name;
-
             this.LastPosX = x;
             this.LastPosY = y;
-
             this.LData = levelData;
-
             this.AttackDice = new Dice(attackArray[0], attackArray[1], attackArray[2]);
             this.DefenseDice = new Dice(defenseArray[0], defenseArray[1], defenseArray[2]);
-
             this.IsAbleToMove = true;
+            this.LootTable = lootTable;
         }
         public abstract void Update();
         public void LastPositionOfEnemy()
@@ -158,55 +167,49 @@ namespace Dungeon_Crawler.Elements
                     enemyDefeatedText = $"The {this.Name} is defeated!";
                     player.KillCount += 1;
                 }
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($"You attacked the {this.Name} for {playerAttack}, the {this.Name} defended for {enemyDefense}. You dealt {result} damage! {enemyDefeatedText}");
-                Console.ResetColor();
             }
         }
         public void CheckIfHitPointsBelowZero()
         {
             if (this.HitPoints <= 0)
             {
-                if (this is Rat rat)
+                if (this is Mimic mimic)
                 {
-                    CreateLoot(1, 3);
-                }
-                else if (this is Snake snake)
-                {
-                    CreateLoot(3, 6);
-                }
-                else if (this is Mimic mimic)
-                {
-                    CreateLoot(12, 20);
                     this.Player.IsAbleToMove = true;
                 }
-                else if (this is BossRatKing ratKing)
-                {
-                    CreateLoot(30, 31);
-                }
+                CreateLoot();
             }   
         }
-        public void CreateLoot(int lowValue = 0, int highValue = 0)
+        public void CreateLoot()
         {
-            Random random = new Random();
-            int chance = random.Next(1, 101);
-            if (chance <= 50)
+            Random lootDropChance = new Random();
+            int maxValue = LootTable.Sum(obj => obj.Odds);
+            int chosenValue = lootDropChance.Next(0, maxValue);
+            int currentValue = 0;
+            for (int i = 0; i < this.LootTable.Count; i++)
             {
-                Gold gold = new Gold(this.PosX, this.PosY, Player, lowValue, highValue);
-                LData.LevelElementList.Add(gold);
-            }
-            else if (chance >= 51)
-            {
-                HeartPiece heart = new HeartPiece(this.PosX, this.PosY, Player);
-                LData.LevelElementList.Add(heart);
-            }
-        }
-        public void CreateSpecificLoot(string s)
-        {
-            if (s == "key")
-            {
-                Key key = new Key(this.PosX, this.PosY, this.Player);
-                LData.LevelElementList.Add(key);
+                currentValue += this.LootTable[i].Odds;
+                if (currentValue >= chosenValue)
+                {
+                    if (this.LootTable[i].Name == "gold")
+                    {
+                        Gold gold = new Gold(this.PosX, this.PosY, Player, this.LootTable[i].MinValue, this.LootTable[i].MaxValue);
+                        LData.LevelElementList.Add(gold);
+                    }
+                    else if (this.LootTable[i].Name == "heartpiece")
+                    {
+                        HeartPiece heart = new HeartPiece(this.PosX, this.PosY, Player);
+                        LData.LevelElementList.Add(heart);
+                    }
+                    else if (this.LootTable[i].Name == "key")
+                    {
+                        Key key = new Key(this.PosX, this.PosY, Player);
+                        LData.LevelElementList.Add(key);
+                    }
+                    break;
+                }
             }
         }
         public void MovementIsBlockedGoBack()

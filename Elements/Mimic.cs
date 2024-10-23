@@ -20,7 +20,11 @@ namespace Dungeon_Crawler.Elements
                   levelData,
                   player,
                   new int[] { 3, 6, 2 },
-                  new int[] { 1, 6, 2 })
+                  new int[] { 1, 6, 2 },
+                  new List<LootItem> 
+                    { new LootItem("heartpiece", 1),
+                      new LootItem("gold", 2, 15, 26)
+                    })
         {
             this.IsActivated = false;
             this.IsFirstRoundOfBattle = true;

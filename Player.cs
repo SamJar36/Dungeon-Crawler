@@ -122,7 +122,7 @@ public class Player
             if (HealthPotionCount > 0)
             {
                 Random random = new Random();
-                int healthRecovered = random.Next(20, 51);
+                int healthRecovered = random.Next(75, 101);
                 Console.Write($"You drank a potion and recovered {healthRecovered} HP!");
                 this.HitPoints += healthRecovered;
                 this.HealthPotionCount -= 1;
