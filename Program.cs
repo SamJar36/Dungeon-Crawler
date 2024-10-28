@@ -38,8 +38,7 @@ public class Program
 
         // remove yOffset in levelData
         // remove the ints "attackplaceinHud" or whatever they're called
-        // add chests on second level
         // guard enemy (stationary)
-        // heart bool on object creation that determines if a heart is red or gold (so it doesn't randomize when created in map level)
+        // level2 boss
     }
 }

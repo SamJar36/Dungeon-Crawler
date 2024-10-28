@@ -26,8 +26,8 @@ namespace Dungeon_Crawler
         {
             this.HitPoints = hitPoints;
             this.Level = level;
-            this.Steps = steps;
-            this.KillCount = killCount;
+            //this.Steps = steps;
+            //this.KillCount = killCount;
             this.GoldCount = goldCount;
             this.KeyCount = keyCount;
             this.HealthPotionCount = healthPotionCount;
@@ -42,8 +42,8 @@ namespace Dungeon_Crawler
         public void Draw(int HP, int steps, int killCount, int goldCount, int keyCount, int healthPotionCount, Dice weapon, Dice armor)
         {
             this.HitPoints = HP;
-            this.Steps = steps;
-            this.KillCount = killCount;
+            //this.Steps = steps;
+            //this.KillCount = killCount;
             this.GoldCount = goldCount;
             this.KeyCount = keyCount;
             this.HealthPotionCount = healthPotionCount;
@@ -57,11 +57,11 @@ namespace Dungeon_Crawler
             Console.WriteLine(
                 $"HP: {HitPoints}, " +
                 $"Gold: {GoldCount}, " +
-                $"Steps: {Steps}, " +
-                $"Mobs killed: {KillCount}, " +
-                $"Keys: {KeyCount}, " +
+                //$"Steps: {Steps}, " +
+                //$"Mobs killed: {KillCount}, " + 
                 $"{Weapon}, " +
                 $"{Armor}, " +
+                $"Keys: {KeyCount}, " +
                 $"Health Potions (D): {HealthPotionCount}");
             Console.ForegroundColor = ColorSeparator;
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
