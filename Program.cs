@@ -1,5 +1,6 @@
 ﻿using Dungeon_Crawler;
 using Dungeon_Crawler.Elements;
+using Dungeon_Crawler.MainMenu;
 using System.Security.Cryptography.X509Certificates;
 
 namespace DungeonCrawler;
@@ -13,6 +14,15 @@ public class Program
 
         //Equipment
         Equipment EQ = new Equipment();
+
+        //Main Menu
+        MainMenu mainMenu = new MainMenu();
+        Difficulty difficulty = new Difficulty();
+        Options options = new Options();
+        mainMenu.Draw();
+        difficulty.Draw();
+        options.Draw();
+
 
         //Map
         LevelData levelData = new LevelData();
@@ -29,6 +39,8 @@ public class Program
             levelData.Player.GoldCount,
             levelData.Player.KeyCount,
             levelData.Player.HealthPotionCount);
+
+        
 
         //Game Loop
         GameLoop gameLoop = new GameLoop(levelData, hud, EQ);
