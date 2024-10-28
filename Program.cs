@@ -36,7 +36,6 @@ public class Program
         //Run the game
         gameLoop.Run();
 
-        // redo loot system
         // remove yOffset in levelData
         // remove the ints "attackplaceinHud" or whatever they're called
         // add chests on second level

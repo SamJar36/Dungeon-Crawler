@@ -22,7 +22,7 @@ namespace Dungeon_Crawler.Elements
             if (chance >= 1 && chance <= 9)
             {
                 this.Color = ConsoleColor.Red;
-                this.HealAmount = 10;
+                this.HealAmount = 15;
                 this.Name = "Heart Piece";
             }
             else
@@ -30,6 +30,21 @@ namespace Dungeon_Crawler.Elements
                 this.Color = ConsoleColor.Yellow;
                 this.HealAmount = 50;
                 this.Name = "Golden Heart";
+            }
+        }
+        public HeartPiece(int x, int y, Player player, bool IsGoldenHeart) : base(x, y, '♥', ConsoleColor.White, player)
+        {
+            if (IsGoldenHeart)
+            {
+                this.Color = ConsoleColor.Yellow;
+                this.HealAmount = 50;
+                this.Name = "Golden Heart";
+            }
+            else
+            {
+                this.Color = ConsoleColor.Red;
+                this.HealAmount = 15;
+                this.Name = "Heart Piece";
             }
         }
         public void PickUpHeartPiece()

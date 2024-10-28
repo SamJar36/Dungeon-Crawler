@@ -101,10 +101,10 @@ namespace Dungeon_Crawler.Elements
                     else if (element is HiddenWall hiddenWall)
                     {
                         MovementIsBlockedGoBack();
-                    }else if (element is Warp warp)
+                    }
+                    else if (element is Warp warp)
                     {
                         MovementIsBlockedGoBack();
-
                     }
                 }
             }

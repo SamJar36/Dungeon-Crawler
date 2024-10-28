@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dungeon_Crawler.Elements
+namespace Dungeon_Crawler
 {
     public class LootItem
     {
@@ -18,7 +18,7 @@ namespace Dungeon_Crawler.Elements
             Name = name;
             Odds = odds;
         }
-        public LootItem(string name, int odds, int minValue, int maxValue) :this(name, odds)
+        public LootItem(string name, int odds, int minValue, int maxValue) : this(name, odds)
         {
             MinValue = minValue;
             MaxValue = maxValue;

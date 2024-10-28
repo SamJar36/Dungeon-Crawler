@@ -18,7 +18,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 1;
+        this.CurrentLevel = 2;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -151,7 +151,13 @@ public class LevelData
                     }
                     else if (character == '♥')
                     {
-                        HeartPiece heart = new HeartPiece(mapX, mapY, this.Player);
+                        HeartPiece heart = new HeartPiece(mapX, mapY, this.Player, false);
+                        heart.Draw();
+                        levelElementList.Add(heart);
+                    }
+                    else if (character == '♡')
+                    {
+                        HeartPiece heart = new HeartPiece(mapX, mapY, this.Player, true);
                         heart.Draw();
                         levelElementList.Add(heart);
                     }
