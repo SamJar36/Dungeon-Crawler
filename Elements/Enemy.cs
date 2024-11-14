@@ -106,6 +106,18 @@ namespace Dungeon_Crawler.Elements
                     {
                         MovementIsBlockedGoBack();
                     }
+                    else if (element is Key key)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is ShopKeeper shopKeeper)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
+                    else if (element is ArrowTile arrow)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
                 }
             }
             foreach (var enemy in LData.EnemyList)

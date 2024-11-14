@@ -14,7 +14,9 @@ public class Player
     public int LastPosY { get; set; }
     public bool IsAbleToMove { get; set; }
     public bool IsCurrentlyInABattle { get; set; }
+    public bool IsArrowTileMoving { get; set; }
     private char Symbol { get; set; }
+    public ConsoleColor Color { get; set; }
     private LevelData LData { get; set; }
     public int HitPoints { get; set; }
     public int Steps { get; set; }
@@ -38,9 +40,11 @@ public class Player
 
         this.IsAbleToMove = true;
         this.IsCurrentlyInABattle = false;
+        this.IsArrowTileMoving = false;
 
         this.LData = levelData;
         this.Symbol = '@';
+        this.Color = ConsoleColor.White;
 
         this.HitPoints = 100;
         this.Steps = 0;
@@ -64,20 +68,23 @@ public class Player
     public void DrawPlayer()
     {
         Console.SetCursorPosition(this.PosX, this.PosY);
-        Console.Write(this.Symbol);        
+        Console.ForegroundColor = Color;
+        Console.Write(Symbol);
+        Console.ResetColor();     
     }
     public void EraseLastPositionOfPlayer()
     {
         Console.SetCursorPosition(this.LastPosX, this.LastPosY);
         Console.Write(" ");
     }
-    private void LastPositionOfPlayer()
+    public void LastPositionOfPlayer()
     {
         this.LastPosY = this.PosY;
         this.LastPosX = this.PosX;
     }
     public void MovePlayer()
     {
+        if (IsArrowTileMoving) return;
         var keyPressed = Console.ReadKey();
         LastPositionOfPlayer();
         EraseBattleText();
@@ -186,6 +193,15 @@ public class Player
                 else if (element is Key key)
                 {
                     key.PickUpKey();
+                }
+                else if (element is ShopKeeper shopKeeper)
+                {
+                    shopKeeper.Talk();
+                    IfMovementBlockedGoBack();
+                }
+                else if (element is ArrowTile arrow)
+                {
+                    arrow.ArrowMovement();
                 }
                 
             }

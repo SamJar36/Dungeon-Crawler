@@ -18,7 +18,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 2;
+        this.CurrentLevel = 3;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -224,6 +224,19 @@ public class LevelData
                             skeletonLeader.Draw();
                             enemyList.Add(skeletonLeader);
                         }
+                    }
+                    else if (character == 'S')
+                    {
+                        ShopKeeper shopKeeper = new ShopKeeper(mapX, mapY, this.Player);
+                        shopKeeper.Draw();
+                        levelElementList.Add(shopKeeper);
+                    }
+                    else if (character == '→' || character == '↓' || character == '←' || character == '↑')
+                    {
+                        character = (char)character;
+                        ArrowTile arrow = new ArrowTile(mapX, mapY, this.Player, character);
+                        arrow.Draw();
+                        LevelElementList.Add(arrow);
                     }
                     mapX++;
                 }
