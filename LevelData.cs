@@ -244,6 +244,12 @@ public class LevelData
                         gwall.Draw();
                         LevelElementList.Add(gwall);
                     }
+                    else if (character == '⁋')
+                    {
+                        PushableBlock pBlock = new PushableBlock(mapX, mapY, this.Player);
+                        pBlock.Draw();
+                        LevelElementList.Add(pBlock);
+                    }
                     mapX++;
                 }
             }

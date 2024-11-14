@@ -213,6 +213,12 @@ public class Player
                         gwall.Touch();
                     }
                 }
+                else if (element is PushableBlock pBlock)
+                {
+                    MovementIsBlockedGoBack();
+
+                    pBlock.Push(LData);
+                }
 
             }
         foreach (var enemy in LData.EnemyList)
