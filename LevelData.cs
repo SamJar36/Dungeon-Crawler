@@ -212,11 +212,17 @@ public class LevelData
                     }
                     else if (character == 'B')
                     {
-                        if (CurrentLevel == 1 || CurrentLevel == 2)
+                        if (CurrentLevel == 1)
                         {
                             BossRatKing ratKing = new BossRatKing(mapX, mapY, this, this.Player);
                             ratKing.Draw();
                             enemyList.Add(ratKing);
+                        }
+                        else if (CurrentLevel == 2)
+                        { 
+                            BossSkeletonLeader skeletonLeader = new BossSkeletonLeader(mapX, mapY, this, this.Player);
+                            skeletonLeader.Draw();
+                            enemyList.Add(skeletonLeader);
                         }
                     }
                     mapX++;

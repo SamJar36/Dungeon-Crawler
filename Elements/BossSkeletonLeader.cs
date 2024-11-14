@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    public class BossRatKing : Enemy
+    public class BossSkeletonLeader : Enemy
     {
         private Random random = new Random();
 
-        public BossRatKing(int x, int y, LevelData levelData, Player player) 
+        public BossSkeletonLeader(int x, int y, LevelData levelData, Player player) 
             : base(x, y, 
                   25, 
                   'B', 
-                  "Rat King",
+                  "Skeleton Leader",
                   ConsoleColor.Red, 
                   levelData, 
                   player,
-                  new int[] { 2, 6, 3},
-                  new int[] { 1, 6, 3},
+                  new int[] { 2, 6, 5},
+                  new int[] { 1, 6, 1},
                   new List<LootItem> 
                     { new LootItem("key", 1)
                     })
@@ -40,26 +40,20 @@ namespace Dungeon_Crawler.Elements
         }
         public void Move()
         {
-            int direction = random.Next(1, 5);
+            double distance = CalculateEuclideanDistance(this.PosX, this.PosY, this.Player.PosX, this.Player.PosY);
             LastPositionOfEnemy();
-            if (direction == 1)
+            if (distance <= 3)
             {
-                this.PosX -= 1;
-                EnemyCheckForCollision();
-            }
-            else if (direction == 2)
-            {
-                this.PosX += 1;
-                EnemyCheckForCollision();
-            }
-            else if (direction == 3)
-            {
-                this.PosY += 1;
-                EnemyCheckForCollision();
-            }
-            else if (direction == 4)
-            {
-                this.PosY -= 1;
+                double directionX = this.PosX - this.Player.PosX;
+                double directionY = this.PosY - this.Player.PosY;
+
+                double magnitude = Math.Sqrt(directionX * directionX + directionY * directionY);
+                directionX /= magnitude;
+                directionY /= magnitude;
+
+                this.PosX -= (int)Math.Round(directionX);
+                this.PosY -= (int)Math.Round(directionY);
+
                 EnemyCheckForCollision();
             }
         }

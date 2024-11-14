@@ -47,8 +47,8 @@ namespace Dungeon_Crawler.Elements
                 directionX /= magnitude;
                 directionY /= magnitude;
 
-                this.PosX += (int)directionX;
-                this.PosY += (int)directionY;
+                this.PosX += (int)Math.Round(directionX);
+                this.PosY += (int)Math.Round(directionY);
 
                 EnemyCheckForCollision();
             }

@@ -15,13 +15,13 @@ public class Program
         //Equipment
         Equipment EQ = new Equipment();
 
-        //Main Menu
-        MainMenu mainMenu = new MainMenu();
-        Difficulty difficulty = new Difficulty();
-        Options options = new Options();
-        mainMenu.Draw();
-        difficulty.Draw();
-        options.Draw();
+        ////Main Menu
+        //MainMenu mainMenu = new MainMenu();
+        //Difficulty difficulty = new Difficulty();
+        //Options options = new Options();
+        //mainMenu.Draw();
+        //difficulty.Draw();
+        //options.Draw();
 
 
         //Map
