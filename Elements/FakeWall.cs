@@ -16,7 +16,7 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.IsDrawing)
             {
-                this.Player.IfMovementBlockedGoBack();
+                this.Player.MovementIsBlockedGoBack();
                 this.Symbol = ' ';
                 this.Draw();
                 this.IsDrawing = false;

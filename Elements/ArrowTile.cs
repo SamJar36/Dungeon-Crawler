@@ -38,26 +38,36 @@ namespace Dungeon_Crawler.Elements
                 this.Symbol = '←';
             }
         }
-        public void ArrowMovement()
+        public void ArrowMovement(LevelData LData)
         {
             Player.EraseLastPositionOfPlayer();
             Player.IsArrowTileMoving = true;
             Player.Color = ConsoleColor.Green;
-            for(int i = 0; i < 10; i++)
+            bool IsArrowTileInNeedOfDrawing = true;
+            while (!Player.IsTouchingSolidObject)
             {
                 Player.LastPositionOfPlayer();
                 Player.PosX += this.DirectionX;
                 Player.PosY += this.DirectionY;
-                Player.DrawPlayer();
-                if (i == 0)
+                Player.CheckForCollision();
+                if (IsArrowTileInNeedOfDrawing)
                 {
                     this.Draw();
+                    IsArrowTileInNeedOfDrawing = false;
                 }
                 else
                 {
                     Player.EraseLastPositionOfPlayer();
                 }
-                
+                Player.DrawPlayer();
+                foreach (var element in LData.LevelElementList)
+                {
+                    element.Draw();
+                }
+                foreach (var enemy in LData.EnemyList)
+                {
+                    enemy.Update();
+                }
                 Thread.Sleep(30);
             }
             while (Console.KeyAvailable)

@@ -163,7 +163,7 @@ public class LevelData
                     }
                     else if (character == '$')
                     {
-                        Gold gold = new Gold(mapX, mapY, Player, 1, 2);
+                        Gold gold = new Gold(mapX, mapY, Player, 1, 5);
                         gold.Draw();
                         levelElementList.Add(gold);
                     }
@@ -237,6 +237,12 @@ public class LevelData
                         ArrowTile arrow = new ArrowTile(mapX, mapY, this.Player, character);
                         arrow.Draw();
                         LevelElementList.Add(arrow);
+                    }
+                    else if (character == '‡')
+                    {
+                        GreenWall gwall = new GreenWall(mapX, mapY, this.Player);
+                        gwall.Draw();
+                        LevelElementList.Add(gwall);
                     }
                     mapX++;
                 }

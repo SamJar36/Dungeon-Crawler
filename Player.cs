@@ -15,6 +15,7 @@ public class Player
     public bool IsAbleToMove { get; set; }
     public bool IsCurrentlyInABattle { get; set; }
     public bool IsArrowTileMoving { get; set; }
+    public bool IsTouchingSolidObject { get; set; }
     private char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
     private LevelData LData { get; set; }
@@ -41,6 +42,7 @@ public class Player
         this.IsAbleToMove = true;
         this.IsCurrentlyInABattle = false;
         this.IsArrowTileMoving = false;
+        this.IsTouchingSolidObject = false;
 
         this.LData = levelData;
         this.Symbol = '@';
@@ -64,6 +66,7 @@ public class Player
         MovePlayer();
         EraseLastPositionOfPlayer();
         DrawPlayer();
+        this.IsTouchingSolidObject = false;
     }
     public void DrawPlayer()
     {
@@ -140,7 +143,7 @@ public class Player
             }
         }
     }
-    private void CheckForCollision()
+    public void CheckForCollision()
     {
         foreach (var element in LData.LevelElementList)
         {
@@ -148,7 +151,7 @@ public class Player
             {
                 if (element is Wall wall)
                 {
-                    IfMovementBlockedGoBack();
+                    MovementIsBlockedGoBack();
                 }
                 else if (element is FakeWall fakeWall)
                 {
@@ -156,7 +159,7 @@ public class Player
                 }
                 else if (element is HiddenWall hiddenWall)
                 {
-                    IfMovementBlockedGoBack();
+                    MovementIsBlockedGoBack();
                 }
                 else if (element is TreasureChest treasure)
                 {
@@ -197,19 +200,26 @@ public class Player
                 else if (element is ShopKeeper shopKeeper)
                 {
                     shopKeeper.Talk();
-                    IfMovementBlockedGoBack();
+                    MovementIsBlockedGoBack();
                 }
                 else if (element is ArrowTile arrow)
                 {
-                    arrow.ArrowMovement();
+                    arrow.ArrowMovement(LData);
                 }
-                
+                else if (element is GreenWall gwall)
+                {
+                    if (!IsArrowTileMoving)
+                    {
+                        gwall.Touch();
+                    }
+                }
+
             }
         foreach (var enemy in LData.EnemyList)
             {
                 if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
                 {
-                    IfMovementBlockedGoBack();
+                    MovementIsBlockedGoBack();
 
                     if (enemy is Mimic mimic)
                     {
@@ -273,11 +283,12 @@ public class Player
             this.KillCount += 1;
         }
     }
-    public void IfMovementBlockedGoBack()
+    public void MovementIsBlockedGoBack()
     {
         this.PosX = this.LastPosX;
         this.PosY = this.LastPosY;
         this.Steps--;
+        this.IsTouchingSolidObject = true;
     }
     public void EraseBattleText()
     {

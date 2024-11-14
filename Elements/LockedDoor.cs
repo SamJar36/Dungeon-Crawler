@@ -21,7 +21,7 @@ namespace Dungeon_Crawler.Elements
                 {
                     Console.SetCursorPosition(0, 3);
                     Console.Write("You unlocked the door!");
-                    this.Player.IfMovementBlockedGoBack();
+                    this.Player.MovementIsBlockedGoBack();
                     this.Player.KeyCount -= 1;
                     this.Symbol = ' ';
                     this.Draw();
@@ -31,7 +31,7 @@ namespace Dungeon_Crawler.Elements
                 {
                     Console.SetCursorPosition(0, 3);
                     Console.Write("The door is locked");
-                    this.Player.IfMovementBlockedGoBack();
+                    this.Player.MovementIsBlockedGoBack();
                 }
             }     
         }

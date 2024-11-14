@@ -51,7 +51,7 @@ public class TreasureChest : LevelElement
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");
 
-            this.Player.IfMovementBlockedGoBack();
+            this.Player.MovementIsBlockedGoBack();
 
             this.Symbol = ' ';
             this.Draw();

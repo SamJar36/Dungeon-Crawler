@@ -118,6 +118,10 @@ namespace Dungeon_Crawler.Elements
                     {
                         MovementIsBlockedGoBack();
                     }
+                    else if (element is GreenWall gwall)
+                    {
+                        MovementIsBlockedGoBack();
+                    }
                 }
             }
             foreach (var enemy in LData.EnemyList)

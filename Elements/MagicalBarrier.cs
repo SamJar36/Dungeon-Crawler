@@ -25,13 +25,13 @@ namespace Dungeon_Crawler.Elements
                     this.Symbol = ' ';
                     this.Draw();
                     this.IsDrawing = false;
-                    this.Player.IfMovementBlockedGoBack();
+                    this.Player.MovementIsBlockedGoBack();
                 }
                 else
                 {
                     Console.SetCursorPosition(0, 3);
                     Console.Write("Your path is blocked by a Magical Barrier");
-                    this.Player.IfMovementBlockedGoBack();
+                    this.Player.MovementIsBlockedGoBack();
                 }
             }
         }
