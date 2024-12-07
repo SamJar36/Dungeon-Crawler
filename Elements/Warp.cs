@@ -74,6 +74,7 @@ namespace Dungeon_Crawler.Elements
         }
         public void UseWarp(int currentlevel)
         {
+            this.Player.IsCurrentlyWarping = true;
             this.Player.PosX = this.WarpExitX;
             this.Player.PosY = this.WarpExitY;
         }

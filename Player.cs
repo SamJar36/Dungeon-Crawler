@@ -2,6 +2,7 @@
 using Dungeon_Crawler.Elements;
 using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
 namespace DungeonCrawler;
@@ -16,6 +17,7 @@ public class Player
     public bool IsCurrentlyInABattle { get; set; }
     public bool IsArrowTileMoving { get; set; }
     public bool IsTouchingSolidObject { get; set; }
+    public bool IsCurrentlyWarping { get; set; }
     private char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
     private LevelData LData { get; set; }
@@ -43,6 +45,7 @@ public class Player
         this.IsCurrentlyInABattle = false;
         this.IsArrowTileMoving = false;
         this.IsTouchingSolidObject = false;
+        this.IsCurrentlyWarping = false;
 
         this.LData = levelData;
         this.Symbol = '@';
@@ -242,51 +245,61 @@ public class Player
     }
     private void Battle(Enemy enemy)
     {
-        Console.ForegroundColor = ConsoleColor.White;
-        this.IsCurrentlyInABattle = true;
-        enemy.IsAbleToMove = false;
-        int playerAttack = EquippedWeapon.Throw();
-        int enemyDefense = enemy.DefenseDice.Throw();
-        int result = playerAttack - enemyDefense;
-        if (result <= 0)
+        if (IsCurrentlyWarping)
         {
-            result = 0;
+            Console.SetCursorPosition(0, 3);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("The exit point of the Warp is blocked by a moving object.");
+            MovementIsBlockedGoBack();
         }
-        else if (result > 0)
+        else if (!IsCurrentlyWarping)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-        }
-        Console.SetCursorPosition(0, attackPositionOnHUD);
-        Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
-        enemy.HitPoints -= result;
-        if (enemy.HitPoints > 0)
-        {
-            Console.SetCursorPosition(0, defensePositionOnHUD);
-            int enemyAttack = enemy.AttackDice.Throw();
-            int playerDefense = EquippedArmor.Throw();
-            result = enemyAttack - playerDefense;
-            if (result < 0)
+            Console.ForegroundColor = ConsoleColor.White;
+            this.IsCurrentlyInABattle = true;
+            enemy.IsAbleToMove = false;
+            int playerAttack = EquippedWeapon.Throw();
+            int enemyDefense = enemy.DefenseDice.Throw();
+            int result = playerAttack - enemyDefense;
+            if (result <= 0)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-
                 result = 0;
             }
             else if (result > 0)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            Console.SetCursorPosition(0, attackPositionOnHUD);
+            Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
+            enemy.HitPoints -= result;
+            if (enemy.HitPoints > 0)
+            {
+                Console.SetCursorPosition(0, defensePositionOnHUD);
+                int enemyAttack = enemy.AttackDice.Throw();
+                int playerDefense = EquippedArmor.Throw();
+                result = enemyAttack - playerDefense;
+                if (result < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                    result = 0;
+                }
+                else if (result > 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                }
+                Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
+                this.HitPoints -= result;
+                Console.ForegroundColor = ConsoleColor.White;
 
             }
-            Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
-            this.HitPoints -= result;
-            Console.ForegroundColor = ConsoleColor.White;
-
-        }
-        else
-        {
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.SetCursorPosition(0, defensePositionOnHUD);
-            Console.WriteLine($"The {enemy.Name} is defeated!");
-            this.KillCount += 1;
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.SetCursorPosition(0, defensePositionOnHUD);
+                Console.WriteLine($"The {enemy.Name} is defeated!");
+                this.KillCount += 1;
+            }
         }
     }
     public void MovementIsBlockedGoBack()

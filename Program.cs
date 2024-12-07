@@ -52,5 +52,6 @@ public class Program
         // remove the ints "attackplaceinHud" or whatever they're called
         // guard enemy (stationary)
         // level2 boss
+        // warp on same vertical plane bug (game crashes)
     }
 }
