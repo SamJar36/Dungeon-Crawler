@@ -22,6 +22,7 @@ public class TreasureChest : LevelElement
             string text = "";
             if (Contents == "key")
             {
+                Player.SoundEffects.PlaySoundEffect("Key");
                 this.Player.KeyCount += 1;
                 text = "a Small Key!";
             }
@@ -37,6 +38,7 @@ public class TreasureChest : LevelElement
             else if (Contents == "gold")
             {
                 text = "10 gold";
+                Player.SoundEffects.PlaySoundEffect("Coins");
             }
             else if (Contents == "leather armor")
             {

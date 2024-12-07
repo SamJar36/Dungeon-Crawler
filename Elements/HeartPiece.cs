@@ -51,6 +51,14 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.IsDrawing)
             {
+                if (this.Color == ConsoleColor.Red)
+                {
+                    Player.SoundEffects.PlaySoundEffect("Heart");
+                }
+                else if (this.Color == ConsoleColor.Yellow)
+                {
+                    Player.SoundEffects.PlaySoundEffect("GoldHeart");
+                }
                 Console.SetCursorPosition(0, 3);
                 Console.WriteLine($"You picked up a Heart Piece and healed for {this.HealAmount} hitpoints!");
                 Player.HitPoints += HealAmount;

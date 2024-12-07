@@ -19,6 +19,7 @@ namespace Dungeon_Crawler.Elements
             {
                 if (this.Player.MagicalKey == 1)
                 {
+                    Player.SoundEffects.PlaySoundEffect("BarrierBreak");
                     Console.SetCursorPosition(0, 3);
                     Console.Write("With your Magical Key you vanquished the Magical Barrier!");
                     this.Player.MagicalKey -= 1;
@@ -29,6 +30,7 @@ namespace Dungeon_Crawler.Elements
                 }
                 else
                 {
+                    Player.SoundEffects.PlaySoundEffect("BarrierLocked");
                     Console.SetCursorPosition(0, 3);
                     Console.Write("Your path is blocked by a Magical Barrier");
                     this.Player.MovementIsBlockedGoBack();

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NAudio.Wave;
 using NAudio.Vorbis;
+using DungeonCrawler;
 
 namespace Dungeon_Crawler
 {
@@ -12,10 +13,14 @@ namespace Dungeon_Crawler
     {
         private VorbisWaveReader vorbisWaveReader;
         private WaveOutEvent waveOutEvent;
-
+        private bool IsTheGodamnMusicStopping;
+        
+        public Music()
+        {
+            this.IsTheGodamnMusicStopping = false;
+        }
         public void PlayMusic(string song)
         {
-
             StopMusic();
 
             string musicFile = GetMusicFileToPlay(song);
@@ -28,10 +33,12 @@ namespace Dungeon_Crawler
         }
         private void OnPlayBackStopped(object sender, EventArgs e)
         {
-            if (vorbisWaveReader != null)
+            if (!IsTheGodamnMusicStopping)
             {
                 vorbisWaveReader.Position = 0;
-                waveOutEvent.Play(); 
+                waveOutEvent = new WaveOutEvent();
+                waveOutEvent.Init(vorbisWaveReader);
+                waveOutEvent.Play();
             }
         }
 
@@ -41,6 +48,8 @@ namespace Dungeon_Crawler
             {
                 case "Level":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Level.ogg");
+                case "Fanfare":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Fanfare.ogg");
                 default:
                     throw new ArgumentException("Invalid song specified");
             }
@@ -48,6 +57,7 @@ namespace Dungeon_Crawler
 
         public void StopMusic()
         {
+            IsTheGodamnMusicStopping = true;
             if (waveOutEvent != null)
             {
                 waveOutEvent.Stop();

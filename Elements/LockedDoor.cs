@@ -19,6 +19,7 @@ namespace Dungeon_Crawler.Elements
             {
                 if (this.Player.KeyCount > 0)
                 {
+                    Player.SoundEffects.PlaySoundEffect("DoorOpen");
                     Console.SetCursorPosition(0, 3);
                     Console.Write("You unlocked the door!");
                     this.Player.MovementIsBlockedGoBack();
@@ -29,6 +30,7 @@ namespace Dungeon_Crawler.Elements
                 }
                 else
                 {
+                    Player.SoundEffects.PlaySoundEffect("DoorLocked");
                     Console.SetCursorPosition(0, 3);
                     Console.Write("The door is locked");
                     this.Player.MovementIsBlockedGoBack();

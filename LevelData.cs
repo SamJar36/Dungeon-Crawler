@@ -18,7 +18,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 3;
+        this.CurrentLevel = 1;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)
@@ -51,6 +51,7 @@ public class LevelData
                         {
                             Player player = new Player(mapX, mapY, this, EQ);
                             this.Player = player;
+                            
                         }
                         else
                         {
@@ -66,6 +67,7 @@ public class LevelData
                                 this.Player.PosY = mapY;
                             }
                         }
+                        Player.Music.PlayMusic("Level");
                     }
                     mapX++;
                 }

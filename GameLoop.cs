@@ -85,7 +85,8 @@ namespace Dungeon_Crawler
             Console.WriteLine("#  You finished the level!  #");
             Console.WriteLine("#                           #");
             Console.WriteLine("#############################");
-            Thread.Sleep(2000);
+            Thread.Sleep(6000);
+            LData.Player.Music.StopMusic();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
             Console.Clear();

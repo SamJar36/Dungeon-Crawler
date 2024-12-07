@@ -28,10 +28,6 @@ public class Program
         //difficulty.Draw();
         //options.Draw();
 
-        //Music Player
-        Music musicPlayer = new Music();
-        musicPlayer.PlayMusic("Level");
-
         //Map
         LevelData levelData = new LevelData();
         levelData.LoadMap(EQ);

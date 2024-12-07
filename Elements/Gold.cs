@@ -24,7 +24,8 @@ namespace Dungeon_Crawler.Elements
         public void PickUpGold()
         {
             if (this.IsDrawing)
-            {     
+            {
+                Player.SoundEffects.PlaySoundEffect("Coins");
                 Console.SetCursorPosition(0, 3);
                 Console.WriteLine($"You picked up {GoldAmount} gold");
                 this.Player.GoldCount += GoldAmount;

@@ -20,6 +20,7 @@ public class Player
     public bool IsTouchingSolidObject { get; set; }
     public bool IsCurrentlyWarping { get; set; }
     public SoundEffects SoundEffects { get; set; }
+    public Music Music { get; set; }
     private char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
     private LevelData LData { get; set; }
@@ -64,6 +65,7 @@ public class Player
         this.EquippedArmor = EQ.Tunic;
 
         this.SoundEffects = new SoundEffects();
+        this.Music = new Music();
 
         DrawPlayer();
     }
@@ -166,6 +168,7 @@ public class Player
                 }
                 else if (element is HiddenWall hiddenWall)
                 {
+                    SoundEffects.PlaySoundEffect("Wall");
                     MovementIsBlockedGoBack();
                 }
                 else if (element is TreasureChest treasure)
@@ -255,7 +258,7 @@ public class Player
         {
             Console.SetCursorPosition(0, 3);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("The exit point of the Warp is blocked by a moving object.");
+            Console.WriteLine("The exit point of the Warp is blocked by a \u001b[31mmoving\u001b[0m object.");
             MovementIsBlockedGoBack();
         }
         else if (!IsCurrentlyWarping)

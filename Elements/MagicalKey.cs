@@ -17,8 +17,11 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.IsDrawing)
             {
+                Player.SoundEffects.PlaySoundEffect("MagicalKey");
                 Console.SetCursorPosition(0, 3);
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("~~You found the Magical Key~~");
+                Console.ForegroundColor = ConsoleColor.White;
                 this.Player.MagicalKey += 1;
                 this.Symbol = ' ';
                 this.IsDrawing = false;

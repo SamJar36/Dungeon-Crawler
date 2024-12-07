@@ -20,7 +20,8 @@ namespace Dungeon_Crawler.Elements
         public void PickUpKey()
         {
             if (this.IsDrawing)
-            {     
+            {
+                Player.SoundEffects.PlaySoundEffect("Key");
                 Console.SetCursorPosition(0, 3);
                 Console.WriteLine($"You picked up a Small Key!");
                 this.Player.KeyCount += 1;

@@ -15,8 +15,10 @@ namespace Dungeon_Crawler.Elements
         }
         public void GoToNextLevel(LevelData LData)
         {
-            LData.SetCurrentLevel(LData.CurrentLevel + 1);
             LData.IsSwitchingLevels = true;
+            LData.SetCurrentLevel(LData.CurrentLevel + 1);
+            Player.Music.StopMusic();
+            Player.Music.PlayMusic("Fanfare");
         }
     }
 }
