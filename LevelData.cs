@@ -26,8 +26,8 @@ public class LevelData
         this.CurrentLevel = level;
     }
     public void LoadMap(Equipment EQ)
-    {     
-        string filePath = @$"C:\Users\saman\source\repos\Dungeon-Crawler\Levels\Level{CurrentLevel}.text";
+    {
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), @$"Levels\Level{CurrentLevel}.text");
 
         int mapX = 0;
         int mapY = yOffset;

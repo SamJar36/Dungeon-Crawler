@@ -2,6 +2,7 @@
 using Dungeon_Crawler.Elements;
 using System.Diagnostics.Metrics;
 using System.Linq.Expressions;
+using System.Net.NetworkInformation;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
@@ -50,7 +51,6 @@ public class Player
         this.LData = levelData;
         this.Symbol = '@';
         this.Color = ConsoleColor.White;
-
         this.HitPoints = 100;
         this.Steps = 0;
         this.KillCount = 0;
@@ -301,6 +301,7 @@ public class Player
                 this.KillCount += 1;
             }
         }
+        IsCurrentlyWarping = false;
     }
     public void MovementIsBlockedGoBack()
     {

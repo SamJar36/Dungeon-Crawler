@@ -2,6 +2,8 @@
 using Dungeon_Crawler.Elements;
 using Dungeon_Crawler.MainMenu;
 using System.Security.Cryptography.X509Certificates;
+using NAudio.Wave;
+using System.Runtime.CompilerServices;
 
 namespace DungeonCrawler;
 
@@ -11,6 +13,9 @@ public class Program
     {
         Console.CursorVisible = false;
         Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+        string projectDirectory = Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..");
+        Directory.SetCurrentDirectory(projectDirectory);
 
         //Equipment
         Equipment EQ = new Equipment();
@@ -23,6 +28,9 @@ public class Program
         //difficulty.Draw();
         //options.Draw();
 
+        //Music Player
+        Music musicPlayer = new Music();
+        musicPlayer.PlayMusic("Level");
 
         //Map
         LevelData levelData = new LevelData();
@@ -39,8 +47,6 @@ public class Program
             levelData.Player.GoldCount,
             levelData.Player.KeyCount,
             levelData.Player.HealthPotionCount);
-
-        
 
         //Game Loop
         GameLoop gameLoop = new GameLoop(levelData, hud, EQ);
