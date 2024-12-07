@@ -16,6 +16,7 @@ namespace Dungeon_Crawler.Elements
         {
             if (this.IsDrawing)
             {
+                Player.SoundEffects.PlaySoundEffect("FakeWall");
                 this.Player.MovementIsBlockedGoBack();
                 this.Symbol = ' ';
                 this.Draw();

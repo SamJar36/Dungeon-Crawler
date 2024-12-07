@@ -19,6 +19,7 @@ public class Player
     public bool IsArrowTileMoving { get; set; }
     public bool IsTouchingSolidObject { get; set; }
     public bool IsCurrentlyWarping { get; set; }
+    public SoundEffects SoundEffects { get; set; }
     private char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
     private LevelData LData { get; set; }
@@ -61,6 +62,8 @@ public class Player
         this.EquippedWeapon = EQ.WoodenSword;
         //this.EquippedWeapon = EQ.DebuggingSword;
         this.EquippedArmor = EQ.Tunic;
+
+        this.SoundEffects = new SoundEffects();
 
         DrawPlayer();
     }
@@ -107,14 +110,12 @@ public class Player
                 this.PosY += 1;
                 this.Steps++;
                 CheckForCollision();
-
             }
             else if (keyPressed.Key == ConsoleKey.LeftArrow)
             {
                 this.PosX -= 1;
                 this.Steps++;
                 CheckForCollision();
-
             }
             else if (keyPressed.Key == ConsoleKey.RightArrow)
             {
@@ -125,6 +126,8 @@ public class Player
         }
         if (keyPressed.Key == ConsoleKey.K)
         {
+            Console.SetCursorPosition(0, 3);
+            Console.WriteLine("Cheatcode activated! You got a key and a health potion!");
             this.KeyCount += 1;
             this.HealthPotionCount += 1;
         }
@@ -154,7 +157,8 @@ public class Player
             {
                 if (element is Wall wall)
                 {
-                    MovementIsBlockedGoBack();
+                    SoundEffects.PlaySoundEffect("Wall");
+                    MovementIsBlockedGoBack();   
                 }
                 else if (element is FakeWall fakeWall)
                 {
@@ -195,6 +199,7 @@ public class Player
                 else if (element is Warp warp)
                 {
                     warp.UseWarp(LData.CurrentLevel);
+                    SoundEffects.PlaySoundEffect("Warp");
                 }
                 else if (element is Key key)
                 {
@@ -207,6 +212,7 @@ public class Player
                 }
                 else if (element is ArrowTile arrow)
                 {
+                    SoundEffects.PlaySoundEffect("Arrow");
                     arrow.ArrowMovement(LData);
                 }
                 else if (element is GreenWall gwall)

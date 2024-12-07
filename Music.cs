@@ -42,7 +42,7 @@ namespace Dungeon_Crawler
                 case "Level":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Level.ogg");
                 default:
-                    throw new ArgumentException("Invalid level specified");
+                    throw new ArgumentException("Invalid song specified");
             }
         }
 
