@@ -160,7 +160,7 @@ public class Player
                 if (element is Wall wall)
                 {
                     SoundEffects.PlaySoundEffect("Wall");
-                    MovementIsBlockedGoBack();   
+                    MovementIsBlockedGoBack();
                 }
                 else if (element is FakeWall fakeWall)
                 {
@@ -231,23 +231,22 @@ public class Player
 
                     pBlock.Push(LData);
                 }
-
             }
+        }
         foreach (var enemy in LData.EnemyList)
+        {
+            if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
             {
-                if (this.PosX == enemy.PosX && this.PosY == enemy.PosY)
-                {
-                    MovementIsBlockedGoBack();
+                MovementIsBlockedGoBack();
 
-                    if (enemy is Mimic mimic)
-                    {
-                        // mimics have a slightly different battle phase
-                        mimic.ActivateMimic();
-                    }
-                    else
-                    {
-                        Battle(enemy); 
-                    }  
+                if (enemy is Mimic mimic)
+                {
+                    // mimics have a slightly different battle phase
+                    mimic.ActivateMimic();
+                }
+                else
+                {
+                    Battle(enemy);
                 }
             }
         }
@@ -260,57 +259,65 @@ public class Player
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("The exit point of the Warp is blocked by a \u001b[31mmoving\u001b[0m object.");
             MovementIsBlockedGoBack();
+            IsCurrentlyWarping = false;
+            return;
         }
-        else if (!IsCurrentlyWarping)
+        Random random = new Random();
+        int battleNoiseChance = random.Next(1, 3);
+        if (battleNoiseChance == 1)
         {
-            Console.ForegroundColor = ConsoleColor.White;
-            this.IsCurrentlyInABattle = true;
-            enemy.IsAbleToMove = false;
-            int playerAttack = EquippedWeapon.Throw();
-            int enemyDefense = enemy.DefenseDice.Throw();
-            int result = playerAttack - enemyDefense;
-            if (result <= 0)
+            this.SoundEffects.PlaySoundEffect("Fight1");
+        }
+        else if (battleNoiseChance == 2)
+        {
+            this.SoundEffects.PlaySoundEffect("Fight2");
+        }
+        Console.ForegroundColor = ConsoleColor.White;
+        this.IsCurrentlyInABattle = true;
+        enemy.IsAbleToMove = false;
+        int playerAttack = EquippedWeapon.Throw();
+        int enemyDefense = enemy.DefenseDice.Throw();
+        int result = playerAttack - enemyDefense;
+        if (result <= 0)
+        {
+            result = 0;
+        }
+        else if (result > 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+        Console.SetCursorPosition(0, attackPositionOnHUD);
+        Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
+        enemy.HitPoints -= result;
+        if (enemy.HitPoints > 0)
+        {
+            Console.SetCursorPosition(0, defensePositionOnHUD);
+            int enemyAttack = enemy.AttackDice.Throw();
+            int playerDefense = EquippedArmor.Throw();
+            result = enemyAttack - playerDefense;
+            if (result < 0)
             {
+                Console.ForegroundColor = ConsoleColor.White;
+
                 result = 0;
             }
             else if (result > 0)
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-            }
-            Console.SetCursorPosition(0, attackPositionOnHUD);
-            Console.WriteLine($"You attacked the {enemy.Name} for {playerAttack}, the {enemy.Name} defended for {enemyDefense}. You dealt {result} damage!");
-            enemy.HitPoints -= result;
-            if (enemy.HitPoints > 0)
-            {
-                Console.SetCursorPosition(0, defensePositionOnHUD);
-                int enemyAttack = enemy.AttackDice.Throw();
-                int playerDefense = EquippedArmor.Throw();
-                result = enemyAttack - playerDefense;
-                if (result < 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.White;
-
-                    result = 0;
-                }
-                else if (result > 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-
-                }
-                Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
-                this.HitPoints -= result;
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Red;
 
             }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.SetCursorPosition(0, defensePositionOnHUD);
-                Console.WriteLine($"The {enemy.Name} is defeated!");
-                this.KillCount += 1;
-            }
+            Console.WriteLine($"The {enemy.Name} attacked you for {enemyAttack}, you defended for {playerDefense}. The {enemy.Name} dealt {result} damage!");
+            this.HitPoints -= result;
+            Console.ForegroundColor = ConsoleColor.White;
+
         }
-        IsCurrentlyWarping = false;
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(0, defensePositionOnHUD);
+            Console.WriteLine($"The {enemy.Name} is defeated!");
+            this.KillCount += 1;
+        }
     }
     public void MovementIsBlockedGoBack()
     {

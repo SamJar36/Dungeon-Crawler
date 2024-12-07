@@ -55,6 +55,14 @@ namespace Dungeon_Crawler
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\BarrierBreak.wav");
                 case "BarrierLocked":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\BarrierLocked.wav");
+                case "GreenWall":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\GreenWall.wav");
+                case "Fight1":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\Fight1.wav");
+                case "Fight2":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\Fight2.wav");
+                case "PushBlock":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\PushBlock.wav");
                 default:
                     throw new ArgumentException("Invalid sound specified");
             }

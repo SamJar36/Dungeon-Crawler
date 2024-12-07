@@ -33,6 +33,7 @@ namespace Dungeon_Crawler.Elements
                 this.PosX += (int)Math.Round(directionX);
                 this.PosY += (int)Math.Round(directionY);
 
+                Player.SoundEffects.PlaySoundEffect("PushBlock");
                 BlockCheckForCollision(LData);
                 this.Draw();
                 EraseLastPositionOfBlock();
