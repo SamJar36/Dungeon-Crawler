@@ -17,7 +17,6 @@ namespace Dungeon_Crawler.Elements
         {
             LData.IsSwitchingLevels = true;
             LData.SetCurrentLevel(LData.CurrentLevel + 1);
-            Player.Music.PlayMusic("Fanfare");
         }
     }
 }

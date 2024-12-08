@@ -45,9 +45,9 @@ namespace Dungeon_Crawler.Elements
         public void ActivateMimic()
         {
             Player.IsAbleToMove = false;
-
+            Player.SoundEffects.PlaySoundEffect("MimicStart");
             Console.SetCursorPosition(0, 3);
-            Console.WriteLine("The treasure chest was actually a MIMIC! You're trapped in it's jaws!");
+            Console.WriteLine("The treasure chest was actually a \x1b[31mMIMIC\x1b[0m! You're trapped in its jaws!");
             this.Symbol = 'M';
             this.Color = ConsoleColor.Red;
             Draw();

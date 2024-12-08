@@ -14,7 +14,7 @@ namespace Dungeon_Crawler
         private VorbisWaveReader vorbisWaveReader;
         private WaveOutEvent waveOutEvent;
         private bool IsMusicPlaying;
-        public void PlayMusic(string song)
+        public void PlayMusic(string song, bool IsSongLooping = true)
         {
             StopMusic();
             string musicFile = GetMusicFileToPlay(song);
@@ -24,7 +24,14 @@ namespace Dungeon_Crawler
             IsMusicPlaying = true;
             waveOutEvent.Init(vorbisWaveReader);
             waveOutEvent.Play();
-            waveOutEvent.PlaybackStopped += OnPlayBackStopped;
+            if (IsSongLooping )
+            {
+                waveOutEvent.PlaybackStopped += OnPlayBackStopped;
+            }
+            else
+            {
+                waveOutEvent.PlaybackStopped -= OnPlayBackStopped;
+            }
         }
         private void OnPlayBackStopped(object sender, StoppedEventArgs e)
         {
@@ -46,6 +53,8 @@ namespace Dungeon_Crawler
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Level.ogg");
                 case "Fanfare":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Fanfare.ogg");
+                case "GameOver":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Music\GameOver.ogg");
                 default:
                     throw new ArgumentException("Invalid song specified");
             }

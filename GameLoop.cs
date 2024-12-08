@@ -68,6 +68,7 @@ namespace Dungeon_Crawler
         }
         private void SwitchLevel()
         {
+            LData.Player.Music.PlayMusic("Fanfare", false);
             for (int i = LData.LevelElementList.Count - 1; i >= 0; i--)
             {
                 LData.LevelElementList.RemoveAt(i);
@@ -86,7 +87,6 @@ namespace Dungeon_Crawler
             Console.WriteLine("#                           #");
             Console.WriteLine("#############################");
             Thread.Sleep(6000);
-            LData.Player.Music.StopMusic();
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
             Console.Clear();
@@ -95,13 +95,14 @@ namespace Dungeon_Crawler
         }
         private void GameOver()
         {
+            LData.Player.Music.PlayMusic("GameOver", false);
             Console.Clear();
             Console.SetCursorPosition(0, 0);
             Console.WriteLine("##########################");
             Console.WriteLine("#                        #");
             Console.WriteLine("#       GAME OVER        #");
             Console.WriteLine("#                        #");
-            Console.WriteLine("#  Your HP went below 0  #");
+            Console.WriteLine("#   Your HP went to 0    #");
             Console.WriteLine("#                        #");
             Console.WriteLine("##########################");
             Thread.Sleep(2000);

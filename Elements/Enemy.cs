@@ -151,6 +151,23 @@ namespace Dungeon_Crawler.Elements
         }
         protected void Battle(Player player)
         {
+            Random random = new Random();
+            if (this is Mimic)
+            {
+                Player.SoundEffects.PlaySoundEffect("MimicAttack");
+            }
+            else
+            {
+                int battleNoiseChance = random.Next(1, 3);
+                if (battleNoiseChance == 1)
+                {
+                    Player.SoundEffects.PlaySoundEffect("Fight1");
+                }
+                else if (battleNoiseChance == 2)
+                {
+                    Player.SoundEffects.PlaySoundEffect("Fight2");
+                }
+            }
             Console.ForegroundColor = ConsoleColor.White;
             int enemyAttack = this.AttackDice.Throw();
             int playerDefense = player.EquippedArmor.Throw();
