@@ -33,6 +33,7 @@ public class TreasureChest : LevelElement
             }
             else if (Contents == "empty")
             {
+                Player.SoundEffects.PlaySoundEffect("EmptyChest");
                 text = "... nothing";
             }
             else if (Contents == "gold")

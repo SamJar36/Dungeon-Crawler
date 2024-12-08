@@ -13,32 +13,28 @@ namespace Dungeon_Crawler
     {
         private VorbisWaveReader vorbisWaveReader;
         private WaveOutEvent waveOutEvent;
-        private bool IsTheGodamnMusicStopping;
-        
-        public Music()
-        {
-            this.IsTheGodamnMusicStopping = false;
-        }
+        private bool IsMusicPlaying;
         public void PlayMusic(string song)
         {
             StopMusic();
-
             string musicFile = GetMusicFileToPlay(song);
 
             vorbisWaveReader = new VorbisWaveReader(musicFile);
             waveOutEvent = new WaveOutEvent();
+            IsMusicPlaying = true;
             waveOutEvent.Init(vorbisWaveReader);
             waveOutEvent.Play();
             waveOutEvent.PlaybackStopped += OnPlayBackStopped;
         }
-        private void OnPlayBackStopped(object sender, EventArgs e)
+        private void OnPlayBackStopped(object sender, StoppedEventArgs e)
         {
-            if (!IsTheGodamnMusicStopping)
+            if (IsMusicPlaying && waveOutEvent != null && vorbisWaveReader != null)
             {
-                vorbisWaveReader.Position = 0;
-                waveOutEvent = new WaveOutEvent();
-                waveOutEvent.Init(vorbisWaveReader);
-                waveOutEvent.Play();
+                if (vorbisWaveReader.Position == vorbisWaveReader.Length)
+                {
+                    vorbisWaveReader.Position = 0;
+                    waveOutEvent.Play();
+                }
             }
         }
 
@@ -57,7 +53,7 @@ namespace Dungeon_Crawler
 
         public void StopMusic()
         {
-            IsTheGodamnMusicStopping = true;
+            IsMusicPlaying = false;
             if (waveOutEvent != null)
             {
                 waveOutEvent.Stop();

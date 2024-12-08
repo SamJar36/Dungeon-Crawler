@@ -63,6 +63,8 @@ namespace Dungeon_Crawler
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\Fight2.wav");
                 case "PushBlock":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\PushBlock.wav");
+                case "EmptyChest":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Sound Effects\EmptyChest.wav");
                 default:
                     throw new ArgumentException("Invalid sound specified");
             }
