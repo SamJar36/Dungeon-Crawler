@@ -1,5 +1,6 @@
 ﻿using Dungeon_Crawler;
 using Dungeon_Crawler.Elements;
+using Newtonsoft.Json;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
@@ -49,7 +50,7 @@ public class LevelData
                     {
                         if (CurrentLevel == 1)
                         {
-                            Player player = new Player(mapX, mapY, this, EQ);
+                            Player player = new Player(mapX, mapY, this);
                             this.Player = player;
                             
                         }
@@ -58,7 +59,7 @@ public class LevelData
                             if (Player == null)
                             {
                                 // in case I start on a different level for debugging or designing purposes
-                                Player player = new Player(mapX, mapY, this, EQ);
+                                Player player = new Player(mapX, mapY, this);
                                 this.Player = player;
                             }
                             else
@@ -256,6 +257,45 @@ public class LevelData
                 }
             }
         }
+    }
+    public void Save()
+    {
+        LevelElementJsonObject jsonObject = new LevelElementJsonObject(levelElementList);
+
+        string json1 = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
+        string json3 = JsonConvert.SerializeObject(this.Player, Formatting.Indented);
+        File.WriteAllText("ldata-elements.txt", json1);
+        File.WriteAllText("ldata-player.txt", json3);
+    }
+    public void LoadSavedMap(Equipment EQ)
+    {
+        string json1 = File.ReadAllText("ldata-elements.txt");
+        string json3 = File.ReadAllText("ldata-player.txt");
+
+        LevelElementJsonObject jsonObject = JsonConvert.DeserializeObject<LevelElementJsonObject>(json1);
+
+        Player player = JsonConvert.DeserializeObject<Player>(json3);
+
+        player.LData = this;
+        this.Player = player;
+        Player.DrawPlayer();
+        var jsonList = jsonObject.CombineLists();
+        foreach (var element in jsonList)
+        {
+            element.Player = player;
+            element.LData = this;
+            element.Draw();
+            levelElementList.Add(element);
+        }
+
+        //foreach (var element in levelElementList)
+        //{
+        //    element.Draw();
+        //}
+        //foreach (var enemy in enemyList)
+        //{
+        //    enemy.Update();
+        //}
     }
     private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
     {

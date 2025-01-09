@@ -8,9 +8,9 @@ public abstract class LevelElement
     public int PosY { get; set; }
     public char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
-    protected Player Player { get; set; }
+    public Player Player { get; set; }
     protected bool IsDrawing { get; set; }
-    protected LevelData LData { get; set; }
+    public LevelData LData { get; set; }
     public int DrawingDistance { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player, int drawingDistance = 5)
     {

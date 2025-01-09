@@ -11,6 +11,7 @@ namespace Dungeon_Crawler.Elements
     {
         private int DirectionX { get; set; }
         private int DirectionY { get; set; }
+        
         public ArrowTile(int x, int y, Player player, int character) : base(x, y, '?', ConsoleColor.Green, player)
         {
             if (character == '↑')

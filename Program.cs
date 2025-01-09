@@ -63,7 +63,8 @@ public class Program
 
         //Map
         LevelData levelData = new LevelData();
-        levelData.LoadMap(EQ);
+        //levelData.LoadMap(EQ);
+        levelData.LoadSavedMap(EQ);
 
         //HUD
         HUD hud = new HUD(

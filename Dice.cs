@@ -24,6 +24,10 @@ namespace Dungeon_Crawler
         {
             this.DiceName = name;
         }
+        public Dice()
+        {
+
+        }
         public int Throw()
         {
             int total = 0;

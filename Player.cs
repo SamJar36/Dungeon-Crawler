@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Net.NetworkInformation;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
+using Newtonsoft.Json;
 
 namespace DungeonCrawler;
 
@@ -21,9 +22,10 @@ public class Player
     public bool IsCurrentlyWarping { get; set; }
     public SoundEffects SoundEffects { get; set; }
     public Music Music { get; set; }
-    private char Symbol { get; set; }
+    public char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
-    private LevelData LData { get; set; }
+    [JsonIgnore]
+    public LevelData LData { get; set; }
     public int HitPoints { get; set; }
     public int Steps { get; set; }
     public int KillCount { get; set; }
@@ -36,7 +38,7 @@ public class Player
     private int attackPositionOnHUD = 3;
     private int defensePositionOnHUD = 4;
 
-    public Player(int x, int y, LevelData levelData, Equipment EQ)
+    public Player(int x, int y, LevelData levelData)
     {
         this.PosX = x;
         this.PosY = y;
@@ -60,6 +62,8 @@ public class Player
         this.HealthPotionCount = 0;
         this.MagicalKey = 0;
 
+        Equipment EQ = new Equipment();
+
         this.EquippedWeapon = EQ.WoodenSword;
         //this.EquippedWeapon = EQ.DebuggingSword;
         this.EquippedArmor = EQ.Tunic;
@@ -68,6 +72,13 @@ public class Player
         this.Music = new Music();
 
         DrawPlayer();
+    }
+    public Player()
+    {
+        this.Color = ConsoleColor.White;
+        this.Symbol = '@';
+        this.SoundEffects = new SoundEffects();
+        this.Music = new Music();
     }
     public void Update()
     {
@@ -101,6 +112,10 @@ public class Player
         EraseBattleText();
         if (IsAbleToMove)
         {
+            if (keyPressed.Key == ConsoleKey.M)
+            {
+                LData.Save();
+            }
             if (keyPressed.Key == ConsoleKey.UpArrow)
             {
                 this.PosY -= 1;
