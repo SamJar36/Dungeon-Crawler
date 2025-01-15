@@ -11,7 +11,7 @@ public abstract class LevelElement
     public ConsoleColor Color { get; set; }
     [JsonIgnore] 
     public Player Player { get; set; }
-    protected bool IsDrawing { get; set; }
+    public bool IsDrawing { get; set; }
     public LevelData LData { get; set; }
     public int DrawingDistance { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player, int drawingDistance = 5)

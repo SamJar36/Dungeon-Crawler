@@ -9,8 +9,8 @@ namespace Dungeon_Crawler.Elements
 {
     public class HeartPiece : LevelElement
     {
-        private int HealAmount { get; set; }
-        private string Name { get; set; }
+        public int HealAmount { get; set; }
+        public string Name { get; set; }
         public HeartPiece(int x, int y, Player player) 
             : base(x, y,
                   '♥', 

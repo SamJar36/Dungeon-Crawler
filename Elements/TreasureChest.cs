@@ -1,13 +1,16 @@
 ﻿using DungeonCrawler;
+using Newtonsoft.Json;
 
 namespace Dungeon_Crawler.Elements;
 
 public class TreasureChest : LevelElement
 {
-    private string Contents { get; set; }
+    public string Contents { get; set; }
     private LevelData LData { get; set; }
-    private Player Player { get; set; }
-    private Equipment EQ { get; set; }
+    [JsonIgnore]
+    public Player Player { get; set; }
+    [JsonIgnore]
+    public Equipment EQ { get; set; }
     public TreasureChest(int x, int y, Player player, string contents, LevelData levelData, Equipment eQ) : base(x, y, 'C', ConsoleColor.Cyan, player)
     {
         this.Contents = contents;

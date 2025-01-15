@@ -188,7 +188,10 @@ public class Player
                 }
                 else if (element is TreasureChest treasure)
                 {
-                    treasure.OpenTreasureChest();
+                    if (treasure.IsDrawing)
+                    {
+                        treasure.OpenTreasureChest();
+                    }
                 }
                 else if (element is Gold gold)
                 {

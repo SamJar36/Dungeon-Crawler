@@ -11,10 +11,10 @@ namespace Dungeon_Crawler.Elements
 {
     public class Warp : LevelElement
     {
-        private string FilePath { get; set; }
-        private int WarpExitX { get; set; }
-        private int WarpExitY { get; set; }
-        private int WarpEntryCharacter { get; set; }
+        public string FilePath { get; set; }
+        public int WarpExitX { get; set; }
+        public int WarpExitY { get; set; }
+        public int WarpEntryCharacter { get; set; }
 
         public Warp(int x, int y, Player player, string filePath, int warpEntryCharacter) : base(x, y, 'W', ConsoleColor.Green, player)
         {

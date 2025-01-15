@@ -1,7 +1,7 @@
 {
-  "PosX": 3,
+  "PosX": 2,
   "PosY": 18,
-  "LastPosX": 3,
+  "LastPosX": 2,
   "LastPosY": 18,
   "IsAbleToMove": true,
   "SoundEffects": {},
@@ -9,6 +9,7 @@
   "Symbol": "@",
   "Color": 15,
   "HitPoints": 100,
+  "Steps": 3,
   "EquippedWeapon": {
     "DiceName": "Wooden Sword",
     "DiceNumber": 1,
