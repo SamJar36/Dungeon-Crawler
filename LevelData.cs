@@ -3,6 +3,8 @@ using Dungeon_Crawler.Elements;
 using Newtonsoft.Json;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace DungeonCrawler;
 
@@ -261,9 +263,13 @@ public class LevelData
     public void Save()
     {
         LevelElementJsonObject jsonObject = new LevelElementJsonObject(levelElementList);
-
-        string json1 = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
-        string json3 = JsonConvert.SerializeObject(this.Player, Formatting.Indented);
+        var settings = new JsonSerializerSettings
+        {
+            DefaultValueHandling = DefaultValueHandling.Ignore,
+            Formatting = Formatting.Indented
+        };
+        string json1 = JsonConvert.SerializeObject(jsonObject, settings);
+        string json3 = JsonConvert.SerializeObject(this.Player, settings);
         File.WriteAllText("ldata-elements.txt", json1);
         File.WriteAllText("ldata-player.txt", json3);
     }

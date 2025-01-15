@@ -11,13 +11,13 @@ namespace Dungeon_Crawler.Elements
     {
         private Random random = new Random();
 
-        public BossSkeletonLeader(int x, int y, LevelData levelData, Player player) 
+        public BossSkeletonLeader(int x, int y, LevelData LData, Player player) 
             : base(x, y, 
                   25, 
                   'B', 
                   "Skeleton Leader",
-                  ConsoleColor.Red, 
-                  levelData, 
+                  ConsoleColor.Red,
+                  LData,
                   player,
                   new int[] { 2, 6, 5},
                   new int[] { 1, 6, 1},

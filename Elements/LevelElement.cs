@@ -1,4 +1,5 @@
 ﻿using DungeonCrawler;
+using Newtonsoft.Json;
 
 namespace Dungeon_Crawler.Elements;
 
@@ -8,6 +9,7 @@ public abstract class LevelElement
     public int PosY { get; set; }
     public char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
+    [JsonIgnore] 
     public Player Player { get; set; }
     protected bool IsDrawing { get; set; }
     public LevelData LData { get; set; }

@@ -1,24 +1,14 @@
 {
-  "PosX": 11,
-  "PosY": 20,
-  "LastPosX": 11,
-  "LastPosY": 20,
+  "PosX": 3,
+  "PosY": 18,
+  "LastPosX": 3,
+  "LastPosY": 18,
   "IsAbleToMove": true,
-  "IsCurrentlyInABattle": false,
-  "IsArrowTileMoving": false,
-  "IsTouchingSolidObject": false,
-  "IsCurrentlyWarping": false,
   "SoundEffects": {},
   "Music": {},
   "Symbol": "@",
   "Color": 15,
-  "HitPoints": 82,
-  "Steps": 20,
-  "KillCount": 2,
-  "GoldCount": 4,
-  "KeyCount": 1,
-  "MagicalKey": 0,
-  "HealthPotionCount": 0,
+  "HitPoints": 100,
   "EquippedWeapon": {
     "DiceName": "Wooden Sword",
     "DiceNumber": 1,
@@ -28,7 +18,6 @@
   "EquippedArmor": {
     "DiceName": "Tunic",
     "DiceNumber": 1,
-    "DiceSides": 6,
-    "DiceModifier": 0
+    "DiceSides": 6
   }
 }
