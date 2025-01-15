@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    internal class GreenWall : LevelElement
+    public class GreenWall : LevelElement
     {
         public GreenWall(int x, int y, Player player) : base(x, y, '#', ConsoleColor.Green, player)
         {

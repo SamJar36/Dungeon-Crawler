@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    internal class ArrowTile : LevelElement
+    public class ArrowTile : LevelElement
     {
         private int DirectionX { get; set; }
         private int DirectionY { get; set; }
