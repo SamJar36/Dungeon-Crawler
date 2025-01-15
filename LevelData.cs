@@ -287,15 +287,6 @@ public class LevelData
             element.Draw();
             levelElementList.Add(element);
         }
-
-        //foreach (var element in levelElementList)
-        //{
-        //    element.Draw();
-        //}
-        //foreach (var enemy in enemyList)
-        //{
-        //    enemy.Update();
-        //}
     }
     private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
     {

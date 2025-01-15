@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler.Elements
 {
-    internal class PushableBlock : LevelElement
+    public class PushableBlock : LevelElement
     {
         private int LastPosX { get; set; }
         private int LastPosY { get; set; }
