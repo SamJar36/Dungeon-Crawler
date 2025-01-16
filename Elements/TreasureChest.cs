@@ -6,16 +6,10 @@ namespace Dungeon_Crawler.Elements;
 public class TreasureChest : LevelElement
 {
     public string Contents { get; set; }
-    private LevelData LData { get; set; }
-    [JsonIgnore]
-    public Player Player { get; set; }
-    [JsonIgnore]
     public Equipment EQ { get; set; }
-    public TreasureChest(int x, int y, Player player, string contents, LevelData levelData, Equipment eQ) : base(x, y, 'C', ConsoleColor.Cyan, player)
+    public TreasureChest(int x, int y, Player player, string contents, Equipment eQ) : base(x, y, 'C', ConsoleColor.Cyan, player)
     {
         this.Contents = contents;
-        this.LData = levelData;
-        this.Player = player;
         this.EQ = eQ;
     }
     public void OpenTreasureChest()
@@ -25,7 +19,7 @@ public class TreasureChest : LevelElement
             string text = "";
             if (Contents == "key")
             {
-                Player.SoundEffects.PlaySoundEffect("Key");
+                this.Player.SoundEffects.PlaySoundEffect("Key");
                 this.Player.KeyCount += 1;
                 text = "a Small Key!";
             }

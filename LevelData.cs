@@ -263,7 +263,6 @@ public class LevelData
         LevelElementJsonObject jsonObject = new LevelElementJsonObject(levelElementList);
         var settings = new JsonSerializerSettings
         {
-            DefaultValueHandling = DefaultValueHandling.Include,
             Formatting = Formatting.Indented,
         };
         string json1 = JsonConvert.SerializeObject(jsonObject, settings);
@@ -288,13 +287,13 @@ public class LevelData
         {
             element.Player = player;
             element.LData = this;
-            element.Draw();
+            element.CheckIfPreviouslyDrawn();
             levelElementList.Add(element);
         }
     }
     private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
     {
-        TreasureChest chest = new TreasureChest(x, y, this.Player, s, this, EQ);
+        TreasureChest chest = new TreasureChest(x, y, this.Player, s, EQ);
         chest.Draw();
         levelElementList.Add(chest);
     }

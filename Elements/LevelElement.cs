@@ -12,6 +12,7 @@ public abstract class LevelElement
     [JsonIgnore] 
     public Player Player { get; set; }
     public bool IsDrawing { get; set; }
+    public bool HasBeenDrawn { get; set; }
     public LevelData LData { get; set; }
     public int DrawingDistance { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player, int drawingDistance = 5)
@@ -23,6 +24,7 @@ public abstract class LevelElement
         this.Player = player;
         this.IsDrawing = true;
         this.DrawingDistance = drawingDistance;
+        this.HasBeenDrawn = false;
     }
     public void Draw()
     {
@@ -35,8 +37,20 @@ public abstract class LevelElement
                 Console.SetCursorPosition(this.PosX, this.PosY);
                 Console.Write(Symbol);
                 Console.ResetColor();
+                this.HasBeenDrawn = true;
             }
         }      
+    }
+    public void CheckIfPreviouslyDrawn()
+    {
+        if (this.HasBeenDrawn)
+        {
+            Console.ForegroundColor = Color;
+            Console.SetCursorPosition(this.PosX, this.PosY);
+            Console.Write(Symbol);
+            Console.ResetColor();
+            this.HasBeenDrawn = false;
+        }
     }
     public double CalculateEuclideanDistance(int x, int y, int playerX, int playerY)
     {
