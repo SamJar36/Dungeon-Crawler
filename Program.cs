@@ -59,6 +59,8 @@ public class Program
         MainMenu mainMenu = new MainMenu();
         bool menuLoop = true;
         bool IsPickingNewGame = true;
+        Music music = new Music();
+        music.PlayMusic("TitleScreen");
         while (menuLoop)
         {
             mainMenu.Draw();
@@ -93,6 +95,7 @@ public class Program
             }
             Console.Clear();
         }
+        music.StopMusic();
         //Map
         if (IsPickingNewGame)
         {

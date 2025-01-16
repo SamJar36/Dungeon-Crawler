@@ -55,6 +55,8 @@ namespace Dungeon_Crawler
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\Fanfare.ogg");
                 case "GameOver":
                     return Path.Combine(Directory.GetCurrentDirectory(), @"Music\GameOver.ogg");
+                case "TitleScreen":
+                    return Path.Combine(Directory.GetCurrentDirectory(), @"Music\TitleScreen.ogg");
                 default:
                     throw new ArgumentException("Invalid song specified");
             }
