@@ -38,7 +38,8 @@ namespace Dungeon_Crawler
                     LData.Player.KeyCount,
                     LData.Player.HealthPotionCount,
                     LData.Player.EquippedWeapon,
-                    LData.Player.EquippedArmor);
+                    LData.Player.EquippedArmor,
+                    LData.CurrentLevel);
                 LData.Player.Update();
                 foreach (var enemy in LData.EnemyList)
                 {

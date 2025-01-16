@@ -19,7 +19,7 @@ public class LevelData
 
     public LevelData()
     {
-        this.CurrentLevel = 3;
+        this.CurrentLevel = 1;
         this.IsSwitchingLevels = false;
     }
     public void SetCurrentLevel(int level)

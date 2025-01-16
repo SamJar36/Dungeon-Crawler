@@ -39,7 +39,7 @@ namespace Dungeon_Crawler
             this.ColorLevel = ConsoleColor.Green;
             this.ColorSeparator = ConsoleColor.White;
         }
-        public void Draw(int HP, int steps, int killCount, int goldCount, int keyCount, int healthPotionCount, Dice weapon, Dice armor)
+        public void Draw(int HP, int steps, int killCount, int goldCount, int keyCount, int healthPotionCount, Dice weapon, Dice armor, int level)
         {
             this.HitPoints = HP;
             //this.Steps = steps;
@@ -49,6 +49,7 @@ namespace Dungeon_Crawler
             this.HealthPotionCount = healthPotionCount;
             this.Weapon = $"{weapon.DiceName}({weapon.DiceNumber}d{weapon.DiceSides}+{weapon.DiceModifier})";
             this.Armor = $"{armor.DiceName}({armor.DiceNumber}d{armor.DiceSides}+{armor.DiceModifier})";
+            this.Level = level;
 
             Console.ForegroundColor = ColorLevel;
             Console.SetCursorPosition(0, 0);
