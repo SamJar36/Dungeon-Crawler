@@ -6,6 +6,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -14,6 +15,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -22,6 +24,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -30,6 +33,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -38,6 +42,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -46,6 +51,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -54,6 +60,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -62,6 +69,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -70,6 +78,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -78,6 +87,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -86,6 +96,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -94,6 +105,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -102,6 +114,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -110,6 +123,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -118,6 +132,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -126,6 +141,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -134,6 +150,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -142,6 +159,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -150,6 +168,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -158,6 +177,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -166,6 +186,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -174,6 +195,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -182,6 +204,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -190,6 +213,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -198,6 +222,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -206,6 +231,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -214,6 +240,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -222,6 +249,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -230,6 +258,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -238,6 +267,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -246,6 +276,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -254,6 +285,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -262,6 +294,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -270,6 +303,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -278,6 +312,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -286,6 +321,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -294,6 +330,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -302,6 +339,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -310,6 +348,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -318,6 +357,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -326,6 +366,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -334,6 +375,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -342,6 +384,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -350,6 +393,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -358,6 +402,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -366,6 +411,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -374,6 +420,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -382,6 +429,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -390,6 +438,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -398,6 +447,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -406,6 +456,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -414,6 +465,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -422,6 +474,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -430,6 +483,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -438,6 +492,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -446,6 +501,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -454,6 +510,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -462,6 +519,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -470,6 +528,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -478,6 +537,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -486,6 +546,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -494,6 +555,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -502,6 +564,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -510,6 +573,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -518,6 +582,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -526,6 +591,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -534,6 +600,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -542,6 +609,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -550,6 +618,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -558,6 +627,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -566,6 +636,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -574,6 +645,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -582,6 +654,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -590,6 +663,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -598,6 +672,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -606,6 +681,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -614,6 +690,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -622,6 +699,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -630,6 +708,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -638,6 +717,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -646,6 +726,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -654,6 +735,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -662,6 +744,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -670,6 +753,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -678,6 +762,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -686,6 +771,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -694,6 +780,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -702,6 +789,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -710,6 +798,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -718,6 +807,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -726,6 +816,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -734,6 +825,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -742,6 +834,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -750,6 +843,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -758,6 +852,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -766,6 +861,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -774,6 +870,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -782,6 +879,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -790,6 +888,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -798,6 +897,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -806,6 +906,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -814,6 +915,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -822,6 +924,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -830,6 +933,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -838,6 +942,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -846,6 +951,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -854,6 +960,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -862,6 +969,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -870,6 +978,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -878,6 +987,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -886,6 +996,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -894,6 +1005,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -902,6 +1014,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -910,6 +1023,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -918,6 +1032,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -926,6 +1041,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -934,6 +1050,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -942,6 +1059,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -950,6 +1068,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -958,6 +1077,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -966,6 +1086,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -974,6 +1095,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -982,6 +1104,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -990,6 +1113,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -998,6 +1122,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1006,6 +1131,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1014,13 +1140,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 12,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1029,6 +1158,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1037,6 +1167,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1045,6 +1176,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1053,6 +1185,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1061,6 +1194,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1069,6 +1203,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1077,6 +1212,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1085,6 +1221,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1093,6 +1230,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1101,6 +1239,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1109,6 +1248,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1117,6 +1257,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1125,6 +1266,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1133,6 +1275,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1141,6 +1284,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1149,6 +1293,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1157,6 +1302,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1165,6 +1311,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1173,6 +1320,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1181,6 +1329,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1189,6 +1338,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1197,6 +1347,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1205,6 +1356,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1213,6 +1365,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1221,6 +1374,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1229,6 +1383,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1237,6 +1392,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1245,6 +1401,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1253,6 +1410,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1261,6 +1419,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1269,6 +1428,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1277,6 +1437,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1285,6 +1446,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1293,6 +1455,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1301,13 +1464,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 13,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1316,6 +1482,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1324,6 +1491,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1332,6 +1500,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1340,6 +1509,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1348,6 +1518,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1356,6 +1527,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1364,6 +1536,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1372,6 +1545,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1380,6 +1554,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1388,6 +1563,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1396,6 +1572,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1404,6 +1581,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1412,6 +1590,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1420,6 +1599,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1428,6 +1608,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1436,6 +1617,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1444,6 +1626,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1452,6 +1635,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1460,6 +1644,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1468,6 +1653,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1476,6 +1662,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1484,6 +1671,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1492,6 +1680,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1500,6 +1689,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1508,6 +1698,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1516,6 +1707,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1524,6 +1716,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1532,6 +1725,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1540,6 +1734,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1548,6 +1743,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1556,6 +1752,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1564,6 +1761,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1572,6 +1770,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1580,6 +1779,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1588,6 +1788,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1596,6 +1797,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1604,13 +1806,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 14,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1619,6 +1824,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1627,6 +1833,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1635,6 +1842,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1643,6 +1851,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1651,6 +1860,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1659,6 +1869,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1667,6 +1878,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1675,6 +1887,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1683,6 +1896,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1691,6 +1905,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1699,6 +1914,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1707,6 +1923,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1715,6 +1932,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1723,6 +1941,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1731,6 +1950,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1739,6 +1959,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1747,6 +1968,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1755,6 +1977,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1763,6 +1986,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1771,6 +1995,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1779,6 +2004,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1787,6 +2013,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1795,6 +2022,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1803,6 +2031,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1811,6 +2040,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1819,13 +2049,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 15,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1834,6 +2067,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1842,6 +2076,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1850,6 +2085,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1858,6 +2094,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1866,6 +2103,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1874,6 +2112,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1882,6 +2121,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1890,6 +2130,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1898,6 +2139,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1906,6 +2148,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1914,6 +2157,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1922,6 +2166,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1930,6 +2175,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1938,6 +2184,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1946,6 +2193,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1954,6 +2202,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1962,6 +2211,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1970,13 +2220,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 16,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1985,6 +2238,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -1993,6 +2247,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2001,6 +2256,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2009,6 +2265,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2017,6 +2274,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2025,6 +2283,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2033,6 +2292,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2041,6 +2301,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2049,6 +2310,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2057,6 +2319,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2065,6 +2328,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2073,6 +2337,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2081,6 +2346,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2089,6 +2355,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2097,6 +2364,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2105,6 +2373,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2113,6 +2382,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2121,6 +2391,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2129,6 +2400,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2137,6 +2409,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2145,6 +2418,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2153,6 +2427,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2161,6 +2436,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2169,6 +2445,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2177,6 +2454,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2185,6 +2463,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2193,6 +2472,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2201,6 +2481,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2209,6 +2490,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2217,6 +2499,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2225,6 +2508,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2233,13 +2517,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 17,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2248,6 +2535,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2256,6 +2544,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2264,6 +2553,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2272,6 +2562,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2280,6 +2571,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2288,6 +2580,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2296,6 +2589,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2304,6 +2598,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2312,6 +2607,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2320,6 +2616,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2328,6 +2625,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2336,6 +2634,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2344,6 +2643,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2352,6 +2652,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2360,6 +2661,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2368,6 +2670,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2376,6 +2679,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2384,6 +2688,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2392,13 +2697,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 18,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2407,6 +2715,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2415,6 +2724,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2423,6 +2733,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2431,6 +2742,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2439,6 +2751,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2447,6 +2760,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2455,6 +2769,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2463,6 +2778,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2471,6 +2787,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2479,6 +2796,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2487,6 +2805,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2495,6 +2814,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2503,6 +2823,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2511,6 +2832,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2519,6 +2841,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2527,6 +2850,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2535,6 +2859,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2543,6 +2868,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2551,6 +2877,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2559,6 +2886,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2567,6 +2895,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2575,6 +2904,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2583,6 +2913,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2591,6 +2922,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2599,6 +2931,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2607,6 +2940,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2615,6 +2949,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2623,6 +2958,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2631,6 +2967,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2639,6 +2976,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2647,6 +2985,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2655,6 +2994,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2663,6 +3003,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2671,6 +3012,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2679,6 +3021,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2687,6 +3030,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2695,13 +3039,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 19,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2710,6 +3057,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2718,6 +3066,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2726,6 +3075,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2734,6 +3084,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2742,6 +3093,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2750,6 +3102,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2758,6 +3111,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2766,6 +3120,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2774,6 +3129,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2782,6 +3138,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2790,6 +3147,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2798,6 +3156,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2806,6 +3165,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2814,6 +3174,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2822,6 +3183,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2830,6 +3192,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2838,6 +3201,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2846,6 +3210,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2854,6 +3219,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2862,6 +3228,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2870,6 +3237,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2878,6 +3246,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2886,6 +3255,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2894,6 +3264,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2902,6 +3273,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2910,6 +3282,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2918,6 +3291,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2926,6 +3300,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2934,6 +3309,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2942,6 +3318,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2950,6 +3327,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2958,6 +3336,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2966,6 +3345,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2974,6 +3354,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2982,6 +3363,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2990,6 +3372,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -2998,6 +3381,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3006,6 +3390,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3014,6 +3399,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3022,6 +3408,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3030,6 +3417,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3038,6 +3426,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3046,6 +3435,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3054,6 +3444,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3062,6 +3453,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3070,6 +3462,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3078,6 +3471,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3086,6 +3480,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3094,6 +3489,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3102,6 +3498,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3110,6 +3507,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3118,6 +3516,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3126,6 +3525,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3134,6 +3534,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3142,6 +3543,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3150,6 +3552,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3158,6 +3561,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3166,6 +3570,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3174,6 +3579,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3182,6 +3588,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3190,13 +3597,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 21,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3205,6 +3615,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3213,6 +3624,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3221,6 +3633,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3229,6 +3642,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3237,6 +3651,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3245,6 +3660,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3253,6 +3669,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3261,6 +3678,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3269,6 +3687,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3277,6 +3696,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3285,6 +3705,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3293,6 +3714,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3301,6 +3723,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3309,6 +3732,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3317,6 +3741,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3325,6 +3750,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3333,6 +3759,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3341,6 +3768,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3349,6 +3777,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3357,6 +3786,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3365,6 +3795,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3373,6 +3804,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3381,6 +3813,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3389,6 +3822,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3397,6 +3831,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3405,6 +3840,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3413,6 +3849,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3421,6 +3858,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3429,13 +3867,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 22,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3444,6 +3885,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3452,6 +3894,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3460,6 +3903,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3468,6 +3912,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3476,6 +3921,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3484,6 +3930,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3492,6 +3939,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3500,6 +3948,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3508,6 +3957,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3516,6 +3966,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3524,6 +3975,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3532,6 +3984,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3540,6 +3993,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3548,6 +4002,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3556,6 +4011,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3564,6 +4020,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3572,6 +4029,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3580,6 +4038,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3588,6 +4047,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3596,6 +4056,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3604,6 +4065,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3612,6 +4074,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3620,6 +4083,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3628,6 +4092,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3636,6 +4101,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3644,6 +4110,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3652,6 +4119,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3660,6 +4128,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3668,6 +4137,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3676,6 +4146,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3684,6 +4155,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3692,6 +4164,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3700,6 +4173,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3708,6 +4182,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3716,6 +4191,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3724,6 +4200,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3732,6 +4209,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3740,6 +4218,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3748,6 +4227,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3756,6 +4236,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3764,13 +4245,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 23,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3779,6 +4263,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3787,6 +4272,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3795,6 +4281,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3803,6 +4290,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3811,6 +4299,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3819,6 +4308,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3827,6 +4317,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3835,6 +4326,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3843,6 +4335,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3851,6 +4344,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3859,6 +4353,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3867,6 +4362,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3875,6 +4371,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3883,13 +4380,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 24,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3898,6 +4398,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3906,6 +4407,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3914,6 +4416,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3922,6 +4425,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3930,6 +4434,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3938,6 +4443,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3946,6 +4452,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3954,6 +4461,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3962,6 +4470,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3970,6 +4479,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3978,6 +4488,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3986,6 +4497,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -3994,6 +4506,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4002,6 +4515,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4010,6 +4524,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4018,6 +4533,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4026,6 +4542,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4034,6 +4551,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4042,6 +4560,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4050,6 +4569,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4058,6 +4578,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4066,6 +4587,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4074,6 +4596,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4082,6 +4605,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4090,6 +4614,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4098,6 +4623,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4106,6 +4632,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4114,6 +4641,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4122,6 +4650,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4130,6 +4659,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4138,6 +4668,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4146,6 +4677,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4154,6 +4686,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4162,13 +4695,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
+      "PosX": 0,
       "PosY": 25,
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4177,6 +4713,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4185,6 +4722,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4193,6 +4731,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4201,6 +4740,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4209,6 +4749,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4217,6 +4758,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4225,6 +4767,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4233,6 +4776,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4241,6 +4785,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4249,6 +4794,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4257,6 +4803,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4265,6 +4812,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4273,6 +4821,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4281,6 +4830,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4289,6 +4839,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4297,6 +4848,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4305,6 +4857,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4313,6 +4866,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4321,6 +4875,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4329,6 +4884,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4337,6 +4893,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4345,6 +4902,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4353,6 +4911,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4361,6 +4920,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4369,6 +4929,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4377,6 +4938,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4385,6 +4947,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4393,6 +4956,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4401,6 +4965,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4409,6 +4974,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4417,6 +4983,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4425,6 +4992,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4433,6 +5001,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4441,6 +5010,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4449,6 +5019,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4457,6 +5028,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4465,6 +5037,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4473,6 +5046,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4481,6 +5055,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4489,6 +5064,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4497,6 +5073,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4505,6 +5082,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4513,6 +5091,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4521,6 +5100,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4529,6 +5109,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4537,6 +5118,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4545,6 +5127,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4553,6 +5136,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4561,6 +5145,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4571,6 +5156,7 @@
       "Symbol": "?",
       "Color": 15,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4579,6 +5165,7 @@
       "Symbol": "?",
       "Color": 15,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4587,6 +5174,7 @@
       "Symbol": "?",
       "Color": 15,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4597,6 +5185,7 @@
       "Symbol": "→",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4605,6 +5194,7 @@
       "Symbol": "↓",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4613,6 +5203,7 @@
       "Symbol": "→",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4621,6 +5212,7 @@
       "Symbol": "→",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4629,6 +5221,7 @@
       "Symbol": "↑",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4637,6 +5230,7 @@
       "Symbol": "→",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4645,6 +5239,7 @@
       "Symbol": "↑",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4655,6 +5250,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4663,6 +5259,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4671,6 +5268,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4679,6 +5277,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4687,6 +5286,7 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4695,14 +5295,16 @@
       "Symbol": "#",
       "Color": 8,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "PosX": 8,
       "PosY": 19,
-      "Symbol": "#",
+      "Symbol": " ",
       "Color": 8,
-      "IsDrawing": true,
+      "IsDrawing": false,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4713,6 +5315,7 @@
       "Symbol": "F",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4724,6 +5327,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4732,6 +5336,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4740,6 +5345,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4748,6 +5354,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4756,6 +5363,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4764,6 +5372,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4772,6 +5381,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4780,6 +5390,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4788,6 +5399,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4796,6 +5408,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4804,6 +5417,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4812,6 +5426,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4820,6 +5435,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4828,6 +5444,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4836,6 +5453,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4844,6 +5462,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4852,6 +5471,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4860,6 +5480,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4868,6 +5489,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4876,6 +5498,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -4884,6 +5507,7 @@
       "Symbol": "#",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -4895,6 +5519,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4903,6 +5528,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4911,6 +5537,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4919,6 +5546,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4927,6 +5555,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4935,6 +5564,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4943,6 +5573,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4951,6 +5582,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4959,6 +5591,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4967,6 +5600,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4975,6 +5609,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4983,6 +5618,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4991,6 +5627,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -4999,6 +5636,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     },
     {
@@ -5007,6 +5645,7 @@
       "Symbol": "#",
       "Color": 7,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 1
     }
   ],
@@ -5018,6 +5657,7 @@
       "Symbol": "X",
       "Color": 5,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
@@ -5029,6 +5669,7 @@
       "Symbol": "#",
       "Color": 5,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5037,6 +5678,7 @@
       "Symbol": "#",
       "Color": 5,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5045,22 +5687,26 @@
       "Symbol": "#",
       "Color": 5,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
   "ShopKeepers": [
     {
+      "IsShopOpen": false,
       "PosX": 19,
       "PosY": 14,
       "Symbol": "@",
       "Color": 14,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],
   "TreasureChests": [
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 57,
       "PosY": 7,
       "Symbol": "C",
@@ -5070,6 +5716,7 @@
     },
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 60,
       "PosY": 7,
       "Symbol": "C",
@@ -5079,6 +5726,7 @@
     },
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 78,
       "PosY": 12,
       "Symbol": "C",
@@ -5088,6 +5736,7 @@
     },
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 68,
       "PosY": 13,
       "Symbol": "C",
@@ -5097,6 +5746,7 @@
     },
     {
       "Contents": "key",
+      "LData": null,
       "PosX": 86,
       "PosY": 17,
       "Symbol": "C",
@@ -5105,24 +5755,18 @@
       "DrawingDistance": 5
     },
     {
-      "Contents": "empty",
-      "PosX": 1,
-      "PosY": 18,
-      "Symbol": " ",
-      "Color": 11,
-      "DrawingDistance": 5
-    },
-    {
       "Contents": "key",
+      "LData": null,
       "PosX": 11,
       "PosY": 21,
-      "Symbol": "C",
+      "Symbol": " ",
       "Color": 11,
-      "IsDrawing": true,
+      "IsDrawing": false,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 36,
       "PosY": 21,
       "Symbol": "C",
@@ -5132,6 +5776,7 @@
     },
     {
       "Contents": "empty",
+      "LData": null,
       "PosX": 24,
       "PosY": 23,
       "Symbol": "C",
@@ -5143,12 +5788,15 @@
   "Warps": [
     {
       "FilePath": "C:\\Users\\saman\\source\\repos\\Dungeon-Crawler\\Levels\\Level3.text",
+      "WarpExitX": 0,
+      "WarpExitY": 0,
       "WarpEntryCharacter": 196,
       "PosX": 98,
       "PosY": 8,
       "Symbol": "W",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5161,6 +5809,7 @@
       "Symbol": "W",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5173,6 +5822,7 @@
       "Symbol": "W",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5185,6 +5835,7 @@
       "Symbol": "W",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
@@ -5197,6 +5848,7 @@
       "Symbol": "W",
       "Color": 10,
       "IsDrawing": true,
+      "LData": null,
       "DrawingDistance": 5
     }
   ]
