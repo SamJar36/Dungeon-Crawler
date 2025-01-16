@@ -19,7 +19,6 @@ namespace Dungeon_Crawler.Elements
         public Dice AttackDice { get; set; }
         public Dice DefenseDice { get; set; }
         public bool IsAbleToMove { get; set; }
-        protected LevelData LData { get; set; }
         private List<LootItem> LootTable { get; set; }
         public Enemy(int x, 
                      int y, 

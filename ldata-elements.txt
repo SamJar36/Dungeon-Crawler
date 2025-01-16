@@ -6337,90 +6337,346 @@
   "TreasureChests": [
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 57,
       "PosY": 7,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 60,
       "PosY": 7,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 78,
       "PosY": 12,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 68,
       "PosY": 13,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "key",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 86,
       "PosY": 17,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "key",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 11,
       "PosY": 21,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": true,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 36,
       "PosY": 21,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     },
     {
       "Contents": "empty",
-      "LData": null,
+      "EQ": {
+        "WoodenSword": {
+          "DiceName": "Wooden Sword",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 4
+        },
+        "ShortSword": {
+          "DiceName": "Short Sword",
+          "DiceNumber": 2,
+          "DiceSides": 6,
+          "DiceModifier": 3
+        },
+        "DebuggingSword": {
+          "DiceName": "Debugging Sword",
+          "DiceNumber": 3,
+          "DiceSides": 6,
+          "DiceModifier": 5
+        },
+        "Tunic": {
+          "DiceName": "Tunic",
+          "DiceNumber": 1,
+          "DiceSides": 6,
+          "DiceModifier": 0
+        },
+        "LeatherArmor": {
+          "DiceName": "Leather Armor",
+          "DiceNumber": 1,
+          "DiceSides": 8,
+          "DiceModifier": 3
+        }
+      },
       "PosX": 24,
       "PosY": 23,
       "Symbol": "C",
       "Color": 11,
       "IsDrawing": true,
       "HasBeenDrawn": false,
+      "LData": null,
       "DrawingDistance": 5
     }
   ],

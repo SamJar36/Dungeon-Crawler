@@ -260,36 +260,49 @@ public class LevelData
     }
     public void Save()
     {
-        LevelElementJsonObject jsonObject = new LevelElementJsonObject(levelElementList);
+        LevelElementJsonObject jsonObject = new LevelElementJsonObject(LevelElementList);
+        EnemyJsonObject enemyJsonObject = new EnemyJsonObject(EnemyList);
         var settings = new JsonSerializerSettings
         {
             Formatting = Formatting.Indented,
         };
         string json1 = JsonConvert.SerializeObject(jsonObject, settings);
+        string json2 = JsonConvert.SerializeObject(enemyJsonObject, settings);
         string json3 = JsonConvert.SerializeObject(this.Player, settings);
         File.WriteAllText("ldata-elements.txt", json1);
+        File.WriteAllText("ldata-enemies.txt", json2);
         File.WriteAllText("ldata-player.txt", json3);
     }
     public void LoadSavedMap(Equipment EQ)
     {
         string json1 = File.ReadAllText("ldata-elements.txt");
+        string json2 = File.ReadAllText("ldata-enemies.txt");
         string json3 = File.ReadAllText("ldata-player.txt");
 
         LevelElementJsonObject jsonObject = JsonConvert.DeserializeObject<LevelElementJsonObject>(json1);
-
+        EnemyJsonObject enemyJsonObject = JsonConvert.DeserializeObject<EnemyJsonObject>(json2);
         Player player = JsonConvert.DeserializeObject<Player>(json3);
 
         player.LData = this;
         this.Player = player;
         Player.DrawPlayer();
         var jsonList = jsonObject.CombineLists();
+        var enemyJsonList = enemyJsonObject.CombineLists();
         foreach (var element in jsonList)
         {
             element.Player = player;
             element.LData = this;
             element.CheckIfPreviouslyDrawn();
-            levelElementList.Add(element);
+            LevelElementList.Add(element);
         }
+        foreach (var enemy in enemyJsonList)
+        {
+            enemy.Player = player;
+            enemy.LData = this;
+            enemy.Draw();
+            EnemyList.Add(enemy);
+        }
+        Player.Music.PlayMusic("Level");
     }
     private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
     {

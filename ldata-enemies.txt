@@ -1,0 +1,510 @@
+{
+  "Rats": [
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 108,
+      "PosY": 7,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 105,
+      "PosY": 9,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 9,
+      "PosY": 13,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": true,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 3,
+      "PosY": 18,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": true,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 88,
+      "PosY": 16,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 88,
+      "PosY": 17,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 9,
+      "PosY": 18,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": true,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 48,
+      "PosY": 20,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 40,
+      "PosY": 21,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 48,
+      "PosY": 21,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 45,
+      "PosY": 25,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 50,
+      "PosY": 25,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 4,
+      "PosY": 25,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    }
+  ],
+  "Snakes": [
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 107,
+      "PosY": 14,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 5,
+      "PosY": 16,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": true,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 78,
+      "PosY": 17,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 5,
+      "PosY": 22,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": true,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 4,
+      "PosY": 24,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 13,
+      "Name": "snake",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 4,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 8,
+        "DiceModifier": 1
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 24,
+      "PosY": 25,
+      "Symbol": "s",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    }
+  ],
+  "Mimics": [
+    {
+      "HitPoints": 20,
+      "Name": "Mimic",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 3,
+        "DiceSides": 6,
+        "DiceModifier": 2
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 2
+      },
+      "IsAbleToMove": true,
+      "LData": null,
+      "PosX": 111,
+      "PosY": 24,
+      "Symbol": "C",
+      "Color": 11,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    }
+  ],
+  "BossRatKings": [],
+  "BossSkeletonLeaders": []
+}

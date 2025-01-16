@@ -129,7 +129,7 @@ public class LevelElementJsonObject
             .Concat(FinishLevels)
             .Concat(Golds)
             .Concat(GreenWalls)
-            //.Concat(HeartPieces)
+            .Concat(HeartPieces)
             .Concat(HiddenWalls)
             .Concat(Keys)
             .Concat(MagicalBarriers)
