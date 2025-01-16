@@ -13,7 +13,6 @@ public abstract class LevelElement
     public Player Player { get; set; }
     public bool IsDrawing { get; set; }
     public bool HasBeenDrawn { get; set; }
-    public LevelData LData { get; set; }
     public int DrawingDistance { get; set; }
     public LevelElement(int x, int y, char symbol, ConsoleColor color, Player player, int drawingDistance = 5)
     {

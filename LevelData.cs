@@ -291,7 +291,6 @@ public class LevelData
         foreach (var element in jsonList)
         {
             element.Player = player;
-            element.LData = this;
             element.CheckIfPreviouslyDrawn();
             LevelElementList.Add(element);
         }

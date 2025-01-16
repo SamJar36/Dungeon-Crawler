@@ -8,7 +8,7 @@ namespace Dungeon_Crawler.MainMenu
 {
     internal class MainMenu : MenuElement
     {
-        public MainMenu() : base(new List<string> { "New Game", "Password", "Options", "About", "Exit" }, "Main Menu")
+        public MainMenu() : base(new List<string> { "New Game", "Load", "Exit" }, "Main Menu")
         {
 
         }
