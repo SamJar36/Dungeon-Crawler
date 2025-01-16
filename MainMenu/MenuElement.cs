@@ -44,8 +44,6 @@ namespace Dungeon_Crawler.MainMenu
             DrawBorders();
             DrawMenuItems();
             DrawArrow();
-            Console.ReadKey();
-            Console.Clear();
         }
         public void DrawBorders()
         {
@@ -80,11 +78,10 @@ namespace Dungeon_Crawler.MainMenu
                     menuItemToDraw++;
                 }
             }  
-
         }
         public void DrawArrow()
         {
-            Console.SetCursorPosition(SetCursorX + 2, SetCursorY + 2 + (arrowDrawIndex * 2));
+            Console.SetCursorPosition(SetCursorX + 2, SetCursorY + 2 + (arrowDrawIndex));
             foreach (char c in arrow)
             {
                 Console.Write(c);

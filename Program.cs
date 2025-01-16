@@ -53,23 +53,60 @@ public class Program
         //Equipment
         Equipment EQ = new Equipment();
 
-        ////Main Menu
-        //MainMenu mainMenu = new MainMenu();
-        //Difficulty difficulty = new Difficulty();
-        //Options options = new Options();
-        //mainMenu.Draw();
-        //difficulty.Draw();
-        //options.Draw();
-
-        //Map
         LevelData levelData = new LevelData();
-        levelData.LoadMap(EQ);
-        //levelData.LoadSavedMap(EQ);
+
+        ////Main Menu
+        MainMenu mainMenu = new MainMenu();
+        bool menuLoop = true;
+        bool IsPickingNewGame = true;
+        while (menuLoop)
+        {
+            mainMenu.Draw();
+            var keyPressed = Console.ReadKey();
+            if (keyPressed.Key == ConsoleKey.DownArrow && mainMenu.arrowDrawIndex < 2)
+            {
+                mainMenu.arrowDrawIndex++;
+            }
+            else if (keyPressed.Key == ConsoleKey.UpArrow && mainMenu.arrowDrawIndex > 0)
+            {
+                mainMenu.arrowDrawIndex--;
+            }
+            else if (keyPressed.Key == ConsoleKey.Enter)
+            {
+                if (mainMenu.arrowDrawIndex == 0)
+                {
+                    menuLoop = false;
+                    Console.Clear();   
+                }
+                else if (mainMenu.arrowDrawIndex == 1)
+                {
+                    menuLoop = false;
+                    Console.Clear();
+                    IsPickingNewGame = false;
+                }
+                else if (mainMenu.arrowDrawIndex == 2)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Exiting game. Thank you for playing!");
+                    Environment.Exit(1);
+                }
+            }
+            Console.Clear();
+        }
+        //Map
+        if (IsPickingNewGame)
+        {
+            levelData.LoadMap();
+        }
+        else
+        {
+            levelData.LoadSavedMap();
+        }
 
         //HUD
         HUD hud = new HUD(
             levelData.Player.HitPoints,
-            levelData.CurrentLevel, 
+            levelData.CurrentLevel,
             levelData.Player.Steps,
             levelData.Player.EquippedWeapon,
             levelData.Player.EquippedArmor,
@@ -90,5 +127,9 @@ public class Program
         // level2 boss
         // warp on same vertical plane bug (game crashes)
         // Warping and then attacking results in "warp exit is blocked message"
+
+        // pushable blocks after quickload
+        // all walls after loads aren't properly discovered
+
     }
 }

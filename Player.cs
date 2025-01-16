@@ -116,7 +116,12 @@ public class Player
             {
                 LData.Save();
             }
-            if (keyPressed.Key == ConsoleKey.UpArrow)
+            else if (keyPressed.Key == ConsoleKey.N)
+            {
+                Console.Clear();
+                LData.LoadSavedMap();
+            }
+            else if (keyPressed.Key == ConsoleKey.UpArrow)
             {
                 this.PosY -= 1;
                 this.Steps++;

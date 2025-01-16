@@ -25,6 +25,10 @@ public abstract class LevelElement
         this.DrawingDistance = drawingDistance;
         this.HasBeenDrawn = false;
     }
+    public LevelElement()
+    {
+
+    }
     public void Draw()
     {
         if (this.IsDrawing)

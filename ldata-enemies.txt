@@ -16,33 +16,7 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 108,
-      "PosY": 7,
-      "Symbol": "r",
-      "Color": 12,
-      "IsDrawing": true,
-      "HasBeenDrawn": false,
-      "DrawingDistance": 5
-    },
-    {
-      "HitPoints": 10,
-      "Name": "rat",
-      "AttackDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 5
-      },
-      "DefenseDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 0
-      },
-      "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 105,
+      "PosX": 97,
       "PosY": 9,
       "Symbol": "r",
       "Color": 12,
@@ -66,9 +40,32 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 9,
-      "PosY": 13,
+      "PosX": 108,
+      "PosY": 6,
+      "Symbol": "r",
+      "Color": 12,
+      "IsDrawing": true,
+      "HasBeenDrawn": false,
+      "DrawingDistance": 5
+    },
+    {
+      "HitPoints": 10,
+      "Name": "rat",
+      "AttackDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 5
+      },
+      "DefenseDice": {
+        "DiceName": null,
+        "DiceNumber": 1,
+        "DiceSides": 6,
+        "DiceModifier": 0
+      },
+      "IsAbleToMove": true,
+      "PosX": 1,
+      "PosY": 16,
       "Symbol": "r",
       "Color": 12,
       "IsDrawing": true,
@@ -91,33 +88,7 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 3,
-      "PosY": 18,
-      "Symbol": "r",
-      "Color": 12,
-      "IsDrawing": true,
-      "HasBeenDrawn": true,
-      "DrawingDistance": 5
-    },
-    {
-      "HitPoints": 10,
-      "Name": "rat",
-      "AttackDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 5
-      },
-      "DefenseDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 0
-      },
-      "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 88,
+      "PosX": 87,
       "PosY": 16,
       "Symbol": "r",
       "Color": 12,
@@ -141,9 +112,8 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 88,
-      "PosY": 17,
+      "PosY": 15,
       "Symbol": "r",
       "Color": 12,
       "IsDrawing": true,
@@ -166,34 +136,8 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 9,
-      "PosY": 18,
-      "Symbol": "r",
-      "Color": 12,
-      "IsDrawing": true,
-      "HasBeenDrawn": true,
-      "DrawingDistance": 5
-    },
-    {
-      "HitPoints": 10,
-      "Name": "rat",
-      "AttackDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 5
-      },
-      "DefenseDice": {
-        "DiceName": null,
-        "DiceNumber": 1,
-        "DiceSides": 6,
-        "DiceModifier": 0
-      },
-      "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 48,
-      "PosY": 20,
+      "PosX": 47,
+      "PosY": 21,
       "Symbol": "r",
       "Color": 12,
       "IsDrawing": true,
@@ -216,7 +160,6 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 40,
       "PosY": 21,
       "Symbol": "r",
@@ -241,8 +184,7 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 48,
+      "PosX": 46,
       "PosY": 21,
       "Symbol": "r",
       "Color": 12,
@@ -266,8 +208,7 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 45,
+      "PosX": 49,
       "PosY": 25,
       "Symbol": "r",
       "Color": 12,
@@ -291,8 +232,7 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 50,
+      "PosX": 52,
       "PosY": 25,
       "Symbol": "r",
       "Color": 12,
@@ -316,13 +256,12 @@
         "DiceModifier": 0
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 4,
       "PosY": 25,
       "Symbol": "r",
       "Color": 12,
       "IsDrawing": true,
-      "HasBeenDrawn": false,
+      "HasBeenDrawn": true,
       "DrawingDistance": 5
     }
   ],
@@ -343,7 +282,6 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 107,
       "PosY": 14,
       "Symbol": "s",
@@ -368,7 +306,6 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 5,
       "PosY": 16,
       "Symbol": "s",
@@ -393,7 +330,6 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 78,
       "PosY": 17,
       "Symbol": "s",
@@ -418,9 +354,8 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
-      "PosX": 5,
-      "PosY": 22,
+      "PosX": 4,
+      "PosY": 21,
       "Symbol": "s",
       "Color": 12,
       "IsDrawing": true,
@@ -443,13 +378,12 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 4,
       "PosY": 24,
       "Symbol": "s",
       "Color": 12,
       "IsDrawing": true,
-      "HasBeenDrawn": false,
+      "HasBeenDrawn": true,
       "DrawingDistance": 5
     },
     {
@@ -468,7 +402,6 @@
         "DiceModifier": 1
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 24,
       "PosY": 25,
       "Symbol": "s",
@@ -495,7 +428,6 @@
         "DiceModifier": 2
       },
       "IsAbleToMove": true,
-      "LData": null,
       "PosX": 111,
       "PosY": 24,
       "Symbol": "C",

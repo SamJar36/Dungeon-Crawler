@@ -26,7 +26,7 @@ public class LevelData
     {
         this.CurrentLevel = level;
     }
-    public void LoadMap(Equipment EQ)
+    public void LoadMap()
     {
         string filePath = Path.Combine(Directory.GetCurrentDirectory(), @$"Levels\Level{CurrentLevel}.text");
 
@@ -97,32 +97,32 @@ public class LevelData
                     {
                         if (character == '1')
                         {
-                            CreateTreasureChestObject(mapX, mapY, "key", EQ);
+                            CreateTreasureChestObject(mapX, mapY, "key");
                         }
                         else if (character == '2')
                         {
-                            CreateTreasureChestObject(mapX, mapY, "health potion", EQ);
+                            CreateTreasureChestObject(mapX, mapY, "health potion");
                         }
                         else if (character == '3')
                         {
-                            CreateTreasureChestObject(mapX, mapY, "empty", EQ);
+                            CreateTreasureChestObject(mapX, mapY, "empty");
                         }
                         if (CurrentLevel == 1)
                         {
                             if (character == '4')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "gold", EQ);
+                                CreateTreasureChestObject(mapX, mapY, "gold");
                             }
                         }
                         else if (CurrentLevel == 2)
                         {
                             if (character == '4')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "leather armor", EQ);
+                                CreateTreasureChestObject(mapX, mapY, "leather armor");
                             }
                             else if (character == '5')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "short sword", EQ);
+                                CreateTreasureChestObject(mapX, mapY, "short sword");
                             }
                         }
                         
@@ -265,6 +265,7 @@ public class LevelData
         var settings = new JsonSerializerSettings
         {
             Formatting = Formatting.Indented,
+            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
         };
         string json1 = JsonConvert.SerializeObject(jsonObject, settings);
         string json2 = JsonConvert.SerializeObject(enemyJsonObject, settings);
@@ -273,7 +274,7 @@ public class LevelData
         File.WriteAllText("ldata-enemies.txt", json2);
         File.WriteAllText("ldata-player.txt", json3);
     }
-    public void LoadSavedMap(Equipment EQ)
+    public void LoadSavedMap()
     {
         string json1 = File.ReadAllText("ldata-elements.txt");
         string json2 = File.ReadAllText("ldata-enemies.txt");
@@ -284,7 +285,7 @@ public class LevelData
         Player player = JsonConvert.DeserializeObject<Player>(json3);
 
         player.LData = this;
-        this.Player = player;
+        this.Player = player;       
         Player.DrawPlayer();
         var jsonList = jsonObject.CombineLists();
         var enemyJsonList = enemyJsonObject.CombineLists();
@@ -303,9 +304,9 @@ public class LevelData
         }
         Player.Music.PlayMusic("Level");
     }
-    private void CreateTreasureChestObject(int x, int y, string s, Equipment EQ)
+    private void CreateTreasureChestObject(int x, int y, string s)
     {
-        TreasureChest chest = new TreasureChest(x, y, this.Player, s, EQ);
+        TreasureChest chest = new TreasureChest(x, y, this.Player, s);
         chest.Draw();
         levelElementList.Add(chest);
     }

@@ -47,6 +47,10 @@ namespace Dungeon_Crawler.Elements
                 this.Name = "Heart Piece";
             }
         }
+        public HeartPiece()
+        {
+
+        }
         public void PickUpHeartPiece()
         {
             if (this.IsDrawing)

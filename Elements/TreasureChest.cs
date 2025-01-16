@@ -7,10 +7,10 @@ public class TreasureChest : LevelElement
 {
     public string Contents { get; set; }
     public Equipment EQ { get; set; }
-    public TreasureChest(int x, int y, Player player, string contents, Equipment eQ) : base(x, y, 'C', ConsoleColor.Cyan, player)
+    public TreasureChest(int x, int y, Player player, string contents) : base(x, y, 'C', ConsoleColor.Cyan, player)
     {
         this.Contents = contents;
-        this.EQ = eQ;
+        this.EQ = new Equipment();
     }
     public void OpenTreasureChest()
     {
