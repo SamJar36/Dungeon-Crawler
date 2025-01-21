@@ -54,6 +54,7 @@ public class Program
         Equipment EQ = new Equipment();
 
         LevelData levelData = new LevelData();
+        GameDataService gameDataService = new GameDataService("mongodb+srv://samandreasjarva:Mmpp33112233@cluster0.y4gww.mongodb.net/", "GameData");
 
         ////Main Menu
         MainMenu mainMenu = new MainMenu();
