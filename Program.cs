@@ -53,8 +53,8 @@ public class Program
         //Equipment
         Equipment EQ = new Equipment();
 
-        LevelData levelData = new LevelData();
-        GameDataService gameDataService = new GameDataService("", "GameData");
+        GameDataService gameDataService = new GameDataService("mongodb://localhost:27017/", "GameData");
+        LevelData levelData = new LevelData(gameDataService);
 
         ////Main Menu
         MainMenu mainMenu = new MainMenu();
@@ -100,11 +100,11 @@ public class Program
         //Map
         if (IsPickingNewGame)
         {
-            levelData.LoadMap();
+            levelData.LoadMapFromText();
         }
         else
         {
-            levelData.LoadSavedMap();
+            gameDataService.LoadSavedMap(levelData);
         }
 
         //HUD

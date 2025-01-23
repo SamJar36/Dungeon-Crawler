@@ -1,4 +1,5 @@
 ﻿using DungeonCrawler;
+using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
 namespace Dungeon_Crawler.Elements;
@@ -9,7 +10,7 @@ public abstract class LevelElement
     public int PosY { get; set; }
     public char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
-    [JsonIgnore] 
+    [BsonIgnore] 
     public Player Player { get; set; }
     public bool IsDrawing { get; set; }
     public bool HasBeenDrawn { get; set; }

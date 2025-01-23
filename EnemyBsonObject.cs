@@ -4,18 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dungeon_Crawler.Elements;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 
 namespace Dungeon_Crawler
 {
-    public class EnemyJsonObject
+    public class EnemyBsonObject
     {
         public List<Rat> Rats { get; set; }
         public List<Snake> Snakes { get; set; }
         public List<Mimic> Mimics { get; set; }
         public List<BossRatKing> BossRatKings { get; set; }
         public List<BossSkeletonLeader> BossSkeletonLeaders { get; set; }
-        public EnemyJsonObject(List<Enemy> enemyList)
+        public EnemyBsonObject(List<Enemy> enemyList)
         {
+
             this.Rats = new List<Rat>();
             this.Snakes = new List<Snake>();
             this.Mimics = new List<Mimic>();
@@ -45,7 +48,7 @@ namespace Dungeon_Crawler
                 }
             }
         }
-        public EnemyJsonObject()
+        public EnemyBsonObject()
         {
 
         }

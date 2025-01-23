@@ -91,7 +91,7 @@ namespace Dungeon_Crawler
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
             Console.Clear();
-            LData.LoadMap();
+            LData.LoadMapFromText();
             LData.Player.DrawPlayer();
         }
         private void GameOver()

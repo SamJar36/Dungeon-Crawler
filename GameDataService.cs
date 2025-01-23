@@ -7,6 +7,7 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using DungeonCrawler;
 using Newtonsoft.Json;
+using MongoDB.Bson.Serialization;
 
 namespace Dungeon_Crawler
 {
@@ -25,56 +26,82 @@ namespace Dungeon_Crawler
             _enemiesCollection = database.GetCollection<BsonDocument>("Enemies");
             _playerCollection = database.GetCollection<BsonDocument>("Player");
         }
-        public async Task SaveAsync(LevelElementJsonObject levelElements, EnemyJsonObject enemies, Player player)
+
+        public void SaveMap(LevelData LData)
         {
-            var bsonDocument1 = levelElements.ToBsonDocument();
-            var bsonDocument2 = enemies.ToBsonDocument();
-            var bsonDocument3 = player.ToBsonDocument();
+            LevelElementBsonObject bsonObject = new LevelElementBsonObject(LData.LevelElementList);
+            EnemyBsonObject enemyBsonObject = new EnemyBsonObject(LData.EnemyList);
 
-            await _levelElementsCollection.ReplaceOneAsync(
-            new BsonDocument("_id", bsonDocument1["_id"]),
-            bsonDocument1,
-            new ReplaceOptions { IsUpsert = true });
+            var bsonDocument1 = bsonObject.ToBsonDocument();
+            var bsonDocument2 = enemyBsonObject.ToBsonDocument();
+            var bsonDocument3 = LData.Player.ToBsonDocument();
 
-            await _enemiesCollection.ReplaceOneAsync(
-                new BsonDocument("_id", bsonDocument2["_id"]),
-                bsonDocument2,
-                new ReplaceOptions { IsUpsert = true });
-
-            await _playerCollection.ReplaceOneAsync(
-                new BsonDocument("_id", bsonDocument3["_id"]),
-                bsonDocument3,
-                new ReplaceOptions { IsUpsert = true });
-        }
-        public async Task LoadSavedMapAsync(LevelData LData)
-        {
-            // Retrieve JSON from MongoDB
-            var bsonDocument1 = await _levelElementsCollection.Find(new BsonDocument()).FirstOrDefaultAsync();
-            var bsonDocument2 = await _enemiesCollection.Find(new BsonDocument()).FirstOrDefaultAsync();
-            var bsonDocument3 = await _playerCollection.Find(new BsonDocument()).FirstOrDefaultAsync();
-
-            if (bsonDocument1 == null || bsonDocument2 == null || bsonDocument3 == null)
+            if (!bsonDocument1.Contains("_id"))
             {
-                // Handle the case where the documents are not found
-                return;
+                bsonDocument1["_id"] = ObjectId.GenerateNewId();
+            }
+            if (!bsonDocument2.Contains("_id"))
+            {
+                bsonDocument2["_id"] = ObjectId.GenerateNewId();
+            }
+            if (!bsonDocument3.Contains("_id"))
+            {
+                bsonDocument3["_id"] = ObjectId.GenerateNewId();
             }
 
-            // Convert BSON to JSON
-            string json1 = bsonDocument1.ToJson();
-            string json2 = bsonDocument2.ToJson();
-            string json3 = bsonDocument3.ToJson();
+            bool isLevelElementsCollectionEmpty = !_levelElementsCollection.Find(new BsonDocument()).Any();
+            bool isEnemiesCollectionEmpty = !_enemiesCollection.Find(new BsonDocument()).Any();
+            bool isPlayerCollectionEmpty = !_playerCollection.Find(new BsonDocument()).Any();
 
-            // Deserialize JSON to objects
-            LevelElementJsonObject jsonObject = JsonConvert.DeserializeObject<LevelElementJsonObject>(json1);
-            EnemyJsonObject enemyJsonObject = JsonConvert.DeserializeObject<EnemyJsonObject>(json2);
-            Player player = JsonConvert.DeserializeObject<Player>(json3);
+            if (!isLevelElementsCollectionEmpty)
+            {
+                var firstDocument = _levelElementsCollection.Find(new BsonDocument()).FirstOrDefault();
+                if (firstDocument != null)
+                {
+                    _levelElementsCollection.DeleteOne(new BsonDocument("_id", firstDocument["_id"]));
+                }
+            }
+            _levelElementsCollection.InsertOne(bsonDocument1);
 
-            // Set player data and draw player
+            if (!isEnemiesCollectionEmpty)
+            {
+                var firstDocument = _enemiesCollection.Find(new BsonDocument()).FirstOrDefault();
+                if (firstDocument != null)
+                {
+                    _enemiesCollection.DeleteOne(new BsonDocument("_id", firstDocument["_id"]));
+                }
+            }
+            _enemiesCollection.InsertOne(bsonDocument2);
+
+            if (!isPlayerCollectionEmpty)
+            {
+                var firstDocument = _playerCollection.Find(new BsonDocument()).FirstOrDefault();
+                if (firstDocument != null)
+                {
+                    _playerCollection.DeleteOne(new BsonDocument("_id", firstDocument["_id"]));
+                }
+            }
+            _playerCollection.InsertOne(bsonDocument3);
+        }
+        public void LoadSavedMap(LevelData LData)
+        {
+            var bsonDocument1 = _levelElementsCollection.Find(new BsonDocument()).FirstOrDefault();
+            var bsonDocument2 = _enemiesCollection.Find(new BsonDocument()).FirstOrDefault();
+            var bsonDocument3 = _playerCollection.Find(new BsonDocument()).FirstOrDefault();
+
+            //if (bsonDocument1 == null || bsonDocument2 == null || bsonDocument3 == null)
+            //{
+            //    return;
+            //}
+
+            LevelElementBsonObject jsonObject = BsonSerializer.Deserialize<LevelElementBsonObject>(bsonDocument1);
+            EnemyBsonObject enemyJsonObject = BsonSerializer.Deserialize<EnemyBsonObject>(bsonDocument2);
+            Player player = BsonSerializer.Deserialize<Player>(bsonDocument3);
+
             player.LData = LData;
             LData.Player = player;
             LData.Player.DrawPlayer();
 
-            // Combine lists and add elements to LevelElementList and EnemyList
             var jsonList = jsonObject.CombineLists();
             var enemyJsonList = enemyJsonObject.CombineLists();
             foreach (var element in jsonList)
@@ -91,7 +118,6 @@ namespace Dungeon_Crawler
                 LData.EnemyList.Add(enemy);
             }
 
-            // Play level music
             LData.Player.Music.PlayMusic("Level");
         }
     }

@@ -1,5 +1,7 @@
 ﻿using Dungeon_Crawler.Elements;
 using DungeonCrawler;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler;
 
-public class LevelElementJsonObject
+public class LevelElementBsonObject
 {
     public List<Wall> Walls { get; set; }
     public List<LockedDoor> LockedDoors { get; set; }
@@ -28,7 +30,7 @@ public class LevelElementJsonObject
     public List<TreasureChest> TreasureChests { get; set; }
     public List<Warp> Warps { get; set; }
 
-    public LevelElementJsonObject(List<LevelElement> levelElementList)
+    public LevelElementBsonObject(List<LevelElement> levelElementList)
     {
         this.Walls = new List<Wall>();
         this.LockedDoors = new List<LockedDoor>();
@@ -114,7 +116,7 @@ public class LevelElementJsonObject
             }
         }
     }
-    public LevelElementJsonObject()
+    public LevelElementBsonObject()
     {
 
     }

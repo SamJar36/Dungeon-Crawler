@@ -6,6 +6,7 @@ using System.Net.NetworkInformation;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace DungeonCrawler;
 
@@ -24,7 +25,7 @@ public class Player
     public Music Music { get; set; }
     public char Symbol { get; set; }
     public ConsoleColor Color { get; set; }
-    [JsonIgnore]
+    [BsonIgnore]
     public LevelData LData { get; set; }
     public int HitPoints { get; set; }
     public int Steps { get; set; }
@@ -114,12 +115,7 @@ public class Player
         {
             if (keyPressed.Key == ConsoleKey.M)
             {
-                LData.Save();
-            }
-            else if (keyPressed.Key == ConsoleKey.N)
-            {
-                Console.Clear();
-                LData.LoadSavedMap();
+                LData.GameDataService.SaveMap(LData);
             }
             else if (keyPressed.Key == ConsoleKey.UpArrow)
             {

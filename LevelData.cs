@@ -16,17 +16,20 @@ public class LevelData
     private List<LevelElement> levelElementList = new List<LevelElement>();
     public List<LevelElement> LevelElementList { get { return levelElementList; } }
     public Player Player { get; set; }
+    public GameDataService GameDataService { get; set; }
 
-    public LevelData()
+    public LevelData(GameDataService gameDataService)
     {
         this.CurrentLevel = 1;
         this.IsSwitchingLevels = false;
+
+        this.GameDataService = gameDataService;
     }
     public void SetCurrentLevel(int level)
     {
         this.CurrentLevel = level;
     }
-    public void LoadMap()
+    public void LoadMapFromText()
     {
         string filePath = Path.Combine(Directory.GetCurrentDirectory(), @$"Levels\Level{CurrentLevel}.text");
 
@@ -258,52 +261,52 @@ public class LevelData
             }
         }
     }
-    public void Save()
-    {
-        LevelElementJsonObject jsonObject = new LevelElementJsonObject(LevelElementList);
-        EnemyJsonObject enemyJsonObject = new EnemyJsonObject(EnemyList);
-        var settings = new JsonSerializerSettings
-        {
-            Formatting = Formatting.Indented,
-            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-        };
-        string json1 = JsonConvert.SerializeObject(jsonObject, settings);
-        string json2 = JsonConvert.SerializeObject(enemyJsonObject, settings);
-        string json3 = JsonConvert.SerializeObject(this.Player, settings);
-        File.WriteAllText("ldata-elements.txt", json1);
-        File.WriteAllText("ldata-enemies.txt", json2);
-        File.WriteAllText("ldata-player.txt", json3);
-    }
-    public void LoadSavedMap()
-    {
-        string json1 = File.ReadAllText("ldata-elements.txt");
-        string json2 = File.ReadAllText("ldata-enemies.txt");
-        string json3 = File.ReadAllText("ldata-player.txt");
+    //public void Save()
+    //{
+    //    LevelElementBsonObject jsonObject = new LevelElementBsonObject(LevelElementList);
+    //    EnemyBsonObject enemyJsonObject = new EnemyBsonObject(EnemyList);
+    //    var settings = new JsonSerializerSettings
+    //    {
+    //        Formatting = Formatting.Indented,
+    //        ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+    //    };
+    //    string json1 = JsonConvert.SerializeObject(jsonObject, settings);
+    //    string json2 = JsonConvert.SerializeObject(enemyJsonObject, settings);
+    //    string json3 = JsonConvert.SerializeObject(this.Player, settings);
+    //    File.WriteAllText("ldata-elements.txt", json1);
+    //    File.WriteAllText("ldata-enemies.txt", json2);
+    //    File.WriteAllText("ldata-player.txt", json3);
+    //}
+    //public void LoadSavedMap()
+    //{
+    //    string json1 = File.ReadAllText("ldata-elements.txt");
+    //    string json2 = File.ReadAllText("ldata-enemies.txt");
+    //    string json3 = File.ReadAllText("ldata-player.txt");
 
-        LevelElementJsonObject jsonObject = JsonConvert.DeserializeObject<LevelElementJsonObject>(json1);
-        EnemyJsonObject enemyJsonObject = JsonConvert.DeserializeObject<EnemyJsonObject>(json2);
-        Player player = JsonConvert.DeserializeObject<Player>(json3);
+    //    LevelElementBsonObject jsonObject = JsonConvert.DeserializeObject<LevelElementBsonObject>(json1);
+    //    EnemyBsonObject enemyJsonObject = JsonConvert.DeserializeObject<EnemyBsonObject>(json2);
+    //    Player player = JsonConvert.DeserializeObject<Player>(json3);
 
-        player.LData = this;
-        this.Player = player;       
-        Player.DrawPlayer();
-        var jsonList = jsonObject.CombineLists();
-        var enemyJsonList = enemyJsonObject.CombineLists();
-        foreach (var element in jsonList)
-        {
-            element.Player = player;
-            element.CheckIfPreviouslyDrawn();
-            LevelElementList.Add(element);
-        }
-        foreach (var enemy in enemyJsonList)
-        {
-            enemy.Player = player;
-            enemy.LData = this;
-            enemy.Draw();
-            EnemyList.Add(enemy);
-        }
-        Player.Music.PlayMusic("Level");
-    }
+    //    player.LData = this;
+    //    this.Player = player;       
+    //    Player.DrawPlayer();
+    //    var jsonList = jsonObject.CombineLists();
+    //    var enemyJsonList = enemyJsonObject.CombineLists();
+    //    foreach (var element in jsonList)
+    //    {
+    //        element.Player = player;
+    //        element.CheckIfPreviouslyDrawn();
+    //        LevelElementList.Add(element);
+    //    }
+    //    foreach (var enemy in enemyJsonList)
+    //    {
+    //        enemy.Player = player;
+    //        enemy.LData = this;
+    //        enemy.Draw();
+    //        EnemyList.Add(enemy);
+    //    }
+    //    Player.Music.PlayMusic("Level");
+    //}
     private void CreateTreasureChestObject(int x, int y, string s)
     {
         TreasureChest chest = new TreasureChest(x, y, this.Player, s);
