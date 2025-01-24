@@ -168,22 +168,21 @@ public class Player
                 CheckForCollision();
             }
         }
-        if (keyPressed.Key == ConsoleKey.K)
-        {
-            Console.SetCursorPosition(0, 3);
-            Console.WriteLine("Cheatcode activated! You got a key and a health potion!");
-            this.KeyCount += 1;
-            this.HealthPotionCount += 1;
-        }
-        else if (keyPressed.Key == ConsoleKey.D)
+        
+        if (keyPressed.Key == ConsoleKey.D)
         {
             EraseBattleText();
             Console.SetCursorPosition(0, attackPositionOnHUD);
+            foreach (var enemy in LData.EnemyList)
+            {
+                enemy.IsAbleToMove = false;
+            }
             if (HealthPotionCount > 0)
             {
                 Random random = new Random();
                 int healthRecovered = random.Next(75, 101);
-                Console.Write($"You drank a potion and recovered {healthRecovered} HP!");
+                this.SoundEffects.PlaySoundEffect("MagicalKey");
+                Console.Write($"You drank a potion and recovered \u001b[32m{healthRecovered}\u001b[0m HP!");
                 this.HitPoints += healthRecovered;
                 this.HealthPotionCount -= 1;
             }
@@ -191,6 +190,13 @@ public class Player
             {
                 Console.Write("You don't have any Health Potions left");
             }
+        }
+        else if (keyPressed.Key == ConsoleKey.K)
+        {
+            Console.SetCursorPosition(0, 3);
+            Console.WriteLine("Cheatcode activated! You got a key and a health potion!");
+            this.KeyCount += 1;
+            this.HealthPotionCount += 1;
         }
     }
     public void CheckForCollision()

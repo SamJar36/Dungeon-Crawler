@@ -26,6 +26,7 @@ public class TreasureChest : LevelElement
             else if (Contents == "health potion")
             {
                 this.Player.HealthPotionCount += 1;
+                this.Player.SoundEffects.PlaySoundEffect("Key");
                 text = "a Health Potion! It recovers 75-100 HP";
             }
             else if (Contents == "empty")

@@ -152,9 +152,5 @@ public class Program
         // level2 boss
         // warp on same vertical plane bug (game crashes)
         // Warping and then attacking results in "warp exit is blocked message"
-
-        // pushable blocks after quickload
-        // all walls after loads aren't properly discovered
-
     }
 }

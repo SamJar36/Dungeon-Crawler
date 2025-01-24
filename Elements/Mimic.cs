@@ -36,8 +36,12 @@ namespace Dungeon_Crawler.Elements
             {   
                 if (!this.IsFirstRoundOfBattle)
                 {
-                    Battle(Player);
-                    CheckIfHitPointsBelowZero();
+                    if (this.IsAbleToMove)
+                    {
+                        Battle(Player);
+                        CheckIfHitPointsBelowZero();
+                    }
+                    this.IsAbleToMove = true;
                 }
                 this.IsFirstRoundOfBattle = false;
             }   
