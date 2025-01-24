@@ -29,7 +29,11 @@ namespace Dungeon_Crawler.Elements
         }
         public override void Update()
         {
-            Move();
+            if (IsAbleToMove)
+            {
+                Move();
+            }
+            IsAbleToMove = true;
             EraseLastPositionOfEnemy();
             Draw();
             CheckIfHitPointsBelowZero();

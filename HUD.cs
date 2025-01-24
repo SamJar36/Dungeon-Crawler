@@ -56,7 +56,7 @@ namespace Dungeon_Crawler
             Console.WriteLine($"Level: {Level}");
             Console.ForegroundColor = Color;
             Console.SetCursorPosition(104, 0);
-            Console.WriteLine("X = SAVE/QUIT");
+            Console.WriteLine("X = \u001b[32mSAVE\u001b[0m/\u001b[31mQUIT\u001b[0m");
             Console.WriteLine(
                 $"HP: {HitPoints}, " +
                 $"Gold: {GoldCount}, " +

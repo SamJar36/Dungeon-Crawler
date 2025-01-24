@@ -115,7 +115,10 @@ public class Player
         {
             if (keyPressed.Key == ConsoleKey.X)
             {
-                // no monsters move code
+                foreach (var enemy in LData.EnemyList)
+                {
+                    enemy.IsAbleToMove = false;
+                }
                 LData.GameDataService.SaveMap(LData);
                 bool exitLoop = true;
                 while (exitLoop)
@@ -136,7 +139,7 @@ public class Player
                         exitLoop = false;
                         EraseBattleText();
                         Console.SetCursorPosition(0, 3);
-                        Console.WriteLine("Understood. Game resumes now!");
+                        Console.WriteLine("Understood! Resuming game.");
                     }
                 }
             }
