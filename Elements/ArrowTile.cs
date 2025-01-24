@@ -41,7 +41,7 @@ namespace Dungeon_Crawler.Elements
         }
         public void ArrowMovement(LevelData LData)
         {
-            Player.EraseLastPositionOfPlayer();
+            //Player.EraseLastPositionOfPlayer();
             Player.IsArrowTileMoving = true;
             Player.Color = ConsoleColor.Green;
             bool IsArrowTileInNeedOfDrawing = true;

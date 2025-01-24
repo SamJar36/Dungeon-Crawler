@@ -20,7 +20,7 @@ public class LevelData
 
     public LevelData(GameDataService gameDataService)
     {
-        this.CurrentLevel = 1;
+        this.CurrentLevel = 3;
         this.IsSwitchingLevels = false;
 
         this.GameDataService = gameDataService;

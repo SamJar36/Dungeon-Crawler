@@ -264,6 +264,7 @@ public class Player
                 else if (element is ArrowTile arrow)
                 {
                     SoundEffects.PlaySoundEffect("Arrow");
+                    MovementIsBlockedGoBack();
                     arrow.ArrowMovement(LData);
                 }
                 else if (element is GreenWall gwall)
