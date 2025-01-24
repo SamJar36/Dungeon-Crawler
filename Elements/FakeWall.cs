@@ -9,7 +9,7 @@ namespace Dungeon_Crawler.Elements
 {
     public class FakeWall : LevelElement
     {
-        public FakeWall(int x, int y, Player player) : base(x, y, '#', ConsoleColor.DarkGray, player)
+        public FakeWall(int x, int y, Player player) : base(x, y, '#', ConsoleColor.Gray, player)
         {
         }
         public void WalkThroughWall()

@@ -116,16 +116,24 @@ public class LevelData
                             {
                                 CreateTreasureChestObject(mapX, mapY, "gold");
                             }
+                            if (character == '5')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "leather armor");
+                            }
+                            else if (character == '6')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "short sword");
+                            }
                         }
                         else if (CurrentLevel == 2)
                         {
                             if (character == '4')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "leather armor");
+                                CreateTreasureChestObject(mapX, mapY, "brass armor");
                             }
                             else if (character == '5')
                             {
-                                CreateTreasureChestObject(mapX, mapY, "short sword");
+                                CreateTreasureChestObject(mapX, mapY, "sabre");
                             }
                         }
                         

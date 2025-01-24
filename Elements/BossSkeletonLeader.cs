@@ -13,7 +13,7 @@ namespace Dungeon_Crawler.Elements
 
         public BossSkeletonLeader(int x, int y, LevelData LData, Player player) 
             : base(x, y, 
-                  25, 
+                  35, 
                   'B', 
                   "Skeleton Leader",
                   ConsoleColor.Red,

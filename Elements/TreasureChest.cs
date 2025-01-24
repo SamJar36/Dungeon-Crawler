@@ -42,12 +42,26 @@ public class TreasureChest : LevelElement
             else if (Contents == "leather armor")
             {
                 text = "a Leather Armor! (1d8+1)";
+                Player.SoundEffects.PlaySoundEffect("EquipmentGet");
                 this.Player.EquippedArmor = EQ.LeatherArmor;
             }
             else if (Contents == "short sword")
             {
-                text = "a Short Sword! (2d6+2)";
+                text = "a Short Sword! (1d8+3)";
+                Player.SoundEffects.PlaySoundEffect("EquipmentGet");
                 this.Player.EquippedWeapon = EQ.ShortSword;
+            }
+            else if (Contents == "brass armor")
+            {
+                text = "a Brass Armor! (2d6+1)";
+                Player.SoundEffects.PlaySoundEffect("EquipmentGet");
+                this.Player.EquippedArmor = EQ.BrassArmor;
+            }
+            else if (Contents == "sabre")
+            {
+                text = "a Sabre! (2d6+3)";
+                Player.SoundEffects.PlaySoundEffect("EquipmentGet");
+                this.Player.EquippedWeapon = EQ.Sabre;
             }
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");

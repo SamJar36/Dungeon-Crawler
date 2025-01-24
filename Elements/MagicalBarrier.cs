@@ -21,7 +21,7 @@ namespace Dungeon_Crawler.Elements
                 {
                     Player.SoundEffects.PlaySoundEffect("BarrierBreak");
                     Console.SetCursorPosition(0, 3);
-                    Console.Write("With your Magical Key you vanquished the Magical Barrier!");
+                    Console.Write("With your Magical Key you vanquished the \u001b[35mMagical Barrier\u001b[0m!");
                     this.Player.MagicalKey -= 1;
                     this.Symbol = ' ';
                     this.Draw();
@@ -32,7 +32,7 @@ namespace Dungeon_Crawler.Elements
                 {
                     Player.SoundEffects.PlaySoundEffect("BarrierLocked");
                     Console.SetCursorPosition(0, 3);
-                    Console.Write("Your path is blocked by a Magical Barrier");
+                    Console.Write("Your path is blocked by a \u001b[35mMagical Barrier\u001b[0m");
                     this.Player.MovementIsBlockedGoBack();
                 }
             }
