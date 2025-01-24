@@ -53,7 +53,6 @@ public abstract class LevelElement
             Console.SetCursorPosition(this.PosX, this.PosY);
             Console.Write(Symbol);
             Console.ResetColor();
-            this.HasBeenDrawn = false;
         }
     }
     public double CalculateEuclideanDistance(int x, int y, int playerX, int playerY)

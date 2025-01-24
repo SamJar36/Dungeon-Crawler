@@ -26,27 +26,27 @@ namespace Dungeon_Crawler.Elements
                 this.Symbol = ' ';
                 this.IsDrawing = false;
 
-                // this was supposed to draw the entire map and do a cool blinking green effect, but I couldn't get it working properly in time
-                //for (int i = 0; i < 5; i++)
-                //{
-                //    Thread.Sleep(100);
-                //    foreach (var el in elements)
-                //    {
-                //        if (el is Wall vall)
-                //        {
-                //            vall.PaintWallsGray();
-                //        }
-                //    }
-                //    Thread.Sleep(100);
-                //    foreach (var el in elements)
-                //    {
-                //        if (el is Wall vall)
-                //        {
-                //            vall.DrawingDistance = 100;
-                //            vall.PaintWallsGreen();
-                //        }
-                //    } 
-                //}
+                for (int i = 0; i < 5; i++)
+                {
+                    Thread.Sleep(100);
+                    foreach (var element in elements)
+                    {
+                        if (element is Wall vall && element.HasBeenDrawn == true && element.IsDrawing == true)
+                        {
+                            vall.DrawingDistance = 100;
+                            vall.PaintWallsGreen();
+                        }
+                    }
+                    Thread.Sleep(100);
+                    foreach (var element in elements)
+                    {
+                        if (element is Wall vall && element.HasBeenDrawn == true && element.IsDrawing == true)
+                        {
+                            vall.PaintWallsGray();
+                        }
+                    }
+                    
+                }
             }
         }
     }
