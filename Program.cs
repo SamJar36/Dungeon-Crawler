@@ -83,9 +83,30 @@ public class Program
                 }
                 else if (mainMenu.arrowDrawIndex == 1)
                 {
-                    menuLoop = false;
-                    Console.Clear();
-                    IsPickingNewGame = false;
+                    bool isDataPresent = gameDataService.IsThereSavedDataInCollections();
+                    if (isDataPresent)
+                    {
+                        menuLoop = false;
+                        Console.Clear();
+                        IsPickingNewGame = false;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        int menuHeight = 3;
+                        int menuWidth = 37 + 5;
+                        int setCursorX = Console.WindowWidth / 2 - menuWidth / 2;
+                        int setCursorY = Console.WindowHeight / 2 - (menuHeight / 2) - 1;
+                        Console.SetCursorPosition(setCursorX, setCursorY);
+                        Console.WriteLine("#####################################");
+                        Console.SetCursorPosition(setCursorX, setCursorY + 1);
+                        Console.WriteLine("#   Error! No saved data detected   #");
+                        Console.SetCursorPosition(setCursorX, setCursorY + 2);
+                        Console.WriteLine("#####################################");
+                        Console.ReadKey();
+                        Console.Clear();
+                        continue;
+                    }     
                 }
                 else if (mainMenu.arrowDrawIndex == 2)
                 {

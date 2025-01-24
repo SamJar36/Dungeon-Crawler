@@ -84,12 +84,23 @@ namespace Dungeon_Crawler
             }
             _playerCollection.InsertOne(bsonDocument3);
         }
+        public bool IsThereSavedDataInCollections()
+        {
+            bool isLevelElementsCollectionEmpty = !_levelElementsCollection.Find(new BsonDocument()).Any();
+            bool isEnemiesCollectionEmpty = !_enemiesCollection.Find(new BsonDocument()).Any();
+            bool isPlayerCollectionEmpty = !_playerCollection.Find(new BsonDocument()).Any();
+
+            if (isLevelElementsCollectionEmpty || isEnemiesCollectionEmpty || isPlayerCollectionEmpty)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         public void LoadSavedMap(LevelData LData)
         {
-            //bool isLevelElementsCollectionEmpty = !_levelElementsCollection.Find(new BsonDocument()).Any();
-            //bool isEnemiesCollectionEmpty = !_enemiesCollection.Find(new BsonDocument()).Any();
-            //bool isPlayerCollectionEmpty = !_playerCollection.Find(new BsonDocument()).Any();
-
             var bsonDocument1 = _levelElementsCollection.Find(new BsonDocument()).FirstOrDefault();
             var bsonDocument2 = _enemiesCollection.Find(new BsonDocument()).FirstOrDefault();
             var bsonDocument3 = _playerCollection.Find(new BsonDocument()).FirstOrDefault();
