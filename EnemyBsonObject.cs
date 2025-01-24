@@ -9,6 +9,7 @@ using MongoDB.Bson;
 
 namespace Dungeon_Crawler
 {
+    [BsonIgnoreExtraElements]
     public class EnemyBsonObject
     {
         public List<Rat> Rats { get; set; }

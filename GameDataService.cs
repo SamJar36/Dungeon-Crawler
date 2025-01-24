@@ -8,6 +8,7 @@ using MongoDB.Bson;
 using DungeonCrawler;
 using Newtonsoft.Json;
 using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Dungeon_Crawler
 {
@@ -85,32 +86,36 @@ namespace Dungeon_Crawler
         }
         public void LoadSavedMap(LevelData LData)
         {
+            //bool isLevelElementsCollectionEmpty = !_levelElementsCollection.Find(new BsonDocument()).Any();
+            //bool isEnemiesCollectionEmpty = !_enemiesCollection.Find(new BsonDocument()).Any();
+            //bool isPlayerCollectionEmpty = !_playerCollection.Find(new BsonDocument()).Any();
+
             var bsonDocument1 = _levelElementsCollection.Find(new BsonDocument()).FirstOrDefault();
             var bsonDocument2 = _enemiesCollection.Find(new BsonDocument()).FirstOrDefault();
             var bsonDocument3 = _playerCollection.Find(new BsonDocument()).FirstOrDefault();
 
-            //if (bsonDocument1 == null || bsonDocument2 == null || bsonDocument3 == null)
-            //{
-            //    return;
-            //}
+            if (bsonDocument1 == null || bsonDocument2 == null || bsonDocument3 == null)
+            {
+                return;
+            }
 
-            LevelElementBsonObject jsonObject = BsonSerializer.Deserialize<LevelElementBsonObject>(bsonDocument1);
-            EnemyBsonObject enemyJsonObject = BsonSerializer.Deserialize<EnemyBsonObject>(bsonDocument2);
+            LevelElementBsonObject bsonObject = BsonSerializer.Deserialize<LevelElementBsonObject>(bsonDocument1);
+            EnemyBsonObject enemyBsonObject = BsonSerializer.Deserialize<EnemyBsonObject>(bsonDocument2);
             Player player = BsonSerializer.Deserialize<Player>(bsonDocument3);
 
             player.LData = LData;
             LData.Player = player;
             LData.Player.DrawPlayer();
 
-            var jsonList = jsonObject.CombineLists();
-            var enemyJsonList = enemyJsonObject.CombineLists();
-            foreach (var element in jsonList)
+            var bsonList = bsonObject.CombineLists();
+            var enemyBsonList = enemyBsonObject.CombineLists();
+            foreach (var element in bsonList)
             {
                 element.Player = player;
                 element.CheckIfPreviouslyDrawn();
                 LData.LevelElementList.Add(element);
             }
-            foreach (var enemy in enemyJsonList)
+            foreach (var enemy in enemyBsonList)
             {
                 enemy.Player = player;
                 enemy.LData = LData;

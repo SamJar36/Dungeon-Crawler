@@ -23,7 +23,7 @@ namespace Dungeon_Crawler.Elements
         public bool IsAbleToMove { get; set; }
         [BsonIgnore]
         public LevelData LData { get; set; }
-        private List<LootItem> LootTable { get; set; }
+        public List<LootItem> LootTable { get; set; }
         public Enemy(int x, 
                      int y, 
                      int HP, 

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Dungeon_Crawler;
 
+[BsonIgnoreExtraElements]
 public class LevelElementBsonObject
 {
     public List<Wall> Walls { get; set; }

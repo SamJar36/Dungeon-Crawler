@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace DungeonCrawler;
-
+[BsonIgnoreExtraElements]
 public class Player
 {
     public int PosX { get; set; }
@@ -113,9 +113,32 @@ public class Player
         EraseBattleText();
         if (IsAbleToMove)
         {
-            if (keyPressed.Key == ConsoleKey.M)
+            if (keyPressed.Key == ConsoleKey.X)
             {
+                // no monsters move code
                 LData.GameDataService.SaveMap(LData);
+                bool exitLoop = true;
+                while (exitLoop)
+                {
+                    EraseBattleText();
+                    Console.SetCursorPosition(0, 3);
+                    Console.WriteLine("Game \u001b[32msaved\u001b[0m! Do you also wish to \u001b[31mexit\u001b[0m the game? y/n");
+                    var keypressed2 = Console.ReadKey();
+                    if (keypressed2.Key == ConsoleKey.Y)
+                    {
+                        exitLoop = false;
+                        Console.Clear();
+                        Console.WriteLine("Exiting the game. Thanks for playing!");
+                        Environment.Exit(1);
+                    }
+                    else if (keypressed2.Key == ConsoleKey.N)
+                    {
+                        exitLoop = false;
+                        EraseBattleText();
+                        Console.SetCursorPosition(0, 3);
+                        Console.WriteLine("Understood. Game resumes now!");
+                    }
+                }
             }
             else if (keyPressed.Key == ConsoleKey.UpArrow)
             {

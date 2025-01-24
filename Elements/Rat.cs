@@ -9,7 +9,6 @@ namespace Dungeon_Crawler.Elements
 {
     public class Rat : Enemy
     {
-        private Random random = new Random();
 
         public Rat(int x, int y, LevelData levelData, Player player) 
             : base(x, y, 
@@ -42,6 +41,7 @@ namespace Dungeon_Crawler.Elements
         }
         public void Move()
         {
+            Random random = new Random();
             int direction = random.Next(1, 5);
             LastPositionOfEnemy();
             if (direction == 1)
