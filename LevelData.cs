@@ -20,7 +20,7 @@ public class LevelData
 
     public LevelData(GameDataService gameDataService)
     {
-        this.CurrentLevel = 3;
+        this.CurrentLevel = 1;
         this.IsSwitchingLevels = false;
 
         this.GameDataService = gameDataService;
@@ -136,6 +136,13 @@ public class LevelData
                                 CreateTreasureChestObject(mapX, mapY, "sabre");
                             }
                         }
+                        else if (CurrentLevel == 3)
+                        {
+                            if (character == '4')
+                            {
+                                CreateTreasureChestObject(mapX, mapY, "chain armor");
+                            }
+                        }
                         
                     }
                     else if (character == 'r')
@@ -234,6 +241,12 @@ public class LevelData
                         }
                         else if (CurrentLevel == 2)
                         { 
+                            BossSkeletonLeader skeletonLeader = new BossSkeletonLeader(mapX, mapY, this, this.Player);
+                            skeletonLeader.Draw();
+                            enemyList.Add(skeletonLeader);
+                        }
+                        else if (CurrentLevel == 3)
+                        {
                             BossSkeletonLeader skeletonLeader = new BossSkeletonLeader(mapX, mapY, this, this.Player);
                             skeletonLeader.Draw();
                             enemyList.Add(skeletonLeader);

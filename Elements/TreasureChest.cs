@@ -63,6 +63,12 @@ public class TreasureChest : LevelElement
                 Player.SoundEffects.PlaySoundEffect("EquipmentGet");
                 this.Player.EquippedWeapon = EQ.Sabre;
             }
+            else if (Contents == "chain armor")
+            {
+                text = "a Chain Armor! (2d6+3)";
+                Player.SoundEffects.PlaySoundEffect("EquipmentGet");
+                this.Player.EquippedArmor = EQ.ChainArmor;
+            }
             Console.SetCursorPosition(0, 3);
             Console.Write($"You opened the chest and found {text}");
 

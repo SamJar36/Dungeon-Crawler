@@ -16,6 +16,7 @@ namespace Dungeon_Crawler
         public Dice Tunic { get; set; }
         public Dice LeatherArmor { get; set; }
         public Dice BrassArmor { get; set; }
+        public Dice ChainArmor { get; set; }
 
         public Equipment()
         {
@@ -33,9 +34,11 @@ namespace Dungeon_Crawler
             Dice tunic = new Dice(1, 6, 0, "Tunic");
             Dice leatherArmor = new Dice(1, 8, 1, "Leather Armor");
             Dice brassArmor = new Dice(2, 6, 1, "Brass Armor");
+            Dice chainArmor = new Dice(2, 6, 3, "Chain Armor");
             this.Tunic = tunic;
             this.LeatherArmor = leatherArmor;
             this.BrassArmor = brassArmor;
+            this.ChainArmor = chainArmor;
     
         }
     }
