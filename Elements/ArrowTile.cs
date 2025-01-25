@@ -9,8 +9,8 @@ namespace Dungeon_Crawler.Elements
 {
     public class ArrowTile : LevelElement
     {
-        private int DirectionX { get; set; }
-        private int DirectionY { get; set; }
+        public int DirectionX { get; set; }
+        public int DirectionY { get; set; }
         
         public ArrowTile(int x, int y, Player player, int character) : base(x, y, '?', ConsoleColor.Green, player)
         {
