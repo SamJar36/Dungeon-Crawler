@@ -9,8 +9,8 @@ namespace Dungeon_Crawler.Elements
 {
     public class Mimic : Enemy
     {
-        private bool IsActivated { get; set; }
-        private bool IsFirstRoundOfBattle { get; set; }
+        public bool IsActivated { get; set; }
+        public bool IsFirstRoundOfBattle { get; set; }
         public Mimic(int x, int y, LevelData levelData, Player player)
             : base(x, y,
                   20,

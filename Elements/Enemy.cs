@@ -16,8 +16,8 @@ namespace Dungeon_Crawler.Elements
     {
         public int HitPoints { get; set; }
         public string Name { get; set; }
-        private int LastPosX { get; set; }
-        private int LastPosY { get; set; }
+        public int LastPosX { get; set; }
+        public int LastPosY { get; set; }
         public Dice AttackDice { get; set; }
         public Dice DefenseDice { get; set; }
         public bool IsAbleToMove { get; set; }

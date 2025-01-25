@@ -9,7 +9,7 @@ namespace Dungeon_Crawler.Elements
 {
     public class Gold : LevelElement
     { 
-        private int GoldAmount { get; set; }
+        public int GoldAmount { get; set; }
 
         public Gold(int x, int y, Player player, int lowValue, int highValue) 
             : base(x, y, 

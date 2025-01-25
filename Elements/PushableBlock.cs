@@ -10,8 +10,8 @@ namespace Dungeon_Crawler.Elements
 {
     public class PushableBlock : LevelElement
     {
-        private int LastPosX { get; set; }
-        private int LastPosY { get; set; }
+        public int LastPosX { get; set; }
+        public int LastPosY { get; set; }
         public PushableBlock(int x, int y, Player player) : base(x, y, '#', ConsoleColor.DarkMagenta, player)
         {
             this.LastPosX = x;
