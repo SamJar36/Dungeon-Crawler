@@ -1,8 +1,8 @@
 # Dungeon Crawler (Labb2)
 
-My second schoolproject, a Dungeon Crawler. Using Object-Orientated Programming we were to design a game that uses class hierarchy, loading the map from a text file, a game loop, vision range, a simple combat system where you throw dice and compare the results to each others armor, and two enemies, each with distinct movement (rat moves randomly, and snake steps away from the player when you get close).
+For my second school project, I developed a Dungeon Crawler game using Object-Oriented Programming principles. The project required designing a game that incorporates class hierarchy, map loading from a text file, a game loop, vision range, and a simple combat system where dice rolls determine the outcome against armor values. The game also featured two enemies with distinct movement patterns: a rat that moves randomly and a snake that retreats when the player approaches.
 
-I ended up liking the project so much that I added a bunch of other features, such as keys and locked doors, chests, health potions, a loot system, a block with its own collision that can be pushed, music and sound effects, warps, a magical barrier that guards the finish line that you need a magical key in order to get past, Mimics that pretend to be chests, two bosses, secret passages, arrow tiles that shoots you into the direction it points towards until you collide with something, a main menu and saving and loading the game from a BSON file in a database.
+I was so enthusiastic about the project that I expanded it significantly by adding numerous features, including keys and locked doors, chests, health potions, a loot system, pushable blocks with collision detection, music and sound effects, warps, a magical barrier requiring a special key to pass, Mimics disguised as chests, two bosses, secret passages, arrow tiles that propel the player in a specified direction until collision, a main menu, and the ability to save and load the game using BSON files stored in a database
 
 - Arrow keys to move
 - D to drink health potions
